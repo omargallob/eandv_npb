@@ -1,5 +1,6 @@
-
-
 es:
-  welcome:
-      title: "Hola mundo"
+  overview:
+    static_pages: "Numero total de paginas estaticas"
+    service_categories: "Numero total de categorias en servicios"
+    countries: "Numero total de paises"
+    properties: "Numero total de propiedades"

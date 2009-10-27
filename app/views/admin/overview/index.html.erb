@@ -1,7 +1,9 @@
+<% title "Overview"%>
+
 <div class="overview">
-	<p>Total number of Static pages: <%= @pages.size %></p>
-	<p>Total number of service categories: <%= @categories.size %></p>	
-	<p>Total number of countries: <%= @countries.size %></p>
-	<p>Total number of properties: <%= @properties.size %></p>
+	<p><%= t "overview.static_pages" %>: <%= @pages.size %></p>
+	<p><%= t "overview.service_categories" %>: <%= @categories.size %></p>	
+	<p><%= t 'overview.countries' %>: <%= @countries.size %></p>
+	<p><%= t 'overview.properties' %> <%= @properties.size %></p>
 	<p>Total number of facilities: <%= @facilities.size %></p>
 </div>

@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   
   
-  map.resources :services,:path_prefix => '/:locale'
+  map.resources :services #, :path_prefix => ":locale"
 
 
   #user action ( login signup logout)
@@ -20,7 +20,7 @@ ActionController::Routing::Routes.draw do |map|
   
   map.services_sub '/services/:category/:subcategory', :controller => "services", :action => "show"
   #admin section
-  map.namespace :admin, :path_prefix => '/:locale'  do |admin|
+  map.namespace :admin  do |admin|
      admin.root :controller => "overview"
      admin.resources :pages
      admin.resources :metatag

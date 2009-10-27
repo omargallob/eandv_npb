@@ -1,4 +1,5 @@
 class Admin::OverviewController < Admin::BaseController
+ 
   def index
     @pages = Page.find(:all)
     @categories = Category.find_main
