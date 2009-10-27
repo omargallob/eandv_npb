@@ -1,0 +1,15 @@
+<h2>Pages</h2>
+<table>
+	<% for page in @pages%>
+	<tr>
+		<td><%= page.name %> </td><td>&nbsp;|&nbsp;</td> 
+		<td><% if page.metatag %><%= page.metatag.id %> <% else %> No metatags <% end %></td><td>&nbsp;|&nbsp;</td>
+		<td><% if page.metatag %>
+			 	 <%= link_to "Edit", edit_admin_metatag_path(page.metatag) %>
+			<% else %>
+			 <%= link_to "Add", :controller => "metatag", :action=>"new", :name=>page.name %>
+			<% end %>
+		</td>
+	</tr>
+	<% end %>
+</table>

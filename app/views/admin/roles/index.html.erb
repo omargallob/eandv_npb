@@ -1,0 +1,38 @@
+
+<div id="side-nav">
+	<ul>
+		<li><%= link_to "New Roles", new_admin_role_path %></li>
+	</ul>
+</div>
+
+<div id="subcontent">
+	<h1>Listing roles</h1>
+
+	
+	<table>
+	  <tr>
+	    <td class="tableheader">id</td>
+			<td>&nbsp;|&nbsp;</td>
+	    <td class="tableheader">name</td>
+			<td>&nbsp;|&nbsp;</td>
+	   
+		  <td class="tableheader">Options</td>
+	  </tr>
+
+	<% @roles.each do |role| %>
+	  <tr>
+	    <td class="tableheader"><%= role.id %></td>
+			<td>&nbsp;|&nbsp;</td>
+		<td class="tableheader"><%= role.name %></td>
+			<td>&nbsp;|&nbsp;</td>
+		<td>
+			<%= link_to image_tag ('system/buttons/edit.jpg', :height => "15px", :title => "edit"),edit_admin_role_path(role) %> |
+			<%= link_to image_tag ('system/buttons/delete.jpg', :height => "15px", :title => "edit"),admin_role_path(role),:method=>"delete" %>
+		</td>
+	  </tr>
+	<% end %>
+	</table>
+
+	<br />
+	
+</div>	

@@ -1,0 +1,33 @@
+body { background: #fafafa; color: black; }
+body a { color: green; }
+body a:hover { color: yellow; }
+
+#pagewrapper { width: 1020px; margin: 0px auto; background-color: black; }
+#pagewrapper #header { height: 84px; width: 1020px; background-image: url(../images/system/bg/admin/header.png); background-color: black; }
+#pagewrapper #header #logbox { float: right; width: 250px; margin-top: 0px; }
+#pagewrapper #header #logbox div { float: left; margin-left: 15px; background-color: #fafafa; }
+#pagewrapper #navbar { height: 50px; background-image: url(../images/system/bg/admin/navbar.png); }
+#pagewrapper #navbar ul li { list-style: none; height: 25px; line-height: 25px; vertical-align: middle; float: left; margin: 15px; }
+#pagewrapper #navbar ul li a { margin-left: 25px; color: #4d4d4d; text-decoration: none; }
+#pagewrapper #navbar ul li a:hover { color: white; }
+#pagewrapper #navbar ul li a.active { color: white; }
+
+#content { margin: 0px auto; padding: 25px; background-color: #d4d4d4; color: black; width: 970px; }
+#content div.fieldWithErrors input { border: 2px solid red; }
+#content #side-nav { width: 120px; float: left; background-color: white; }
+#content #side-nav ul { padding-left: 5px; width: 120px; float: none; }
+#content #side-nav ul li { list-style: none; }
+#content #side-nav ul li a { color: black; }
+#content #side-nav ul li a:hover { color: red; }
+#content h1 { font-size: 24px; padding: 25px; text-align: center; }
+#content h2 { font-size: 21px; padding: 5px; text-align: left; font-weight: bold; }
+#content p { margin: 10px 0 10px 0; }
+#content p span.title-name { width: 150px; }
+#content ul { width: 350px; float: right; margin-right: 50px; }
+#content ul.form_list { width: 100%; float: none; margin: 0px; list-style: none; }
+#content #notice { right: 0px; top: 0px; background: green; }
+#content #notice p { padding: 25px; }
+#content #subcontent { width: 720px; float: left; margin-left: 40px; }
+#content #subcontent td { border-bottom: 1px solid black; vertical-align: middle; }
+#content #subcontent td table.nolines td { border: 0px none; }
+#content #subcontent p { width: 350px; }

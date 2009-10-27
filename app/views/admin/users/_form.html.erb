@@ -1,0 +1,20 @@
+<p><%= label_tag 'login' %><br/>
+<%= f.text_field :login %></p>
+
+<p><%= label_tag 'email' %><br/>
+<%= f.text_field :email %></p>
+
+<p><%= label_tag 'password' %><br/>
+<%= f.password_field :password %></p>
+
+<p><%= label_tag 'password_confirmation', 'Confirm Password' %><br/>
+<%= f.password_field :password_confirmation %></p>
+
+<p>
+	 Role<br/>
+	<% for role in Role.find(:all, :order => :name) %>
+			<%= check_box_tag "user[role_ids][]", role.id, @user.roles.include?(role) %> <%= role.name %>
+	
+	  <% end %>
+	
+</p>

@@ -1,0 +1,15 @@
+<div id="side-nav">
+	<ul>
+		<%= render :partial => "shared/admin/categories_sidenav" %>
+	</ul>
+</div>
+
+
+
+<h1>SubCategory list for: <%= @parent.title %></h1>
+
+	<table>
+	<% @categories.each do |category| %>
+		<%= render :partial => 'shared/service', :object => category %>
+	<% end -%>
+	</table>

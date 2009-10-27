@@ -1,0 +1,29 @@
+	<tr>
+		<td><%= service.title %></td>
+		<td>&nbsp;|&nbsp;</td>
+		
+		<td>
+		<% if controller.controller_name == "services" %>
+	
+			<% unless service.subcategories.empty? %>					
+				<%= link_to "Sublevel", admin_category_path(service)%>|&nbsp;(<%= service.subcategories.size %>)
+			<% end %>
+
+		<% end %>
+		
+		</td>
+		
+		<td>&nbsp;|&nbsp;</td>
+		<td><%= link_to 'Edit', edit_admin_category_path(service) %></td>
+		<td>&nbsp;|&nbsp;</td>
+		<td><%= link_to 'Destroy', admin_category_path(service), :confirm => 'Are you sure?', :method => :delete %></td>
+	</tr>
+
+		<% unless controller.controller_name == "services" %>
+		<tr>
+			<td width="650px" class="clearfix">
+			<%= service.description %>
+			</td>
+		</tr>
+		<% end %>
+	

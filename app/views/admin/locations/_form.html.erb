@@ -1,0 +1,38 @@
+
+<p>
+	  <%= f.label :state %><br/>
+  <%= f.text_field :state %>
+</p>
+
+<p>
+<%= f.label :county %>	<br/>
+
+  <%= f.text_field :county %>
+</p>
+
+<p>
+	
+  <%= f.label :region %>	<br/>
+
+  <%= f.text_field :region %>
+</p>
+
+<p>
+
+  <%= f.label :other %>	<br/>
+
+  <%= f.text_field :other %>
+</p>
+
+<p>
+	
+  <%= f.label :zipcod %>	<br/>
+
+  <%= f.text_field :zipcod %>
+</p>
+
+<% if @country %>
+<%= f.hidden_field :country_id, :value => @country.id %>  
+<% else %>
+<%= f.hidden_field :country_id, :value => @location.country.id %>  
+<% end %>

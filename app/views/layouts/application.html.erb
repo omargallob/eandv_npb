@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<%= stylesheet_link_tag "screen","envnpb" %>
+	<%= display_meta_tags %>
+	<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+	<!--[if lt IE 8]>
+	      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<![endif]-->
+	<style type="text/css">
+
+	  .clearfix:after {
+	    content: ".";
+	    display: block;
+	    height: 0;
+	    clear: both;
+	    visibility: hidden;
+	    }
+
+	</style>
+
+	<!--[if IE]>
+	<style type="text/css">
+	  .clearfix {
+	    zoom: 1;     /* triggers hasLayout */
+	    } 
+	</style>
+	<![endif]-->
+  </head>
+  <body>
+	<div id='pagewrapper'>
+		<div id='header'>
+			<div id="logo">
+				<%= link_to (image_tag("system/logo.gif"), "/") %>
+			</div>
+			<%= render :partial => "shared/user_bar", :object => self %>
+			<h1><%=  I18n.locale %></h1>
+	  	</div>
+		<div id='navbar'>
+			<ul>
+				<%= render :partial => "shared/front_menu" %>					
+			</ul>
+	  	</div>
+	</div>
+	<div id='content' class="clearfix">
+     		<%= yield %>
+	</div>
+	<div id='footer'>
+		
+		</div>
+  </body>
+</html>

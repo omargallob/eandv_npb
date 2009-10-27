@@ -1,0 +1,13 @@
+<div id="main">
+	<h1>Adding Development to:<br/> <%= @location.region %> (<%= @location.zipcod %>) | <%= @location.county %> County | <%= @location.state %> | <%= @location.country.title %></h1>
+
+	<% form_for :development, :url => {:action => ""}  do |f| %>	
+	 <%= f.error_messages %> 
+	  <%= render :partial => "form", :locals => {:f =>f}%>
+	  <p>
+	    <%= f.submit 'Create' %>
+	  </p>
+	<% end %>
+
+	<%= link_to 'Back',:back%>
+</div>

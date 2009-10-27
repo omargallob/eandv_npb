@@ -1,0 +1,17 @@
+<tr>
+	<td><%= location.state %></td>
+	<td>&nbsp;|&nbsp;</td>
+	<td><%= location.county %></td>
+	<td>&nbsp;|&nbsp;</td>
+	<td><%= location.region %></td>
+	<td>&nbsp;|&nbsp;</td>
+	<td><%= location.other %></td>
+	<td>&nbsp;|&nbsp;</td>
+	<td><%= location.zipcod %></td>
+	<td>&nbsp;|&nbsp;</td>
+	<td>
+		<%= link_to image_tag ('system/buttons/search.jpg', :height => "15px", :title => "search developments"), admin_developments_path(location.country.country_initials.downcase,location.zipcod) %> |
+		<%= link_to image_tag ('system/buttons/edit.jpg', :height => "15px", :title => "edit"), admin_edit_location_path(@country.country_initials.downcase,location) %> |
+		<%= link_to image_tag ('system/buttons/delete.jpg',:height => "15px",:title => "delete"), admin_location_path(location), :confirm => 'Are you sure?', :method => :delete %>
+	 </td>
+</tr>

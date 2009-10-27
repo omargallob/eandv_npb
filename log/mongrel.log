@@ -1,0 +1,752 @@
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/admin/pages/new.html.erb:3: warning: multiple values for a block parameter (0 for 1)
+	from /Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/capture_helper.rb:36
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/admin/pages/new.html.erb:3: warning: multiple values for a block parameter (0 for 1)
+	from /Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/capture_helper.rb:36
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/layouts/admin.html.erb:37: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/layouts/admin.html.erb:37: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/layouts/admin.html.erb:37: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/layouts/application.html.erb:37: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/layouts/admin.html.erb:41: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/layouts/admin.html.erb:41: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/layouts/application.html.erb:38: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/layouts/application.html.erb:38: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/layouts/admin.html.erb:37: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/layouts/admin.html.erb:39: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/layouts/admin.html.erb:72: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/layouts/admin.html.erb:70: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/layouts/admin.html.erb:70: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/layouts/admin.html.erb:70: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/layouts/admin.html.erb:70: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/layouts/admin.html.erb:70: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/layouts/admin.html.erb:70: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/layouts/application.html.erb:38: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/layouts/application.html.erb:38: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/layouts/admin.html.erb:70: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/layouts/admin.html.erb:73: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/ba_sass_attfu/app/views/layouts/admin.html.erb:73: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:38: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/admin.html.erb:73: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/admin.html.erb:73: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:38: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/admin.html.erb:73: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/admin.html.erb:73: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:38: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:38: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:38: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:38: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/admin.html.erb:73: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:38: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/admin.html.erb:73: warning: don't put space before argument parentheses
+Wed Oct 21 14:59:02 +0100 2009: Error calling Dispatcher.dispatch #<SyntaxError: /Users/ryan/Dev/2.3.4/envnpb/config/routes.rb:78: syntax error, unexpected kEND, expecting $end>
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:145:in `load_without_new_constant_marking'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:145:in `load'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:145:in `load'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:286:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:266:in `load!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:281:in `reload'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:58:in `reload_application'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:33:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:101:in `dispatch_cgi'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:27:in `dispatch'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:282:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:281:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:281:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/command.rb:212:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+/usr/bin/mongrel_rails:19:in `load'
+/usr/bin/mongrel_rails:19
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/admin.html.erb:73: warning: don't put space before argument parentheses
+Wed Oct 21 15:21:38 +0100 2009: Error calling Dispatcher.dispatch #<SyntaxError: /Users/ryan/Dev/2.3.4/envnpb/config/routes.rb:31: syntax error, unexpected tSYMBEG, expecting kEND
+       country.resources :locations
+                          ^
+/Users/ryan/Dev/2.3.4/envnpb/config/routes.rb:81: syntax error, unexpected kEND, expecting $end>
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:145:in `load_without_new_constant_marking'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:145:in `load'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:145:in `load'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:286:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:266:in `load!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:281:in `reload'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:58:in `reload_application'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:33:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:101:in `dispatch_cgi'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:27:in `dispatch'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:282:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:281:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:281:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/command.rb:212:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+/usr/bin/mongrel_rails:19:in `load'
+/usr/bin/mongrel_rails:19
+Wed Oct 21 15:22:20 +0100 2009: Error calling Dispatcher.dispatch #<SyntaxError: /Users/ryan/Dev/2.3.4/envnpb/config/routes.rb:31: syntax error, unexpected tSYMBEG, expecting kEND
+       country.resources :locations
+                          ^
+/Users/ryan/Dev/2.3.4/envnpb/config/routes.rb:82: syntax error, unexpected kEND, expecting $end>
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:145:in `load_without_new_constant_marking'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:145:in `load'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:145:in `load'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:286:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:266:in `load!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:281:in `reload'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:58:in `reload_application'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:33:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:101:in `dispatch_cgi'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:27:in `dispatch'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:282:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:281:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:281:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/command.rb:212:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+/usr/bin/mongrel_rails:19:in `load'
+/usr/bin/mongrel_rails:19
+Wed Oct 21 15:23:00 +0100 2009: Error calling Dispatcher.dispatch #<SyntaxError: /Users/ryan/Dev/2.3.4/envnpb/config/routes.rb:31: syntax error, unexpected tSYMBEG, expecting kEND
+       country.resources :locations
+                          ^
+/Users/ryan/Dev/2.3.4/envnpb/config/routes.rb:82: syntax error, unexpected kEND, expecting $end>
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:145:in `load_without_new_constant_marking'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:145:in `load'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:145:in `load'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:286:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:266:in `load!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:281:in `reload'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:58:in `reload_application'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:33:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:101:in `dispatch_cgi'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:27:in `dispatch'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:282:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:281:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:281:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/command.rb:212:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+/usr/bin/mongrel_rails:19:in `load'
+/usr/bin/mongrel_rails:19
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:12: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:12: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:12: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:12: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:13: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:12: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:13: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:12: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:13: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:7: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:7: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:12: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:13: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/admin.html.erb:73: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:38: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/admin.html.erb:73: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:12: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:13: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/admin.html.erb:73: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/admin.html.erb:76: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/admin.html.erb:76: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/admin.html.erb:73: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:13: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:14: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:15: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:13: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:14: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:15: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:13: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:14: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:15: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:13: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:14: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:15: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:13: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:14: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:15: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:13: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:14: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:15: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:14: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:15: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:13: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:14: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:15: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/types/index.html.erb:24: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/types/index.html.erb:25: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/types/index.html.erb:26: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/types/index.html.erb:26: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/types/index.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/types/index.html.erb:26: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/types/index.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:9: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:10: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:9: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:10: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:9: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:10: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:9: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:9: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:9: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:9: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:9: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:9: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:10: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:9: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:10: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/developments/_development.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:13: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:14: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:15: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:4: warning: Object#type is deprecated; use Object#class
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:4: warning: Object#type is deprecated; use Object#class
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:4: warning: Object#type is deprecated; use Object#class
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:4: warning: Object#type is deprecated; use Object#class
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:4: warning: Object#type is deprecated; use Object#class
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:4: warning: Object#type is deprecated; use Object#class
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:26: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:28: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:4: warning: Object#type is deprecated; use Object#class
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:26: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:28: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:4: warning: Object#type is deprecated; use Object#class
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:26: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:28: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:4: warning: Object#type is deprecated; use Object#class
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:26: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:28: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:4: warning: Object#type is deprecated; use Object#class
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/show.html.erb:16: warning: Object#type is deprecated; use Object#class
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/show.html.erb:16: warning: Object#type is deprecated; use Object#class
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/show.html.erb:17: warning: Object#type is deprecated; use Object#class
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/show.html.erb:17: warning: Object#type is deprecated; use Object#class
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/show.html.erb:17: warning: Object#id will be deprecated; use Object#object_id
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/show.html.erb:17: warning: Object#type is deprecated; use Object#class
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:26: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:28: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/admin.html.erb:73: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:26: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:28: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:28: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:29: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:30: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:30: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:31: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:32: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:28: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:29: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:28: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:29: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:13: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:14: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/locations/_location.html.erb:15: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:28: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:29: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:28: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:29: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/types/index.html.erb:26: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/types/index.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/admin.html.erb:75: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:28: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:29: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:28: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:29: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:28: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:29: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:28: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:29: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:28: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:29: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:38: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:38: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/admin.html.erb:75: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/types/index.html.erb:26: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/types/index.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:28: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:29: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/facilities/_facility.html.erb:5: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/facilities/_facility.html.erb:6: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/facilities/_facility.html.erb:5: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/facilities/_facility.html.erb:6: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/admin.html.erb:75: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/admin.html.erb:76: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/admin.html.erb:76: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:28: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:29: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/types/index.html.erb:26: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/types/index.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:11: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:28: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:29: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/admin.html.erb:76: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:38: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/facilities/_facility.html.erb:5: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/facilities/_facility.html.erb:6: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/types/index.html.erb:26: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/types/index.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:11: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:38: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:28: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:29: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/types/index.html.erb:26: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/types/index.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/facilities/_facility.html.erb:5: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/facilities/_facility.html.erb:6: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:32: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:33: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:32: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:33: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:32: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:33: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:32: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:33: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:32: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:33: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:32: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:33: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:32: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:33: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:32: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:33: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:32: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:33: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:38: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:33: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:34: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:33: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:34: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:28: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/properties/_property.html.erb:29: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:33: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:34: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/roles/index.html.erb:29: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/roles/index.html.erb:30: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/roles/index.html.erb:29: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/roles/index.html.erb:30: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:33: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:34: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:33: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:34: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:33: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/users/index.html.erb:34: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:38: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/countries/_country.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/types/index.html.erb:26: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/types/index.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/facilities/_facility.html.erb:5: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/admin/facilities/_facility.html.erb:6: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:38: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:36: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:36: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:36: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:36: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:36: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:36: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:36: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/envnpb/app/views/layouts/application.html.erb:36: warning: don't put space before argument parentheses
+** TERM signal received.

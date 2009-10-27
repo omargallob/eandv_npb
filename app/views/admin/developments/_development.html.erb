@@ -1,0 +1,13 @@
+<tr>
+	<td><%= development.title %></td>
+	<td>&nbsp;|&nbsp;</td>
+	<td><%= development.type.title %></td>
+	<td>&nbsp;|&nbsp;</td>
+	<td width="500px"><%= development.description %></td>
+	<td>&nbsp;|&nbsp;</td>
+	<td>
+		<%= link_to image_tag ('system/buttons/search.jpg', :height => "15px", :title => "search"), admin_developments_path(development.location.country.country_initials.downcase,development.location.zipcod) %> |
+		<%= link_to image_tag ('system/buttons/edit.jpg', :height => "15px", :title => "edit"), admin_edit_development_path(development.location.country.country_initials.downcase,development.location.zipcod, development.id) %> |
+		<%= link_to image_tag ('system/buttons/delete.jpg',:height => "15px",:title => "delete"), admin_development_path(development), :confirm => 'Are you sure?', :method => :delete %>
+	 </td>
+</tr>

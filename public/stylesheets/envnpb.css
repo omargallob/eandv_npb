@@ -1,0 +1,31 @@
+body { background: black; color: white; }
+body a { color: white; }
+body a:hover { color: yellow; }
+
+#pagewrapper { width: 900px; margin: 25px auto; background-color: black; }
+#pagewrapper #header { height: 150px; background-color: black; }
+#pagewrapper #header #logbox { float: right; width: 250px; margin-top: 0px; }
+#pagewrapper #header #logbox div { float: left; margin-left: 15px; background-color: black; }
+#pagewrapper #header #logo { height: 80px; width: 230px; background-image: url(../images/system/logo.gif); }
+#pagewrapper #navbar { height: 25px; background-color: #d4d4d4; }
+#pagewrapper #navbar ul li { list-style: none; height: 25px; line-height: 25px; vertical-align: middle; float: left; }
+#pagewrapper #navbar ul li a { margin-left: 25px; color: black; }
+#pagewrapper #navbar ul li a:hover { color: red; }
+
+#content { margin: 25px auto; padding: 25px; background-color: #d4d4d4; color: black; width: 850px; }
+#content #main { width: 695px; margin-left: 25px; background: #4d4d4d; float: left; color: white; }
+#content #main p { margin: 25px; }
+#content #main table { margin: 25px; }
+#content #side-nav { width: 130px; height: 300px; float: left; background-color: white; }
+#content #side-nav ul { padding-left: 5px; width: 120px; float: none; }
+#content #side-nav ul li { list-style: none; }
+#content #side-nav ul li a { color: black; }
+#content #side-nav ul li a:hover { color: red; }
+#content #side-nav ul li ul.sublevel li { list-style: disc; list-style-position: inside; }
+#content h1 { font-size: 24px; padding: 25px; text-align: center; }
+#content h2 { font-size: 21px; padding: 5px; text-align: left; font-weight: bold; }
+#content p { margin: 10px 0 10px 0; }
+#content ul { width: 600px; float: right; margin-right: 50px; }
+#content #subcontent { width: 720px; float: left; margin-left: 40px; }
+#content #subcontent td { border-bottom: 1px solid black; vertical-align: middle; }
+#content #subcontent td table.nolines td { border: 0px none; }

@@ -1,0 +1,8 @@
+<tr>
+	<td><%= facility.title %></td>
+	<td>&nbsp;|&nbsp;</td>
+	<td> 
+		<%= link_to image_tag ('system/buttons/edit.jpg', :height => "15px", :title => "edit"), edit_admin_facility_path(facility) %> | 
+		<%= link_to image_tag ('system/buttons/delete.jpg',:height => "15px",:title => "delete"), admin_facility_path(facility), :confirm => 'Are you sure?', :method => :delete %>
+	</td>
+</tr>

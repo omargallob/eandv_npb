@@ -1,0 +1,8 @@
+<li><%= link_to 'Index', admin_properties_path %></li>
+<li><%= link_to 'back', :back %></li>
+<% if controller.action_name == "show"  %>
+<li><%= link_to 'edit', edit_admin_property_path(@property) %></li>
+
+<li><%= link_to image_tag('system/buttons/rss.jpg',:height=>"20px"), admin_property_path(@property,:format =>"xml") %></li>
+<li><%#link_to 'edit facilities', admin_property_facilities_path(@property.location.id, @property.id) %></li>
+<% end %>

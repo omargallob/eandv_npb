@@ -1,0 +1,18 @@
+
+<div id="side-nav">
+	<ul>
+		<li><%= link_to "back", :back %></li>
+	</ul>
+</div>
+
+<div id="subcontent">
+	<h1>Adding user to backend</h1>
+	<% form_for :role, :url => {:action => ""}  do |f| %>	
+	 <%= f.error_messages %> 
+	  <%= render :partial => "form", :locals => {:f =>f}%>
+	  <p>
+	    <%= f.submit 'Create' %>
+	  </p>
+	<% end %>
+
+</div>	

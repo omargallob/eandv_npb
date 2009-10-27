@@ -1,0 +1,19 @@
+
+<p>
+	  <%= f.label :title %><br/>
+  <%= f.text_field :title %>
+</p>
+<p>
+	  <%= f.label :type_id %><br/>
+  	  <%= f.select(:type_id, Type.all.collect {|p| [ p.title, p.id ] }, {:include_blank => 'None'})
+	   %>
+</p>
+<p>
+	  <%= f.label :description %><br/>
+  <%= f.text_area:description %>
+</p>
+
+<p>
+	  <%= f.hidden_field :location_id, :value =>@location.id %><br/>
+
+</p>

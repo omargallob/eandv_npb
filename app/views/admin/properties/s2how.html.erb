@@ -1,0 +1,53 @@
+<div id="side-nav">
+	<ul>
+		<%= render :partial => "shared/admin/property_sidenav" %>
+	</ul>
+</div>
+
+<div id="main">
+	<h1>Property listing for Orange County (Ca)</h1>
+	
+	<table>	
+		<tr><td>
+			<table>
+				<tr>
+					<td> <%= @property.title %> </td>
+					<td>&nbsp;|&nbsp;</td>
+					<td> <%= @property.type %> </td>
+					<td>&nbsp;|&nbsp;</td>
+					<td> <%= @property.price %></td>
+					<td>&nbsp;|&nbsp;</td>
+					<td> <%= @property.address %></td>
+				</tr>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<table>
+				<tr>
+					<td width="250"> <%= truncate(@property.description, 30) %> </td>
+				</tr>
+			</table>
+		</td>
+		</tr>
+		<tr>
+		<td>
+			<table>
+				<tr>
+					<td> <%= @property.bedrooms %>  </td>
+					<td>&nbsp;|&nbsp;</td>
+					<td> <%= @property.bathrooms %></td>
+					<td>&nbsp;|&nbsp;</td>
+					<td><%= @property.living_areas %> </td>
+					<td>&nbsp;|&nbsp;</td>
+					<td> <%= @property.built %> </td>
+					<td>&nbsp;|&nbsp;</td>
+					<td> <%= @property.plot %> </td>
+					<td>&nbsp;|&nbsp;</td>
+					<td> <%= @property.garden %></td>
+				</tr>
+			</table>
+		</td>
+		</tr>
+	</table>
+</div>

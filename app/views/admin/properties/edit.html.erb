@@ -1,0 +1,16 @@
+<div id="side-nav">
+	<ul>
+		<%= render :partial => "shared/admin/property_sidenav" %>
+	</ul>
+</div>
+
+<div id="main">
+	<h1>Editing property for Orange County (CA)</h1>
+	<% form_for @property, :url => {:action => "update"}  do |f| %>	
+	 <%= f.error_messages %> 
+	  <%= render :partial => "form", :locals => {:f =>f}%>
+	  <p>
+	    <%= f.submit 'Update' %>
+	  </p>
+	<% end %>
+</div>

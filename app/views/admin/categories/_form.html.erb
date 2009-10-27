@@ -1,0 +1,24 @@
+<p>
+  <%= f.label :name %><br />
+  <%= f.text_field :name %>
+</p>
+<p>
+  <%= f.label :title %><br />
+  <%= f.text_field :title %>
+</p>
+<p>
+  <%= f.label :description %><br />
+  <%= f.text_area :description %>
+</p>
+
+<p>
+	<%= f.collection_select :parent_id, Category.find_main, :id, :title, :include_blank => true%>
+</p>
+<p>
+	 <%= f.label :position %><br />
+     <%= f.text_field :position, :size => "3" %>
+</p>
+<p>
+	 <%= f.label :navlabel %><br />
+     <%= f.text_field :navlabel  %>
+</p>

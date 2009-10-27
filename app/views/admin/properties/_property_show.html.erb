@@ -1,0 +1,64 @@
+<h2>
+  	 <%= property_show.title %>
+</h2>
+<h3>
+	(<%= property_show.location.zipcod %>) |	<%= property_show.location.region %>   | <%= property_show.location.county %> County | <%= property_show.location.state %> 
+</h3>
+<hr/>
+<p>
+	 <strong>Type</strong> <br/>
+  	  <%= property_show.type.title %>
+</p>
+<p>
+	 <strong>Rental</strong> <br/>
+  	  <%= property_show.rental %>
+</p>
+<p>
+	 <strong>Price</strong><br/>
+	 <%=  number_with_delimiter(property_show.price ) %>
+</p>
+<p>
+	<strong>Address</strong><br/>
+	 <%= property_show.address %>
+
+</p>
+<hr/>
+<p>
+	<strong>Description</strong><br/>
+</p> 	
+ 	<%= property_show.description %>
+<hr/>
+<p>
+ <strong>Bedrooms</strong> <br/>
+   <%= property_show.bedrooms %>
+</p>
+
+<p>
+ <strong>Bathrooms</strong><br/>
+  <%= property_show.bathrooms %>
+</p>
+<p>
+<strong> Living Areas</strong><br/>
+ <%= property_show.living_areas %>
+</p>
+<hr/>
+<p>
+   <strong>Built</strong><br/>
+    <%= property_show.built %>
+</p>
+<p>
+	<strong>Plot</strong> <br/>
+ <%= property_show.plot %> sqft
+</p>
+<p>
+	<strong>Garden</strong> <br/>
+   <%= property_show.garden %> sqft
+</p>
+<hr/>
+<p>
+	<strong>Facilities list</strong> <br/>
+   	<% for facility in property_show.facilities do %> 
+		<%= facility.title %><br />
+	<% end %>
+</p>
+<hr/>

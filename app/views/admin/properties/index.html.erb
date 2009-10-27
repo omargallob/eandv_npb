@@ -1,0 +1,52 @@
+<div id="side-nav">
+	<ul>
+		<%= render :partial => "shared/admin/properties_sidenav" %>
+	</ul>
+</div>
+
+<div id="main">
+	<h1>Property listing for Orange County (Ca)</h1>
+	
+	<table id="properties_list">	
+		<thead>
+			<tr>
+			<td> Area </td>
+			<td>&nbsp;|&nbsp;</td>
+			<td><strong>Title</strong></td>
+			<td>&nbsp;|&nbsp;</td>
+			<td><strong>Type</strong></td>
+			<td>&nbsp;|&nbsp;</td>
+			<td><strong>Rental?</strong></td>
+			<td>&nbsp;|&nbsp;</td>
+			<td><strong>Price<br />($)</strong></td>
+			<td>&nbsp;|&nbsp;</td>
+			<td ><strong>Description</strong></td>
+			<td>&nbsp;|&nbsp;</td>
+			<td><strong>Bed </strong></td>
+			<td>&nbsp;|&nbsp;</td>
+			<td><strong>Bath</strong></td>
+			<td>&nbsp;|&nbsp;</td>
+			<td><strong>Living</strong></td>
+			<td>&nbsp;|&nbsp;</td>
+			<td><strong>Built</strong></td>
+			<td>&nbsp;|&nbsp;</td>
+			<td><strong>Plot</strong></td>
+			<td>&nbsp;|&nbsp;</td>
+			<td><strong>Garden</strong></td>
+			<td>&nbsp;|&nbsp;</td>
+			<td><strong>Opts</strong></td>
+			</tr>
+		</thead>
+		</tr>
+		<% if @properties.size > 0 %>
+			<%= render :partial => 'property', :collection => @properties %>	
+		<% end %>
+	</table>
+</div>
+
+<script type="text/javascript">
+<!--
+var TSort_Data = new Array ('properties_list', 's','','s','','s','','s','','n','','h','','i','','i','','i','','i','','i','','i');
+tsRegister();
+// -->
+</script>

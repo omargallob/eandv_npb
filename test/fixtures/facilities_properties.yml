@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  facility_id: 1
+  property_id: 1
+  total: 1
+
+two:
+  facility_id: 1
+  property_id: 1
+  total: 1

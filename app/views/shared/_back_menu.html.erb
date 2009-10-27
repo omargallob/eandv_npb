@@ -1,0 +1,49 @@
+<% if controller.controller_name == "overview" %>
+<li><%= link_to 'Overview', {:controller => 'admin/overview', :action => 'index'},:class=>"active" %></li>
+<% else %>
+<li><%= link_to 'Overview', {:controller => 'admin/overview', :action => 'index'} %></li>
+<% end %>
+<% if controller.controller_name == "pages" %>
+<li><%= link_to 'Pages', {:controller => 'admin/pages', :action => 'index'},:class=>"active" %></li>
+<% else %>
+<li><%= link_to 'Pages', {:controller => 'admin/pages', :action => 'index'} %></li>
+<% end %>
+<% if controller.controller_name == "metatag" %>
+<li><%= link_to 'Metatags', {:controller => 'admin/metatag', :action => 'index'},:class=>"active"  %></li>
+<% else %>
+<li><%= link_to 'Metatags', {:controller => 'admin/metatag', :action => 'index'} %></li>
+<% end %>
+<% if controller.controller_name == "services" %>
+<li><%= link_to 'Services', {:controller => 'admin/services', :action => 'index'},:class=>"active" %></li>
+<% else %>
+<li><%= link_to 'Services', {:controller => 'admin/services', :action => 'index'} %></li>
+<% end %>
+
+<% if current_user.has_role?('admin')%>
+	<% if controller.controller_name == "countries" %>
+	<li><%= link_to 'Countries', {:controller => 'admin/countries', :action => 'index'},:class => "active"  %></li>
+	<% else %>
+	<li><%= link_to 'Countries', {:controller => 'admin/countries', :action => 'index'} %></li>
+	<% end %>
+	<% if controller.controller_name == "types" %>
+	<li><%= link_to 'Types', {:controller => 'admin/types', :action => 'index'},:class=>"active" %></li>
+	<% else %>
+	<li><%= link_to 'Types', {:controller => 'admin/types', :action => 'index'} %></li>
+	<% end %>
+	<% if controller.controller_name == "facilities" %>
+	<li><%= link_to 'Facilities', admin_facilities_path,:class => "active" %></li>
+	<% else %>
+	<li><%= link_to 'Facilities', admin_facilities_path %></li>
+	<% end %>
+	<% if controller.controller_name == "users" %>
+	<li><%= link_to 'Users', admin_users_path,:class => "active" %></li>
+	<% else %>
+	<li><%= link_to 'Users', admin_users_path %></li>
+	<% end %>
+<% end %>
+
+<% if controller.controller_name == "properties" %>
+<li><%= link_to 'Properties', admin_properties_path,:class=>"active" %></li>
+<% else %>
+<li><%= link_to 'Properties', admin_properties_path %></li>
+<% end %>

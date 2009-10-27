@@ -1,0 +1,11 @@
+<div id="side-nav">
+	<ul>
+		<%= render :partial => "shared/services_sidenav", :object => @categories %>
+	</ul>
+</div>
+
+<div id="main">
+	<h1><%= @page.title %> > <%= @category.title%> </h1>
+	
+	<%= @category.description %>
+</div>

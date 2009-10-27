@@ -1,0 +1,43 @@
+<div id="side-nav">
+	<ul>
+		<%= render :partial => "shared/admin/pages_sidenav" %>
+	</ul>
+</div>
+
+<div id="subcontent">
+	<h1>Listing pages</h1>
+
+	<table>
+	  <tr>
+	    <td class="tableheader">Name</td>
+			<td>&nbsp;|&nbsp;</td>
+	    <td class="tableheader">Title</td>
+			<td>&nbsp;|&nbsp;</td>
+	    <td class="tableheader">Body</td>
+		<td class="tableheader">Actions</td>
+	  </tr>
+
+	<% @pages.each do |page| %>
+	  <tr>
+	    <td><%=h page.name %></td>
+		<td>&nbsp;|&nbsp;</td>
+	    <td><%=h truncate(page.title, 15) %></td>
+		<td>&nbsp;|&nbsp;</td>	
+	    <td style="padding-top:15px"><%= truncate(page.body,40) %></td>
+	
+	    <td>
+			<table class="nolines">
+				<tr>
+					<td><%= link_to 'Show', admin_page_path(page) %></td><td>&nbsp;|&nbsp;</td>
+	    			<td><%= link_to 'Edit', edit_admin_page_path(page) %></td><td>&nbsp;|&nbsp;</td>
+	    			<td><%= link_to 'Destroy', admin_page_path(page), :confirm => 'Are you sure?', :method => :delete %></td>
+				</tr>
+			</table>	
+		</td>
+	  </tr>
+	<% end %>
+	</table>
+
+	<br />
+	
+</div>	

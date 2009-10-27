@@ -1,0 +1,7 @@
+<li><%= link_to 'Index', admin_property_path(@property) %></li>
+<li><%= link_to 'back', :back %></li>
+<li><%= link_to 'New', admin_new_facility_path(@property.location.id,@property.id) %></li>
+<% if controller.action_name == "show"  %>
+<li><%#link_to 'edit', edit_admin_property_path(@property) %></li>
+<li><%# link_to 'edit facilities', admin_property_facilities_path(@property.location.id, @property.id) %></li>
+<% end %>

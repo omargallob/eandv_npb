@@ -1,0 +1,12 @@
+	<% for category in services_sidenav -%>
+		<li>
+			<b><%= link_to category.navlabel, services_par_path(category.name) %></b> <br/>
+			<% if category.subcategories %>
+				<ul class="sublevel">
+				<% for scategory in category.subcategories -%>
+					<li><%= link_to scategory.title, services_sub_path(category.name,scategory.name)  %></li>
+				<% end %>
+				</ul>
+			<% end %>
+		</li>
+	<% end -%>

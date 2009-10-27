@@ -1,0 +1,12 @@
+<div id="side-nav">
+	<ul>
+		<%= render :partial => "shared/admin/countries_sidenav" %>
+	</ul>
+</div>
+
+<div id="main">
+	<h1>Country list (<%= @countries.size %>)</h1>
+	<table>	
+		<%= render :partial => 'country', :collection => @countries %>	
+	</table>
+</div>

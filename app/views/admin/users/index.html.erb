@@ -1,0 +1,42 @@
+
+<div id="side-nav">
+	<ul>
+		<li><%= link_to "New User", new_admin_user_path %></li>
+		<li><%= link_to "View Roles", admin_roles_path %></li>
+	</ul>
+</div>
+
+<div id="subcontent">
+	<h1>Listing users</h1>
+
+	
+	<table>
+	  <tr>
+	    <td class="tableheader">id</td>
+			<td>&nbsp;|&nbsp;</td>
+	    <td class="tableheader">login</td>
+			<td>&nbsp;|&nbsp;</td>
+	    <td class="tableheader">Role</td>
+			<td>&nbsp;|&nbsp;</td>
+		  <td class="tableheader">Options</td>
+	  </tr>
+
+	<% @users.each do |user| %>
+	  <tr>
+	    <td class="tableheader"><%= user.id %></td>
+			<td>&nbsp;|&nbsp;</td>
+	    <td class="tableheader"><%= user.login %></td>
+			<td>&nbsp;|&nbsp;</td>
+		<td class="tableheader"><% for role in user.roles %> <%= role.name %> - <% end %></td>
+			<td>&nbsp;|&nbsp;</td>
+		<td>
+			<%= link_to image_tag ('system/buttons/edit.jpg', :height => "15px", :title => "edit"),edit_admin_user_path(user) %> |
+			<%= link_to image_tag ('system/buttons/delete.jpg', :height => "15px", :title => "edit"),admin_user_path(user),:method=>"delete" %>
+		</td>
+	  </tr>
+	<% end %>
+	</table>
+
+	<br />
+	
+</div>	

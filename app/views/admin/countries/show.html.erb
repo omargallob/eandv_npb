@@ -1,0 +1,22 @@
+<div id="side-nav">
+	<ul>
+		<%= render :partial => "shared/admin/countries_sidenav" %>
+	</ul>
+	<hr>
+	<ul>
+		<li>
+			<table class="nolines">
+				<tr>
+	    			<td><%= link_to 'Edit', edit_admin_country_path(@country) %></td><td>&nbsp;|&nbsp;</td>
+	    			<td><%= link_to 'Destroy', admin_country_path(@country), :confirm => 'Are you sure?', :method => :delete %></td>
+				</tr>
+			</table>
+		</li>
+	</ul>
+</div>
+
+<div id="main">
+	<h1>Country: (<%= @country.country_initials %>)</h1>
+	<p><%= @country.title %></p>
+</div>
+

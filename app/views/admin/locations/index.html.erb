@@ -1,0 +1,27 @@
+<div id="side-nav">
+	<ul>
+		<%= render :partial => "shared/admin/locations_sidenav" %>
+	</ul>
+</div>
+
+<div id="main">
+	<h1>Locations list for  <%= @country.title %></h1>
+	<table>	
+		<tr>
+			<td><strong>State</strong></td>
+			<td>&nbsp;|&nbsp;</td>
+			<td><strong>County</strong></td>
+			<td>&nbsp;|&nbsp;</td>
+			<td><strong>Region</strong></td>
+			<td>&nbsp;|&nbsp;</td>
+			<td><strong>Other</strong></td>
+			<td>&nbsp;|&nbsp;</td>
+			<td><strong>Zipcode</strong></td>
+			<td>&nbsp;|&nbsp;</td>
+			<td><strong>Options</strong></td>
+		</tr>
+		<% if @country.locations%>
+			<%= render :partial => 'location', :collection => @country.locations %>	
+		<% end %>
+	</table>
+</div>

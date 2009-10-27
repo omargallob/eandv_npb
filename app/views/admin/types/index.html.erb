@@ -1,0 +1,35 @@
+<div id="side-nav">
+	<ul>
+		<%= render :partial => "shared/admin/types_sidenav" %>
+	</ul>
+</div>
+
+<div id="subcontent">
+	<h1>Listing types of developments (total: <%= @types.size %>)</h1>
+	
+	<table>
+	  <tr>
+	    <td class="tableheader">id</td>
+			<td>&nbsp;|&nbsp;</td>
+	    <td class="tableheader">Title</td>
+			<td>&nbsp;|&nbsp;</td>
+		  <td class="tableheader">Options</td>
+	  </tr>
+
+	<% @types.each do |type| %>
+	  <tr>
+	    <td class="tableheader"><%= type.id %></td>
+			<td>&nbsp;|&nbsp;</td>
+	    <td class="tableheader"><%= type.title %></td>
+			<td>&nbsp;|&nbsp;</td>
+		<td>
+			<%= link_to image_tag ('system/buttons/edit.jpg', :height => "15px", :title => "edit"),edit_admin_type_path(type) %> |
+			<%= link_to image_tag ('system/buttons/delete.jpg', :height => "15px", :title => "edit"),admin_type_path(type),:method=>"delete" %>
+		</td>
+	  </tr>
+	<% end %>
+	</table>
+
+	<br />
+	
+</div>	
