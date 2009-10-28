@@ -1,14 +1,14 @@
 <div id="logbox">	
 <% if logged_in? -%>
  <div id="user-bar-greeting">
-	Logged in as <%= link_to_current_user :content_method => :login %>			
+ <%= t('options.logbox.logged_as')%> <%= link_to_current_user :content_method => :login %>			
  </div>
  <div id="user-bar-action"  >
-	(<%= link_to "Log out", logout_path, { :title => "Log out" }    %>)
+	(<%= link_to t('options.logbox.logout'), logout_path, { :title =>  t('options.logbox.logout') }    %>)
  </div>
 <% else -%>
  <div id="user-bar-greeting">
-	<%= link_to_login_with_IP 'Not logged, ' , :style => 'border: none;' %>
+	<%= link_to_login_with_IP t('options.logbox.notlogged') , :style => 'border: none;' %>
  </div>
  <div id="user-bar-action"  >
 	<%= link_to "Log in",  login_path,  { :title => "Log in" } %> or

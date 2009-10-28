@@ -1,18 +1,32 @@
-<p>
-  <b>Name:</b>
-  <%=h @page.name %>
-</p>
+<div id="side-nav">
+	<ul>
+		<%= render :partial => "shared/admin/pages_sidenav" %>
+		<li><%= link_to  t('options.edit'), edit_admin_page_path(@page) %></li>
+ 		<li><%= link_to  t('options.back'), admin_pages_path %></li>	
 
-<p>
-  <b>Title:</b>
-  <%=h @page.title %>
-</p>
+	</ul>
+</div>
 
-<p>
-  <b>Body:</b>
-  <%= @page.body %>
-</p>
+<div id="main">
+	<h1><%=h @page.navlabel %></h1>
 
 
-<%= link_to 'Edit', edit_admin_page_path(@page) %> |
-<%= link_to 'Back', admin_pages_path %>
+	<p>
+	  <b><%= t('headerlist.name')%>:</b>
+	  <%=h @page.name %>
+	</p>
+
+	<p>
+	  <b><%= t('headerlist.title')%>:</b>
+	  <%=h @page.title %>
+	</p>
+
+	<p>
+	  <b><%= t('headerlist.body')%>:</b>
+	  <%= @page.body %>
+	</p>
+	
+</div>	
+
+
+

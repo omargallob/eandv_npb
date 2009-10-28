@@ -5,16 +5,16 @@
 </div>
 
 <div id="subcontent">
-	<h1>Listing pages</h1>
+	<h1><%= t('pages.index.title')%></h1>
 
 	<table>
 	  <tr>
-	    <td class="tableheader">Name</td>
+	    <td class="tableheader"><%= t('headerlist.name')%></td>
 			<td>&nbsp;|&nbsp;</td>
-	    <td class="tableheader">Title</td>
+	    <td class="tableheader"><%= t('headerlist.title')%></td>
 			<td>&nbsp;|&nbsp;</td>
-	    <td class="tableheader">Body</td>
-		<td class="tableheader">Actions</td>
+	    <td class="tableheader"><%= t('headerlist.body')%></td>
+		<td class="tableheader"><%= t('headerlist.options')%></td>
 	  </tr>
 
 	<% @pages.each do |page| %>
@@ -28,9 +28,9 @@
 	    <td>
 			<table class="nolines">
 				<tr>
-					<td><%= link_to 'Show', admin_page_path(page) %></td><td>&nbsp;|&nbsp;</td>
-	    			<td><%= link_to 'Edit', edit_admin_page_path(page) %></td><td>&nbsp;|&nbsp;</td>
-	    			<td><%= link_to 'Destroy', admin_page_path(page), :confirm => 'Are you sure?', :method => :delete %></td>
+					<td><%= link_to image_tag ('system/buttons/search.jpg', :height => "15px", :title => t('options.show')), admin_page_path(page) %></td><td>&nbsp;|&nbsp;</td>
+	    			<td><%= link_to image_tag ('system/buttons/edit.jpg', :height => "15px", :title => t('options.edit')), edit_admin_page_path(page) %></td><td>&nbsp;|&nbsp;</td>
+	    			<td><%= link_to image_tag ('system/buttons/delete.jpg', :height => "15px", :title => t('options.delete')), admin_page_path(page), :confirm => 'Are you sure?', :method => :delete %></td>
 				</tr>
 			</table>	
 		</td>

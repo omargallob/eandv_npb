@@ -1,6 +1,27 @@
 en:
+  options:
+    show: "Show"
+    edit: "Edit"
+    delete: "Delete"
+    index: "Index"
+    new: "New"
+    back: "Back"
+    logbox:
+      logged_as: "Logged in as"
+      logout: "Log out"  
+      notlogged: "Not logged, "    
+      login: "Log in"
   overview:
     static_pages: "Total number of service categories"
     service_categories: "Total number of service categories"
     countries: "Total number of countries"
     properties: "Total number of property"
+    facilities: "Total number of facilities"
+  headerlist:
+    name: "Name"
+    title: "Title"
+    body: "Body"
+    options: "Options"  
+  pages:
+    index:
+      title: "Listing all pages"

@@ -1,6 +1,27 @@
 es:
+  options:
+    show: "Mostrar"
+    edit: "Editar"
+    delete: "Borrar"
+    index: "Indice"
+    new: "Nuevo"
+    back: "Regresar"
+    logbox:
+      logged_as: "Conectado como"
+      logout: "Cerrar sesion"  
+      notlogged: "Sesion no iniciada, "   
+      login: "Logueate" 
   overview:
     static_pages: "Numero total de paginas estaticas"
     service_categories: "Numero total de categorias en servicios"
     countries: "Numero total de paises"
     properties: "Numero total de propiedades"
+    facilities: "Numero total de facilidades"
+  headerlist:
+    name: "Nombre"
+    title: "Titulo"
+    body: "Cuerpo"
+    options: "Opciones"
+  pages:
+    index:
+      title: "Listando todas las paginas"
