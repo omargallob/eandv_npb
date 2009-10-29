@@ -3,8 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<%= stylesheet_link_tag "screen","envnpb" %>
+	<%= stylesheet_link_tag "screen","envnpb",'bg','protoFlow' %>
 	<%= display_meta_tags %>
+	<%= javascript_include_tag :all %>
 	<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 	<!--[if lt IE 8]>
 	      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -28,13 +29,14 @@
 	    } 
 	</style>
 	<![endif]-->
+
+	<script type="text/javascript">	
+		   load_image_gallery();
+	</script>
   </head>
   <body>
 	<div id='pagewrapper'>
 		<div id='header'>
-			<div id="logo">
-				<%= link_to (image_tag("system/logo.gif"), "/") %>
-			</div>
 			<%= render :partial => "shared/user_bar", :object => self %>
 			<h1><%=  I18n.locale %></h1>
 	  	</div>
@@ -43,12 +45,22 @@
 				<%= render :partial => "shared/front_menu" %>					
 			</ul>
 	  	</div>
-	</div>
-	<div id='content' class="clearfix">
-     		<%= yield %>
-	</div>
-	<div id='footer'>
+	
+		<div id="largegallery">
+			<div id="holder">
+				<div id="cuber">
+					<ul id="listOfImages">
+						<%= render :partial => "shared/largegallery" %>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id='content' class="clearfix">
+	     		<%= yield %>
+		</div>
+		<div id='footer'>
 		
 		</div>
-  </body>
+ 	</div>
+ </body>
 </html>

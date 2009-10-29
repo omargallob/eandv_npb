@@ -1,11 +1,11 @@
-body { background: #fafafa; color: black; }
-body a { color: green; }
+body { background: #fafafa; color: white; }
+body a { color: white; }
 body a:hover { color: yellow; }
 
 #pagewrapper { width: 1020px; margin: 0px auto; background-color: black; }
-#pagewrapper #header { height: 84px; width: 1020px; background-image: url(../images/system/bg/admin/header.png); background-color: black; }
+#pagewrapper #header { height: 84px; width: 1020px; background-image: url(../images/system/bg/admin/header.png); }
 #pagewrapper #header #logbox { float: right; width: 250px; margin-top: 0px; }
-#pagewrapper #header #logbox div { float: left; margin-left: 15px; background-color: #fafafa; }
+#pagewrapper #header #logbox div { float: left; margin-left: 15px; background-color: black; }
 #pagewrapper #navbar { height: 50px; background-image: url(../images/system/bg/admin/navbar.png); }
 #pagewrapper #navbar ul li { list-style: none; height: 25px; line-height: 25px; vertical-align: middle; float: left; margin: 15px; }
 #pagewrapper #navbar ul li a { margin-left: 25px; color: #4d4d4d; text-decoration: none; }

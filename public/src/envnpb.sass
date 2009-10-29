@@ -1,18 +1,20 @@
 body
-	background: black
+	background: white
 	color: white
 	a
-		color: white
+		color: black
 	a:hover
 		color: yellow
 
+
 #pagewrapper
-	width: 900px
-	margin: 25px auto
-	background-color: black
+	width: 1020px
+	margin: 0px auto
+	background-color: white
 	#header
-		height: 150px
-		background-color: black
+		height: 84px
+		width: 1020px
+		background-image: url(../images/system/bg/admin/header.png)
 		#logbox
 			float: right
 			width: 250px
@@ -20,15 +22,15 @@ body
 			div
 				float: left
 				margin-left: 15px
-				background-color: black
+				background-color: white
 		#logo
 			height: 80px
 			width: 230px
 			background-image: url(../images/system/logo.gif)
 			
 	#navbar
-		height: 25px
-		background-color: #d4d4d4
+		height: 50px
+		background-image: url(../images/system/bg/admin/navbar.png)
 		ul
 			li
 				list-style: none
@@ -36,32 +38,45 @@ body
 				line-height: 25px
 				vertical-align: middle
 				float: left
+				margin: 17px
+				font-size: 13px
 				a
 					margin-left: 25px
-					color: black
+					color: #888888
+					text-decoration: none
+					text-transform: uppercase
 				a:hover
-					color: red
+					color: white
+				a.active
+					color: white
 #content
-	margin: 25px auto
+	margin: 0px auto 
 	padding: 25px
-	background-color: #d4d4d4
+	background-image: url(../images/system/bg/front/content.jpg)
+	background: "repeat-y"
 	color: black
-	width: 850px
+	width: 970px
+	height: 230px
+	font-family: "Georgia"
 	#main
-		width: 695px
+		width: 490px
+		height: 230px
 		margin-left: 25px
-		background: #4d4d4d
+		background: white
 		float: left
-		color: white
+		color: black
+		overflow: auto
 		p
-			margin: 25px
+			margin: 5px 30px
+			font-family: "Courier New"
+			font-size: 14px
 		table
 			margin: 25px
-
+      
 					
 	#side-nav
 		width: 130px
-		height: 300px
+		height: 230px
 		float: left
 		background-color: white
 		ul
@@ -80,9 +95,10 @@ body
 						list-style-position: inside
 
 	h1
-		font-size: 24px
-		padding: 25px
-		text-align: center
+		font-size: 22px
+		padding: 15px 25px 5px 25px
+		text-align: left
+		font-family: "Times New Roman"
 	h2
 		font-size: 21px
 		padding: 5px

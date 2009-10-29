@@ -1,0 +1,5 @@
+#largegallery { margin: 0px auto; width: 1020px; height: 433px; background-image: url(../images/system/bg/front/largegallery.jpg); }
+#largegallery #holder { width: 961px; height: 359px; margin-left: 32px; padding-top: 24px; }
+#largegallery #holder ul { width: 961px; height: 359px; background: black; list-style: none; }
+
+#footer { margin: 0px auto; width: 1020px; height: 35px; background-image: url(../images/system/bg/front/footer.jpg); }
