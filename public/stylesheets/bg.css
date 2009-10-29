@@ -1,8 +1,7 @@
 #largegallery { margin: 0px auto; width: 1020px; height: 433px; background-image: url(../images/system/bg/front/largegallery.jpg); }
 #largegallery #holder { width: 961px; height: 359px; margin-left: 32px; padding-top: 24px; }
 #largegallery #holder #cuber { width: 961px; background: black; list-style: none; }
-#largegallery #holder #cuber ul#listOfImages { background: #e5e5e5; height: 359px; margin: 0; padding: 0; width: 961px; position: relative; }
-#largegallery #holder #cuber ul#listOfImages ul#listOfImages li { display: block; height: 359px; list-style: none; margin: 0; padding: 0; position: absolute; text-align: center; width: 1020px; }
-#largegallery #holder #cuber ul#listOfImages ul#listOfImages li ul#listOfImages li img { border: 1px solid #333; }
+#largegallery #holder #cuber #listOfImages { background: #e5e5e5; height: 359px; margin: 0; padding: 0; width: 961px; position: relative; }
+#largegallery #holder #cuber #listOfImages img { border: 1px solid #333; }
 
 #footer { margin: 0px auto; width: 1020px; height: 35px; background-image: url(../images/system/bg/front/footer.jpg); }

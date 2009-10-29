@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<%= stylesheet_link_tag "screen","envnpb",'bg','protoFlow' %>
+	<%= stylesheet_link_tag "screen","envnpb",'bg','spacegallery' %>
 	<%= display_meta_tags %>
 	<%= javascript_include_tag :all %>
 	<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
@@ -31,7 +31,12 @@
 	<![endif]-->
 
 	<script type="text/javascript">	
-		   load_image_gallery();
+		  /* load_image_gallery();*/
+		 $(document).ready(function() {
+		   	 /*$("#listOfImages").css("display", "none" );*/
+				$('#listOfImages').spacegallery({loadingClass: 'loading'});
+		 });
+
 	</script>
   </head>
   <body>
@@ -47,7 +52,7 @@
 	  	</div>
 	
 		<div id="largegallery">
-			<%# render :partial => "shared/largegallery" %>
+			<%= render :partial => "shared/largegallery_space" %>
 		</div>
 		<div id='content' class="clearfix">
 	     		<%= yield %>

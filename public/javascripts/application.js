@@ -22,4 +22,8 @@ function load_image_gallery(){
   });
 }	
 		
-	
+function test_jquery(){
+  $("cuber").hide();
+ 
+
+}
