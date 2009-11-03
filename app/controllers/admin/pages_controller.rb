@@ -56,12 +56,11 @@ class Admin::PagesController < Admin::BaseController
    # PUT /pages/1.xml
    def update
      @page = Page.find(params[:id])
-
      respond_to do |format|
        if @page.update_attributes(params[:page])
-         flash[:notice] = 'Page was successfully updated.'
-         format.html { redirect_to(admin_page_path(@page)) }
-         format.xml  { head :ok }
+        flash[:notice] = 'Page was successfully UPDATED.'
+        format.html { redirect_to(admin_page_path(@page)) }
+        format.xml  { head :ok }
        else
          format.html { render :action => "edit" }
          format.xml  { render :xml => @page.errors, :status => :unprocessable_entity }
@@ -80,4 +79,26 @@ class Admin::PagesController < Admin::BaseController
        format.xml  { head :ok }
      end
    end
+   
+  def save_featured
+    @page_featured_photo = PageFeaturedPhoto.new(params[:page_featured_photo])
+      if @page_featured_photo.save
+        flash[:notice] = 'Attachment was successfully created.'
+        redirect_to attachable_url(@page_featured_photo)     
+      else
+        render :action => :new
+      end
+  end
+
+  def update_page_featured
+    @page_featured_photo = PageFeaturedPhoto.new(params[:page_featured_photo])
+      if @page_featured_photo.save
+        flash[:notice] = 'Attachment was successfully created.'
+        redirect_to admin_pages_path     
+      else
+        render :action => :new
+      end
+  end
+
+   
 end

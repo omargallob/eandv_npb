@@ -2,7 +2,10 @@ ActionController::Routing::Routes.draw do |map|
   
   
   map.resources :services #, :path_prefix => ":locale"
-
+  map.resources :properties,:collection => {:feed => :get}
+  map.resources :rss,:collection => {:favs => :get,:properties => :get}
+  
+  
 
   #user action ( login signup logout)
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
@@ -49,7 +52,9 @@ ActionController::Routing::Routes.draw do |map|
   end
   
   map.view_page ':name', :controller => 'viewer', :action => 'show'
-  
+  map.feed_properties '/rss/properties.:format', :controller => 'properties', :action => 'feeds'
+  map.feed_favs '/rss/favs.:format', :controller => 'rss', :action => 'favs'
+ # map.feed_properties '/rss/properties.:format', :controller => 'rss', :action => 'properties'
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
@@ -92,4 +97,7 @@ ActionController::Routing::Routes.draw do |map|
  
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
+  map.connect 'properties/feed.:format', :controller => 'properties', :action => 'feed'
+  map.connect ':controller/:action.:format'
+  #map.connect '/properties/favs.:format',:controller=>"properties",:action=>'favs'
 end

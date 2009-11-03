@@ -10,4 +10,5 @@ class ViewerController < ApplicationController
       set_meta_tags :title =>  @page.title
     end  
   end
+
 end

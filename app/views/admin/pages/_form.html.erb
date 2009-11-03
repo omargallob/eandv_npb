@@ -1,5 +1,7 @@
 <%= f.error_messages %>
 
+<p><% image_tag @page.page_featured_photo.public_filename if @page.page_featured_photo %></p>
+
  <p>
    <%= f.label :name %><br />
    <%= f.text_field :name %>
@@ -22,5 +24,10 @@
 <p>
 	 <%= f.label :navlabel %><br />
      <%= f.text_field :navlabel  %>
+</p>
+<p>
+	  <%= f.label :featured %><br/>
+  	  <%= f.check_box(:featured)
+	   %>
 </p>
 	

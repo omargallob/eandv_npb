@@ -9,8 +9,12 @@
 
 	<table>
 	  <tr>
+		<td class="tableheader">thumb</td>
+		<td>&nbsp;|&nbsp;</td>
+		<td class="tableheader">featured</td>
+		<td>&nbsp;|&nbsp;</td>
 	    <td class="tableheader"><%= t('headerlist.name')%></td>
-			<td>&nbsp;|&nbsp;</td>
+			<td>&nbsp;|&nbsp;</td>	   
 	    <td class="tableheader"><%= t('headerlist.title')%></td>
 			<td>&nbsp;|&nbsp;</td>
 	    <td class="tableheader"><%= t('headerlist.body')%></td>
@@ -19,6 +23,11 @@
 
 	<% @pages.each do |page| %>
 	  <tr>
+		
+	    <td style="padding:5px"><%=image_tag page.page_featured_photo.public_filename(:thumb) if page.page_featured_photo %></td>
+		<td>&nbsp;|&nbsp;</td>
+	    <td><%= page.featured %></td>
+		<td>&nbsp;|&nbsp;</td>	
 	    <td><%=h page.name %></td>
 		<td>&nbsp;|&nbsp;</td>
 	    <td><%=h truncate(page.title, 15) %></td>
@@ -37,7 +46,6 @@
 	  </tr>
 	<% end %>
 	</table>
-
 	<br />
 	
 </div>	

@@ -27,7 +27,7 @@ body a:hover { color: yellow; }
 #content ul.form_list { width: 100%; float: none; margin: 0px; list-style: none; }
 #content #notice { right: 0px; top: 0px; background: green; }
 #content #notice p { padding: 25px; }
-#content #subcontent { width: 720px; float: left; margin-left: 40px; }
+#content #subcontent { width: 920px; float: left; margin-left: 40px; }
 #content #subcontent td { border-bottom: 1px solid black; vertical-align: middle; }
 #content #subcontent td table.nolines td { border: 0px none; }
 #content #subcontent p { width: 350px; }

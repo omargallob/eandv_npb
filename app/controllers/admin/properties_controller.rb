@@ -4,7 +4,7 @@ class Admin::PropertiesController < Admin::BaseController
     @properties = Property.find(:all, :include => 'location',:order => 'locations.region')
      respond_to do |format|
          format.html # show.html.erb
-         format.xml  { render :xml => @properties }
+         format.atom 
        end
   end
 

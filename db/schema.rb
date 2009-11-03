@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091027233033) do
+ActiveRecord::Schema.define(:version => 20091030142616) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -73,6 +73,19 @@ ActiveRecord::Schema.define(:version => 20091027233033) do
     t.datetime "updated_at"
   end
 
+  create_table "page_featured_photos", :force => true do |t|
+    t.integer  "size"
+    t.string   "content_type"
+    t.string   "filename"
+    t.integer  "width"
+    t.integer  "height"
+    t.integer  "parent_id"
+    t.string   "thumbnail"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "page_id"
+  end
+
   create_table "pages", :force => true do |t|
     t.string   "name"
     t.string   "title"
@@ -83,6 +96,7 @@ ActiveRecord::Schema.define(:version => 20091027233033) do
     t.integer  "parent_id"
     t.string   "navlabel"
     t.integer  "position"
+    t.boolean  "featured"
   end
 
   create_table "properties", :force => true do |t|

@@ -1,0 +1,34 @@
+/* 
+ * vim: noexpandtab
+ */
+img.ui-combobox-arrow {
+	position: relative;
+	vertical-align: text-bottom;
+	top: 5px;
+	height: 27px;
+}
+
+* html img.ui-combobox-arrow {
+	top: 0px;
+}
+
+.ui-combobox-list {
+	border: 1px solid black;
+	z-index: 780;
+
+}
+
+.ui-combobox-list, .ui-combobox-item {
+	display: block;
+	font-family: "Georgia";
+	font-size:90%;
+	background-image: url(../images/system/form/dropdown.jpg);
+
+}
+
+.ui-combobox-list .selected {
+	background-color: #eeeeff;
+	border-top: 1px solid blue;
+	border-bottom: 1px solid blue;
+	font-weight: bold;
+}

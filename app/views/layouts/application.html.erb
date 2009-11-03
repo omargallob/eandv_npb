@@ -3,7 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<%= stylesheet_link_tag "screen","envnpb",'bg','spacegallery' %>
+	<%= stylesheet_link_tag "screen","envnpb_front" %>
+	<%= stylesheet_link_tag  'jquery.jcarousel.css','JScrollPane','ui.combobox.css' %>
 	<%= display_meta_tags %>
 	<%= javascript_include_tag :all %>
 	<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
@@ -29,21 +30,31 @@
 	    } 
 	</style>
 	<![endif]-->
+	<%= yield :script %>
+	<script>
+	 $(document).ready(function() {
+	   	 
+ 		/*$('#main').jScrollPane({scrollbarWidth:17,showArrows:true});*/
+		<% if @subpages.empty? %>
+		    jQuery('#gallerylinks').jcarousel({
+		        vertical: true,
+		        scroll: 1,
+		        auto: 2,
+		        wrap: 'last',
+		        initCallback: mycarousel_initCallback
+		    });
+		<% end %>
 
-	<script type="text/javascript">	
-		  /* load_image_gallery();*/
-		 $(document).ready(function() {
-		   	 /*$("#listOfImages").css("display", "none" );*/
-				$('#listOfImages').spacegallery({loadingClass: 'loading'});
-		 });
-
+		$('.droppies').combobox(); 
+ 	 });
 	</script>
   </head>
   <body>
-	<div id='pagewrapper'>
+	<div id='upper_pagewrapper'>
 		<div id='header'>
-			<%= render :partial => "shared/user_bar", :object => self %>
-			<h1><%=  I18n.locale %></h1>
+		
+			<div id="logo"><%= link_to image_tag ("system/bg/front/logo.jpg"), "/" %></div>
+			<div id="extra"><%= image_tag ("system/buttons/twitter.jpg") %><%= image_tag ("system/buttons/facebook.jpg") %></div>
 	  	</div>
 		<div id='navbar'>
 			<ul>
@@ -51,15 +62,31 @@
 			</ul>
 	  	</div>
 	
+		<% if controller.controller_name == "viewer" %>
 		<div id="largegallery">
-			<%= render :partial => "shared/largegallery_space" %>
+			<div id="holder">
+				<div id="cuber">
+					<div id="listOfImages">
+						<% if @page.page_featured_photo %>
+							<%= render :partial => "shared/admin/images/featured_photo", :object => @page %>
+						<% end %>
+					</div>
+				</div>
+			</div>		
 		</div>
+		<% end %>
+		
+ 	</div>
+	<div id='lower_pagewrapper'>
 		<div id='content' class="clearfix">
 	     		<%= yield %>
 		</div>
 		<div id='footer'>
-		
+			<ul id="links">
+				<li>Testing</li>
+			</ul>
+				<%# render :partial => "shared/user_bar", :object => self %>
 		</div>
- 	</div>
+	</div>
  </body>
 </html>

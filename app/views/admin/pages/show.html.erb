@@ -8,8 +8,11 @@
 </div>
 
 <div id="main">
-	<h1><%=h @page.navlabel %></h1>
+	<h1><%=h @page.navlabel %> | <%= image_tag @page.page_featured_photo.public_filename(:thumb) %></h1>
 
+	<p><strong>Featured</strong><br />
+		  <%=  @page.featured %>
+	</p>
 
 	<p>
 	  <b><%= t('headerlist.name')%>:</b>
@@ -26,6 +29,9 @@
 	  <%= @page.body %>
 	</p>
 	
+	<p>
+		 <%= image_tag @page.page_featured_photo.public_filename %>
+	</p>
 </div>	
 
 

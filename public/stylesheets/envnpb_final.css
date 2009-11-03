@@ -1,0 +1,46 @@
+body { background: #060606; color: white; }
+body a { color: black; }
+body a:hover { color: yellow; }
+
+#upper_pagewrapper { width: 100%; height: 566px; background-image: url(../images/system/bg/front/header.jpg); }
+#upper_pagewrapper #header { height: 84px; width: 1020px; background-image: url(../images/system/bg/front/header.jpg); margin: 0px auto; }
+#upper_pagewrapper #header #logbox { float: right; width: 250px; margin-top: 0px; }
+#upper_pagewrapper #header #logbox div { float: left; margin-left: 15px; background-color: white; }
+#upper_pagewrapper #header #logo { height: 80px; width: 230px; background-image: url(../images/system/logo.gif); }
+#upper_pagewrapper #navbar { height: 50px; width: 1020px; margin: 0px auto; }
+#upper_pagewrapper #navbar ul { margin: 0px auto; }
+#upper_pagewrapper #navbar ul li { list-style: none; height: 25px; line-height: 25px; vertical-align: middle; float: left; margin: 17px; font-size: 13px; }
+#upper_pagewrapper #navbar ul li a { margin-left: 25px; color: #888888; text-decoration: none; text-transform: uppercase; }
+#upper_pagewrapper #navbar ul li a:hover { color: white; }
+#upper_pagewrapper #navbar ul li a.active { color: white; }
+#upper_pagewrapper #largegallery { width: 100%; height: 433px; background-position: 0 -135px; }
+#upper_pagewrapper #holder { width: 961px; margin: 0px auto; height: 359px; padding-top: 24px; }
+#upper_pagewrapper #cuber { width: 961px; background: transparent; list-style: none; }
+#upper_pagewrapper #listOfImages { background: transparent; height: 359px; margin: 0; padding: 0; width: 961px; position: relative; }
+
+#lower_pagewrapper { width: 100%; background-image: url(../images/system/bg/front/content_bg.jpg); }
+#lower_pagewrapper #content { margin: 0px auto; padding: 25px; background-image: url(../images/system/bg/front/content_bg.jpg); background: "repeat-y"; color: black; width: 970px; height: 230px; font-family: "Georgia"; }
+#lower_pagewrapper #content #main { width: 500px; height: 230px; background: white; float: left; color: black; overflow: auto; }
+#lower_pagewrapper #content #main p { margin: 5px 30px; font-family: "Courier New"; font-size: 14px; }
+#lower_pagewrapper #content #main table { margin: 25px; }
+#lower_pagewrapper #content #searchbox { height: 230px; width: 275px; background-color: transparent; float: left; margin-left: 25px; border: 1px solid #d3d3d3; }
+#lower_pagewrapper #content #page_header { width: 500px; float: left; }
+#lower_pagewrapper #content #sellyourproperty { width: 170px; float: left; margin-top: 15px; }
+#lower_pagewrapper #content ul#gallerylinks { height: 230px; width: 130px; }
+#lower_pagewrapper #content ul#gallerylinks li { float: left; height: 62px; }
+#lower_pagewrapper #content #side-nav { width: 130px; height: 230px; float: left; background-color: transparent; margin-right: 25px; }
+#lower_pagewrapper #content #side-nav ul { padding-left: 5px; width: 120px; float: none; }
+#lower_pagewrapper #content #side-nav ul li { list-style: none; }
+#lower_pagewrapper #content #side-nav ul li a { color: black; }
+#lower_pagewrapper #content #side-nav ul li a:hover { color: red; }
+#lower_pagewrapper #content #side-nav ul li ul.sublevel li { list-style: disc; list-style-position: inside; }
+#lower_pagewrapper #content h1 { font-size: 22px; padding: 15px 25px 5px 25px; text-align: left; font-family: "Times New Roman"; }
+#lower_pagewrapper #content h2 { font-size: 21px; padding: 5px; text-align: left; font-weight: bold; }
+#lower_pagewrapper #content p { margin: 10px 0 10px 0; }
+#lower_pagewrapper #content ul { width: 600px; float: right; margin-right: 50px; }
+#lower_pagewrapper #content #subcontent { width: 720px; float: left; margin-left: 40px; }
+#lower_pagewrapper #content #subcontent td { border-bottom: 1px solid black; vertical-align: middle; }
+#lower_pagewrapper #content #subcontent td table.nolines td { border: 0px none; }
+#lower_pagewrapper #footer { margin: 0px auto; width: 100%; height: 35px; background-image: url(../images/system/bg/front/footer_bg.jpg); z-index: 100; }
+#lower_pagewrapper #footer ul#links { width: 1020px; margin: 0px auto; list-style: none; }
+#lower_pagewrapper #footer ul#links li { line-height: 35px; font-size: 10px; }

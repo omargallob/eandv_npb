@@ -1,0 +1,36 @@
+<div id="side-nav">
+
+	<% unless @subpages.empty? %>
+	<ul>
+		<% for page in @subpages %>
+			<li><%= link_to page.navlabel, view_page_path(page.name)%></li>
+		<% end %>
+	</ul>
+	<% end %>
+	<%# image_tag "static/gallery.png", :style => "margin:15px 15px 5px" %>
+
+	<ul id="gallerylinks">
+		<li><%= image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-left:4px" %></li>
+		<li><%= image_tag "system/buttons/sellyourproperty2.jpg",:style => "margin-left:4px" %></li>
+		<li><%= image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-left:4px" %></li>
+		<li><%= image_tag "system/buttons/sellyourproperty2.jpg",:style => "margin-left:4px" %></li>
+		<li><%= image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-left:4px" %></li>
+		<li><%= image_tag "system/buttons/sellyourproperty2.jpg",:style => "margin-left:4px" %></li>
+		<li><%= image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-left:4px" %></li>
+		<li><%= image_tag "system/buttons/sellyourproperty2.jpg",:style => "margin-left:4px" %></li>
+		<li><%= image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-left:4px" %></li>
+		<li><%= image_tag "system/buttons/sellyourproperty2.jpg",:style => "margin-left:4px" %></li>
+		<li><%= image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-left:4px" %></li>
+		<li><%= image_tag "system/buttons/sellyourproperty2.jpg",:style => "margin-left:4px" %></li>
+	</ul>	
+</div>
+
+
+<div id="main">
+	<h1><%= @page.title %> (total: <%= @properties.size %>)</h1>
+	<%= @page.body %>
+</div>
+
+<div id="searchbox">
+</div>
+
