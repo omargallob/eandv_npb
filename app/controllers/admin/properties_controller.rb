@@ -18,6 +18,7 @@ class Admin::PropertiesController < Admin::BaseController
 
   def new
     @locations = Location.find(:all, :conditions => ['county=?','Orange'])
+    @property = Property.new
   end
 
   def create
@@ -64,4 +65,26 @@ class Admin::PropertiesController < Admin::BaseController
       format.xml  { head :ok }
     end
   end
+  
+  
+   def save_featured_photo
+     @featured_photo = FeaturedPhoto.new(params[:featured_photo])
+       if @featured_photo.save
+         flash[:notice] = 'Attachment was successfully created.'
+         redirect_to attachable_url(@page_featured_photo)     
+       else
+         render :action => :new
+       end
+   end
+
+   def update_featured_photo
+     @featured_photo = FeaturedPhoto.new(params[:featured_photo])
+     @proper
+       if @featured_photo.save
+         flash[:notice] = 'Attachment was successfully created.'
+         redirect_to admin_properties_path     
+       else
+         render :action => :edit
+       end
+   end
 end

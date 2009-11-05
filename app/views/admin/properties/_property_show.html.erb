@@ -1,5 +1,9 @@
+<% if property_show.featured_photo and property_show.featured %>
+	<%= image_tag property_show.featured_photo.public_filename %>
+<% end %>
+
 <h2>
-  	 <%= property_show.title %>
+  	 <%= property_show.title %> <%= "(featured)" if property_show.featured? %>
 </h2>
 <h3>
 	(<%= property_show.location.zipcod %>) |	<%= property_show.location.region %>   | <%= property_show.location.county %> County | <%= property_show.location.state %> 

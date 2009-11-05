@@ -7,7 +7,7 @@
 	<%= javascript_include_tag :all %>
 	
 	<%= javascript_include_tag "admin/gs_sortable" %>
-    <%= stylesheet_link_tag "screen","envnpb_backend" %>
+    <%= stylesheet_link_tag "screen","envnpb_backend","ui.tabs.css" %>
 	<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 	<!--[if lt IE 8]>
 	      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -66,6 +66,7 @@
 		});
 	</script>
 <% end %>
+	<%= yield :script %>
   </head>
   <body>
 		<div id='pagewrapper'>

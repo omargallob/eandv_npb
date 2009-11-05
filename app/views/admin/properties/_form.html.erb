@@ -1,69 +1,91 @@
-<hr/>
-<p>
-	  <%= f.label :location_id %><br/>
-  	  <%= f.select(:location_id, Location.find(:all, :conditions =>['county=?','Orange'],:order => "region").collect {|p| [ ' ('+p.zipcod+') '+p.region, p.id ] })
-	   %>
-</p>
-<hr/>
-<p>
-	  <%= f.label :type_id %><br/>
-  	  <%= f.select(:type_id, Type.all.collect {|p| [ p.title, p.id ] }, {:include_blank => '-'})
-	   %>
-</p>
-<p>
-	  <%= f.label :rental %><br/>
-  	  <%= f.check_box(:rental)
-	   %>
-</p>
-<p>
-	  <%= f.label :title %><br/>
-  <%= f.text_field :title %>
-</p>
-<p>
-	  <%= f.label :price %><br/>
-  <%= f.text_field :price %>
-</p>
-<p>
-	  <%= f.label :address %><br/>
-  <%= f.text_field :address %>
-</p>
-<p>
-	  <%= f.label :description %><br/>
-  <%= f.text_area :description %>
-</p>
-<hr/>
-<p>
-	  <%= f.label :bedrooms %><br/>
-  <%= f.select(:bedrooms,1...12) %>
-</p>
-<p>
-	  <%= f.label :bathrooms %><br/>
-  <%=  f.select(:bathrooms,1...15) %>
-</p>
-<p>
-  <%= f.label :living_areas %><br/>
-  <%=  f.select(:living_areas,1...4) %>
-</p>
-<hr/>
-<p>
-	  <%= f.label :built %><br/>
-  <%= f.text_field :built, :size => "4"%> sqft
-</p>
-<p>
-	  <%= f.label :plot %><br/>
-  <%= f.text_field :plot, :size => "4" %> sqft
-</p>
-<p>
-	  <%= f.label :garden %><br/>
-  <%= f.text_field :garden, :size => "4" %> sqft
-</p>
-<hr />
-<p>	Facility list</br>
+<div id="fragment-1">
+	<hr/>
+	<p>
+		  <%= f.label :featured %><br/>
+	  	  <%= f.check_box(:featured)
+		   %>
+	</p>
+	<hr/>
+	<p>
+		  <%= f.label :mls_id %><br/>
+	  <%= f.text_field :mls_id %>
+	</p>
+	<hr/>
+	<p>
+		  <%= f.label :location_id %><br/>
+	  	  <%= f.select(:location_id, Location.find(:all, :conditions =>['county=?','Orange'],:order => "region").collect {|p| [ ' ('+p.zipcod+') '+p.region, p.id ] })
+		   %>
+	</p>
+	<hr/>
+	<p>
+		  <%= f.label :type_id %><br/>
+	  	  <%= f.select(:type_id, Type.all.collect {|p| [ p.title, p.id ] }, {:include_blank => '-'})
+		   %>
+	</p>
+	<p>
+		  <%= f.label :rental %><br/>
+	  	  <%= f.check_box(:rental)
+		   %>
+	</p>
+	<p>
+		  <%= f.label :title %><br/>
+	  <%= f.text_field :title %>
+	</p>
+	<p>
+		  <%= f.label :price %><br/>
+	  <%= f.text_field :price %>
+	</p>
+	<p>
+		  <%= f.label :address %><br/>
+	  <%= f.text_field :address %>
+	</p>
+		<hr/>
+	</div>
+<div id="fragment-2">
+			<hr/>
+	<p>
+		  <%= f.label :description %><br/>
+	  <%= f.text_area :description %>
+	</p>
+
+	<p>
+		  <%= f.label :bedrooms %><br/>
+	  <%= f.select(:bedrooms,1...12) %>
+	</p>
+	<p>
+		  <%= f.label :bathrooms %><br/>
+	  <%=  f.select(:bathrooms,1...15) %>
+	</p>
+	<p>
+	  <%= f.label :living_areas %><br/>
+	  <%=  f.select(:living_areas,1...4) %>
+	</p>
+	<hr/>
+	<p>
+		  <%= f.label :built %><br/>
+	  <%= f.text_field :built, :size => "4"%> sqft
+	</p>
+	<p>
+		  <%= f.label :plot %><br/>
+	  <%= f.text_field :plot, :size => "4" %> sqft
+	</p>
+	<p>
+		  <%= f.label :garden %><br/>
+	  <%= f.text_field :garden, :size => "4" %> sqft
+	</p>
+	<hr />
+	<p>	Facility list</br>
  	
-<div id="my-id">
-<%= collection_multiple_select('property','facility_ids', Facility.find(:all), :id, :title,:outer_class =>"form_list")%>
+	<div id="my-id">
+	<%= collection_multiple_select('property','facility_ids', Facility.find(:all), :id, :title,:outer_class =>"form_list")%>
+	</div>
+	</p>
+	<hr/>
+	  <p>
+	    <%= f.submit 'Create' %>
+	  </p>
 </div>
-</p>
-<hr/>
+<!--- If featured-->
+
 
 

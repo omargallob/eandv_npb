@@ -41,6 +41,7 @@ ActionController::Routing::Routes.draw do |map|
      admin.new_development '/:country/:zipcod/developments/new', :controller => "developments", :action => "new"
      admin.edit_development '/:country/:zipcod/developments/:id/edit', :controller => "developments", :action => "edit"
      admin.resources :properties
+     admin.update_fp 'properties/:property_id/update_fp',:controller => "properties", :action => "update_featured_photo"
      admin.resources :facilities
      admin.resources :users
      admin.resources :roles

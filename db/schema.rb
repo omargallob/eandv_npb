@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091030142616) do
+ActiveRecord::Schema.define(:version => 20091105183920) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -50,6 +50,28 @@ ActiveRecord::Schema.define(:version => 20091030142616) do
     t.integer  "facility_id"
     t.integer  "property_id"
     t.integer  "total"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "featured_photos", :force => true do |t|
+    t.integer  "page_id"
+    t.integer  "property_id"
+    t.integer  "size"
+    t.string   "content_type"
+    t.string   "filename"
+    t.integer  "width"
+    t.integer  "height"
+    t.integer  "parent_id"
+    t.string   "thumbnail"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "galleries", :force => true do |t|
+    t.string   "title"
+    t.string   "description"
+    t.integer  "property_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -116,6 +138,8 @@ ActiveRecord::Schema.define(:version => 20091030142616) do
     t.text     "address"
     t.boolean  "rental"
     t.string   "facility_ids"
+    t.boolean  "featured"
+    t.integer  "mls_id"
   end
 
   create_table "roles", :force => true do |t|

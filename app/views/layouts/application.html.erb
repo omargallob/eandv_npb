@@ -36,25 +36,37 @@
 	   	 
  		/*$('#main').jScrollPane({scrollbarWidth:17,showArrows:true});*/
 		<% if @subpages.empty? %>
-		    jQuery('#gallerylinks').jcarousel({
+		    /*jQuery('#gallerylinks').jcarousel({
 		        vertical: true,
 		        scroll: 1,
 		        auto: 2,
 		        wrap: 'last',
 		        initCallback: mycarousel_initCallback
-		    });
+		    });*/
 		<% end %>
 
 		$('.droppies').combobox(); 
+		aux = $("#main p");
+
+		$(aux[0]).css("font-weight", "bold");		$(aux[0]).css("font-style", "italic");
+	  	$(aux[0]).show();
+		$(aux[1]).show();
+	  
+	  
+	
+	
+
+	    
  	 });
 	</script>
   </head>
   <body>
 	<div id='upper_pagewrapper'>
 		<div id='header'>
-		
+					
 			<div id="logo"><%= link_to image_tag ("system/bg/front/logo.jpg"), "/" %></div>
-			<div id="extra"><%= image_tag ("system/buttons/twitter.jpg") %><%= image_tag ("system/buttons/facebook.jpg") %></div>
+			<div id="extra"><%= image_tag ("system/buttons/twitter.jpg") %><%= image_tag ("system/buttons/facebook.jpg") %>	<%= render :partial => "shared/user_bar", :object => self %></div>
+			
 	  	</div>
 		<div id='navbar'>
 			<ul>
@@ -85,7 +97,6 @@
 			<ul id="links">
 				<li>Testing</li>
 			</ul>
-				<%# render :partial => "shared/user_bar", :object => self %>
 		</div>
 	</div>
  </body>

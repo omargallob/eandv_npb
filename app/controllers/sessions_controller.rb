@@ -8,6 +8,7 @@ class SessionsController < ApplicationController
     set_meta_tags :title => 'Login',
                   :description => 'Member login page.',
                   :keywords => 'Engel&Volkers, Site, Login, Admin'
+    @subpages = [""]
   end
 
   def create

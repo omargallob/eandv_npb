@@ -1,0 +1,7 @@
+<% form_for( @property.featured_photo || :featured_photo, :url => {:controller=>"properties", :action => "update_featured_photo",:property_id => @property.id }, :html => { :multipart => true }) do |form| %>
+	<p>Featured<br />
+	<%= form.file_field :uploaded_data %>
+	</p>
+	<%= form.hidden_field :property_id, :value => @property.id %>
+   <p><%= form.submit 'Update' %></p>
+<% end %>

@@ -1,6 +1,7 @@
 class ServicesController < ApplicationController
   def index
     @page = Page.find_by_name('services')
+    @subpages = @page.subpages
     @categories = Category.find_main
   end
   

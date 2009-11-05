@@ -1,0 +1,23 @@
+
+<% unless @subpages.empty? %>
+<ul>
+	<% for page in @subpages %>
+		<li><%= link_to page.navlabel, view_page_path(page.name)%></li>
+	<% end %>
+</ul>
+<% end %>
+<%# image_tag "static/gallery.png", :style => "margin:15px 15px 5px" %>
+
+<% if @subpages.empty? %>
+<!--<ul id="gallerylinks">
+	<%# render :partial => "shared/gallerylinks" %>
+</ul>-->
+
+
+<%= image_tag "system/buttons/keepdiscovering.jpg",:style => "margin-top:0px;" %>
+
+<%= render :partial=>"shared/polaroid"%>
+
+<%= image_tag "system/buttons/sellyourproperty.png",:style => "margin-top:5px;" %>
+
+<% end %>

@@ -24,6 +24,7 @@ body a:hover { color: yellow; }
 #content p { margin: 10px 0 10px 0; }
 #content p span.title-name { width: 150px; }
 #content ul { width: 350px; float: right; margin-right: 50px; }
+#content #tabs ul li { position: relative; float: left; border-bottom-width: 0 !important; }
 #content ul.form_list { width: 100%; float: none; margin: 0px; list-style: none; }
 #content #notice { right: 0px; top: 0px; background: green; }
 #content #notice p { padding: 25px; }
