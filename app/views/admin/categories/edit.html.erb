@@ -1,7 +1,7 @@
 <div id="main">
 	<h1>Edit category</h1>
 
-	<% form_for @category, :url => {:action => "update"}  do |f| %>	
+	<% form_for @category, :url => {:action => "update"},:html => {:multipart => true}  do |f| %>	
 	  <%= render :partial => "form", :locals => {:f =>f}%>
 	  <p>
 	    <%= f.submit 'Create' %>

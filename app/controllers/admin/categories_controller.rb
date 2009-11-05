@@ -16,8 +16,15 @@ class Admin::CategoriesController < Admin::BaseController
     
     respond_to do |format|
       if @cat.save
-        flash[:notice] = 'Category was successfully created.'
-        format.html { redirect_to(admin_services_path) }
+      
+        format.html { 
+          if params[:category][:photo].blank?
+            flash[:notice] = 'Category was successfully created.'
+            redirect_to(admin_services_path) 
+          else
+            render :action => "crop"
+          end
+        }
         format.xml  { render :xml => @cat, :status => :created, :location => @cat }
       else
         format.html { render :action => "new" }
@@ -35,8 +42,15 @@ class Admin::CategoriesController < Admin::BaseController
 
      respond_to do |format|
        if @category.update_attributes(params[:category])
-         flash[:notice] = 'Category was successfully updated.'
-         format.html { redirect_to(admin_category_path(@category.parent)) }
+         
+         format.html {
+            if params[:category][:photo].blank?
+              flash[:notice] = 'Category was successfully updated.'
+               redirect_to(admin_category_path(@category.parent))
+             else
+               render :action => "crop"
+             end
+           }
          format.xml  { head :ok }
        else
          format.html { render :action => "edit" }
@@ -54,5 +68,8 @@ class Admin::CategoriesController < Admin::BaseController
        format.xml  { head :ok }
      end
    end
+   
+  def crop
+  end
 
 end

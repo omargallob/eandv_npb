@@ -2,7 +2,7 @@
 	
 	<h1>New category</h1>
 
-	<% form_for :category, :url => {:action => ""}  do |f| %>	
+	<% form_for :category, :url => {:action => ""}, :html => {:multipart => true}  do |f| %>	
 	  <%= render :partial => "form", :locals => {:f =>f}%>
 	  <p>
 	    <%= f.submit 'Create' %>
