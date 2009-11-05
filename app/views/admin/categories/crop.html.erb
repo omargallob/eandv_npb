@@ -6,28 +6,24 @@
 		$("#cropbox").Jcrop({
 			onChange: updateCrop,
 			onSelect: updateCrop,
-			setSelect: [120,90],
+			setSelect: [92,61],
 			aspectRatio: 1.333333333333333333
 		});
 	});	
 	function updateCrop(coords){
-	  var rx = 120/coords.w;
-	  var ry = 90/coords.h;
+	  var rx = 92/coords.w;
+	  var ry = 61/coords.h;
 	  $('#preview').css({
 	    width: Math.round(rx * <%= @category.photo_geometry(:large).width %>) + 'px',
 	    height: Math.round(ry * <%= @category.photo_geometry(:large).height %>) + 'px',
 	    marginLeft: '-' + Math.round(rx * coords.x) + 'px',
 	    marginTop: '-' + Math.round(ry * coords.y) + 'px'
 	  });
-	
-	
-		var ratio = <%= @category.photo_geometry(:original).width %> / <%= @category.photo_geometry(:large).width %>;
-	 
+		var ratio = <%= @category.photo_geometry(:original).width %> / <%= @category.photo_geometry(:large).width %>; 
 			$("#crop_x").val(Math.round(coords.x * ratio));
 			$("#crop_y").val(Math.round(coords.y * ratio));
 			$("#crop_w").val(Math.round(coords.w * ratio));
 			$("#crop_h").val(Math.round(coords.h * ratio));
-	
 	}
 </script>
 <% end %>
@@ -36,7 +32,7 @@
 <%= image_tag @category.photo.url(:large) , :id => "cropbox" %>
 
 <h4>Preview:</h4>
-<div style="width:120px; height:90px; overflow:hidden">
+<div style="width:92px; height:61px; overflow:hidden">
   <%= image_tag @category.photo.url(:large), :id => "preview" %>
 </div>
 

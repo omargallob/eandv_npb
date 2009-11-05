@@ -3,7 +3,7 @@ class Category < ActiveRecord::Base
   has_many :subcategories, :class_name => 'Category', :foreign_key => 'parent_id'
   belongs_to :parent, :class_name => 'Category', :foreign_key => 'parent_id'
 
-  has_attached_file :photo, :styles => {:small => "120x90#", :large => "500x500>"}, :processors => [:cropper],
+  has_attached_file :photo, :styles => {:small => "92x61#", :large => "961x359>"}, :processors => [:cropper],
                             :url => "/assets/categories/:id/:style/:basename.extension",
                             :path => ":rails_root/public/assets/categories/:id/:style/:basename.extension"
 

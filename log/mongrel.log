@@ -1206,3 +1206,4 @@ Wed Oct 21 15:23:00 +0100 2009: Error calling Dispatcher.dispatch #<SyntaxError:
 ** Rails signals registered.  HUP => reload (without restart).  It might not work well.
 ** Mongrel 1.1.4 available at 0.0.0.0:3001
 ** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:67: warning: don't put space before argument parentheses
