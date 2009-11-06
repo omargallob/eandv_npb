@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  description: MyString
+  dog_id: 1
+  photo_file_name: MyString
+  photo_file_size: 1
+
+two:
+  description: MyString
+  dog_id: 1
+  photo_file_name: MyString
+  photo_file_size: 1

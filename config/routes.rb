@@ -45,6 +45,12 @@ ActionController::Routing::Routes.draw do |map|
      admin.resources :facilities
      admin.resources :users
      admin.resources :roles
+     admin.resources :galleries
+     
+      admin.resources :uploads
+     #admin.namespace :property do |property|
+      # property.resources :galleries
+     #end
      #admin.property_facilities '/location/:location_id/property/:property_id/facilities', :controller => 'facilities', :action => "index"
      #admin.new_facility '/location/:location_id/property/:property_id/facilities/new', :controller => 'facilities', :action => "new"
      #admin.edit_facility '/location/:location_id/property/:property_id/facility/:id/edit', :controller => 'facilities', :action => "new"

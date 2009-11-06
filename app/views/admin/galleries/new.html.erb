@@ -1,0 +1,22 @@
+<h1>New gallery</h1>
+ 
+<% form_for @gallery, :url=>{:action=>"create"},:html => { :multipart => true, :method => :post } do |f| %>
+  <%= f.error_messages %>
+ 
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+ 
+  <div id='uploads' style='border: 1px solid silver'>
+    <%= f.render_associated_form(@gallery.uploads, :new => 5) %>
+  </div>
+ 
+  <%= f.add_associated_link('Add another photo', @gallery.uploads.build) %>
+
+ 	<%= f.text_field :property_id, :value => @property.id %>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091105195232) do
+ActiveRecord::Schema.define(:version => 20091106000407) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -123,6 +123,10 @@ ActiveRecord::Schema.define(:version => 20091105195232) do
     t.string   "navlabel"
     t.integer  "position"
     t.boolean  "featured"
+    t.string   "thumb_file_name"
+    t.string   "thumb_content_type"
+    t.integer  "thumb_file_size"
+    t.datetime "thumb_updated_at"
   end
 
   create_table "properties", :force => true do |t|
@@ -160,6 +164,15 @@ ActiveRecord::Schema.define(:version => 20091105195232) do
 
   create_table "types", :force => true do |t|
     t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "uploads", :force => true do |t|
+    t.string   "description"
+    t.integer  "dog_id"
+    t.string   "photo_file_name"
+    t.integer  "photo_file_size"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

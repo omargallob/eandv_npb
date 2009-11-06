@@ -12,7 +12,7 @@ en:
       notlogged: "Not logged, "    
       login: "Log in"
   overview:
-    static_pages: "Total number of service categories"
+    static_pages: "Total number of static pages"
     service_categories: "Total number of service categories"
     countries: "Total number of countries"
     properties: "Total number of property"

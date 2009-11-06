@@ -8,7 +8,7 @@
 </div>
 
 <div id="main">
-	<h1><%=h @page.navlabel %> | <%= image_tag @page.page_featured_photo.public_filename(:thumb) %></h1>
+	<h1><%=h @page.navlabel %> | <%= image_tag @page.thumb.url(:small) %></h1>
 
 	<p><strong>Featured</strong><br />
 		  <%=  @page.featured %>
@@ -30,7 +30,7 @@
 	</p>
 	
 	<p>
-		 <%= image_tag @page.page_featured_photo.public_filename %>
+		 <%# image_tag @page.page_featured_photo.public_filename %>
 	</p>
 </div>	
 

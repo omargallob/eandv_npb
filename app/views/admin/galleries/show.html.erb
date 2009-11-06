@@ -1,0 +1,16 @@
+<h1>Admin::Galleries#show</h1>
+<p> <%= @gallery.title %> (<%= @gallery.uploads.size %>)<%= link_to 'Destroy', admin_gallery_path(@gallery), :confirm => 'Are you sure?', :method => :delete %>
+</p>
+<% for image in @gallery.uploads %>
+	
+	<%= link_to image_tag (image.photo.url(:thumb)),image.photo.url(:original),:rel =>"sexylightbox[group1]" %>
+	<%# image_tag image.photo.url(:thumb) %> | <%= link_to "edit", edit_admin_upload_path(image)%><br>
+<% end %>
+<ul>
+	<% content_for(:script) do %>
+		<script type="text/javascript">
+		    $(document).ready(function(){
+		      SexyLightbox.initialize({color:'white'});
+		    });
+		</script>
+	<% end %>

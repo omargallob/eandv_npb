@@ -43,7 +43,15 @@ class Admin::PagesController < Admin::BaseController
      respond_to do |format|
        if @page.save
          flash[:notice] = 'Page was successfully created.'
-         format.html { redirect_to(admin_page_path(@page)) }
+         format.html {
+           if params[:page][:thumb].blank?
+             flash[:notice] = 'Category was successfully updated.'
+             redirect_to(admin_page_path(@page))
+            else
+              render :action => "crop"
+            end
+          }
+        
          format.xml  { render :xml => @page, :status => :created, :location => @page }
        else
          format.html { render :action => "new" }
@@ -59,7 +67,14 @@ class Admin::PagesController < Admin::BaseController
      respond_to do |format|
        if @page.update_attributes(params[:page])
         flash[:notice] = 'Page was successfully UPDATED.'
-        format.html { redirect_to(admin_page_path(@page)) }
+        format.html {
+           if params[:page][:thumb].blank?
+             flash[:notice] = 'Category was successfully updated.'
+             redirect_to(admin_page_path(@page))
+            else
+              render :action => "crop"
+            end
+          }
         format.xml  { head :ok }
        else
          format.html { render :action => "edit" }
@@ -100,5 +115,7 @@ class Admin::PagesController < Admin::BaseController
       end
   end
 
+  def crop
+  end
    
 end

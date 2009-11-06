@@ -29,6 +29,14 @@
 				<%= link_to image_tag ('system/buttons/search.jpg', :height => "15px", :title => "view"), admin_property_path(property) %> | 
 				<%= link_to image_tag ('system/buttons/edit.jpg', :height => "15px", :title => "edit"), edit_admin_property_path(property) %> | 
 				<%= link_to image_tag ('system/buttons/delete.jpg',:height => "15px",:title => "delete"), admin_development_path(property), :confirm => 'Are you sure?', :method => :delete %>
-		
+			
+			<% if property.gallery %>
+				<%= link_to image_tag ('system/buttons/gallery.png', :height => "15px", :title =>"Gallery"), admin_gallery_path(property.gallery) %>
+			<% else %>
+				<%= link_to image_tag ('system/buttons/gallery.png', :height => "15px", :title =>"Gallery"), :controller => "galleries",:action=>"new",:property_id=>property %>
+			<% end %>
 		</td>
+	</tr>
+	<tr>
+		<td></td>
 	</tr>

@@ -45,9 +45,13 @@
 		<% end %>
 	</table>
 </div>
-
+<% content_for(:script) do %>
+<%= stylesheet_link_tag "jquery.Jcrop" %>
+<%= javascript_include_tag "admin/gs_sortable" %>	
+<% end %>
 <script type="text/javascript">
 <!--
+
 var TSort_Data = new Array ('properties_list', 's','','s','','s','','s','','n','','h','','i','','i','','i','','i','','i','','i');
 tsRegister();
 // -->

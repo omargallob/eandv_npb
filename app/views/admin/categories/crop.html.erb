@@ -7,7 +7,7 @@
 			onChange: updateCrop,
 			onSelect: updateCrop,
 			setSelect: [92,61],
-			aspectRatio: 1.333333333333333333
+			aspectRatio: 1.508196721311475
 		});
 	});	
 	function updateCrop(coords){
@@ -36,7 +36,7 @@
   <%= image_tag @category.photo.url(:large), :id => "preview" %>
 </div>
 
-<% form_for @category, :url => {:action => "update"} do |f| %>
+<% form_for @category, :url => {:action => "update"}, :html =>{ :method =>:put} do |f| %>
 	
 	<% for attribute in [:crop_x,:crop_y,:crop_w,:crop_h]%>
 		<%= f.hidden_field attribute, :id => attribute %>
