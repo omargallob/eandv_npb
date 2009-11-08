@@ -202,7 +202,7 @@ module AttributeFu
       rendered_forms = self.render_associated_form([associated], :fields_for => { :javascript => true }, :partial => partial)
 
       function = "if (typeof #{variable} == 'undefined') { #{variable} = 0; }
-                  $(#{container}).append($.template("+rendered_forms.first.to_json+"), { number: --#{variable}});
+                  $(#{container}).append($.tmpl("+rendered_forms.first.to_json+"), { number: --#{variable}});
                   #{javascript}"
                     
       @template.link_to_function(name, function, opts)

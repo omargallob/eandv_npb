@@ -46,8 +46,9 @@ ActionController::Routing::Routes.draw do |map|
      admin.resources :users
      admin.resources :roles
      admin.resources :galleries
-     
+     admin.resources :galleries, :collection => { :prioritize_uploads => :post }
       admin.resources :uploads
+      admin.update_gallery 'galleries/:id', :controller=>"galleries",:action => "update"
      #admin.namespace :property do |property|
       # property.resources :galleries
      #end
@@ -61,6 +62,7 @@ ActionController::Routing::Routes.draw do |map|
   map.view_page ':name', :controller => 'viewer', :action => 'show'
   map.feed_properties '/rss/properties.:format', :controller => 'properties', :action => 'feeds'
   map.feed_favs '/rss/favs.:format', :controller => 'rss', :action => 'favs'
+  
  # map.feed_properties '/rss/properties.:format', :controller => 'rss', :action => 'properties'
   # The priority is based upon order of creation: first created -> highest priority.
 

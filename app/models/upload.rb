@@ -9,6 +9,9 @@ class Upload < ActiveRecord::Base
                       :path => ":rails_root/public/assets/property/gallery/:id/:style/:basename.jpg"
   attr_accessor :crop_x, :crop_y, :crop_w, :crop_h     
   
+  acts_as_list :scope => :gallery
+  
+ # before_edit :reset_photo
   after_update  :reprocess_photo, :if => :cropping?
   
   def cropping?
@@ -22,6 +25,9 @@ class Upload < ActiveRecord::Base
   
    private
      def reprocess_photo
+       photo.reprocess!
+     end
+     def reset_photo
        photo.reprocess!
      end
 end

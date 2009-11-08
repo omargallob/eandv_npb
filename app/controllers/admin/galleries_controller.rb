@@ -4,6 +4,7 @@ class Admin::GalleriesController <  Admin::BaseController
 
   def show
     @gallery = Gallery.find_by_id(params[:id])
+    @uploads = @gallery.uploads.find(:all,:order => "position")
     # @property -@gallery.property
   end
 
@@ -25,7 +26,22 @@ class Admin::GalleriesController <  Admin::BaseController
   end
   
   def edit
-    
+    @gallery = Gallery.find_by_id(params[:id])
+  end
+  
+  def update
+    @gallery = Gallery.find_by_id(params[:id])
+       respond_to do |format|
+         if @gallery.update_attributes(params[:gallery])
+          flash[:notice] = 'gallery was successfully UPDATED.'
+          format.html {
+               flash[:notice] = 'gallery was successfully updated.'
+               redirect_to(admin_gallery_path(@gallery))
+          }
+        else
+          render :action => "edit"
+        end
+      end
   end
   
   def destroy
@@ -37,5 +53,14 @@ class Admin::GalleriesController <  Admin::BaseController
       format.xml  { head :ok }
     end
   end
-
+  
+  def prioritize_uploads
+    gallery = Gallery.find(params[:id])
+    uploads = gallery.uploads
+    uploads.each do |upload|
+      upload.position = params['image'].index(upload.id.to_s) + 1
+      upload.save
+    end
+    render :nothing => true
+  end
 end

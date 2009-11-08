@@ -1,0 +1,14 @@
+<ul id="tasks_list">
+	<% for image in gallery.uploads %>
+	
+		<li id="image_<%= image.id -%>">
+			<div class="handle">&nbsp;</div> 
+			<span class="content">
+				<%= link_to (image_tag(image.photo.url(:thumb)),image.photo.url(:pagesize),:rel =>"sexylightbox[group1]")  %>
+				|<%= link_to "edit", edit_admin_upload_path(image)%> 
+				|<%= link_to 'Destroy', admin_upload_path(image), :confirm => 'Are you sure?', :method => :delete %>
+			</span>
+
+		</li>
+	<% end %>
+</ul>

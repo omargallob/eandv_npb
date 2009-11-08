@@ -1,3 +1,10 @@
+<div id="side-nav">
+	<ul>
+		<li><%= link_to 'back', :back %></li>
+	</ul>
+</div>
+
+
 <% title "Cropping upload"%>
 <% content_for(:script) do %>
 <%= stylesheet_link_tag "jquery.Jcrop" %>
@@ -42,6 +49,10 @@
 <% form_for(@upload,:url=>{:action=>"update"},:html=>{:method => :put}) do |f| %>
   <%= f.error_messages %>
 
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
   <p>
     <%= f.label :description %><br />
     <%= f.text_area :description %>

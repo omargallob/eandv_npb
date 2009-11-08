@@ -1,16 +1,61 @@
+<div id="side-nav">
+	<ul>
+		<li><%= link_to 'Destroy', admin_gallery_path(@gallery), :confirm => 'Are you sure?', :method => :delete %></li>
+		<li><%= link_to 'edit', edit_admin_gallery_path(@gallery) %></li>
+	</ul>
+</div>
+
+
+
 <h1>Admin::Galleries#show</h1>
-<p> <%= @gallery.title %> (<%= @gallery.uploads.size %>)<%= link_to 'Destroy', admin_gallery_path(@gallery), :confirm => 'Are you sure?', :method => :delete %>
+<p> <%= @gallery.title %> (<%= @gallery.uploads.size %>)<br>
+
 </p>
-<% for image in @gallery.uploads %>
+<ul id="tasks_list">
+	<% for image in @uploads %>
 	
-	<%= link_to image_tag (image.photo.url(:thumb)),image.photo.url(:original),:rel =>"sexylightbox[group1]" %>
-	<%# image_tag image.photo.url(:thumb) %> | <%= link_to "edit", edit_admin_upload_path(image)%><br>
-<% end %>
-<ul>
+		<li id="image_<%= image.id -%>">
+			<div class="handle">&nbsp;</div> 
+			<span class="content">
+				<%= link_to (image_tag(image.photo.url(:thumb)),image.photo.url(:pagesize),:rel =>"sexylightbox[group1]")  %>
+				|<%= link_to "edit", edit_admin_upload_path(image)%> 
+				|<%= link_to 'Destroy', admin_upload_path(image), :confirm => 'Are you sure?', :method => :delete %>
+			</span>
+
+		</li>
+	<% end %>
+</ul>
+
+
 	<% content_for(:script) do %>
 		<script type="text/javascript">
 		    $(document).ready(function(){
-		      SexyLightbox.initialize({color:'white'});
-		    });
+		    	SexyLightbox.initialize({color:'white'});
+	
+				$('#tasks_list').sortable(
+				      {
+				        axis: 'y', 
+				        dropOnEmpty:false, 
+				        handle: '.handle', 
+				        cursor: 'crosshair',
+				        items: 'li',
+				        opacity: 0.4,
+				        scroll: true,
+				        update: function(){
+				          $.ajax({
+				              type: 'post', 
+				              data: $('#tasks_list').sortable('serialize') + '&id=<%=@gallery.id-%>', 
+				              dataType: 'script', 
+				              complete: function(request){
+				                  $('#tasks_list').effect('highlight');
+				                },
+				              url: '/admin/galleries/prioritize_uploads'})
+				          }
+       
+				});
+
+
+				});
+		
 		</script>
 	<% end %>

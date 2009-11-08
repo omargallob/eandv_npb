@@ -37,6 +37,7 @@ class Admin::PropertiesController < Admin::BaseController
 
   def edit
     @property = Property.find_by_id(params[:id])
+    @gallery = @property.gallery
   end
   
   def update

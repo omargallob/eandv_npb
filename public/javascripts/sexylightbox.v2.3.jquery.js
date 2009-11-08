@@ -34,9 +34,9 @@ jQuery.bind = function(object, method){
         displayed     : 0,
         showDuration  : 200,
         closeDuration : 400,
-        moveDuration  : 300,
+        moveDuration  : 1000,
         moveEffect    : 'easeInOutBack',
-        resizeDuration: 400,
+        resizeDuration: 1000,
         resizeEffect  : 'easeInOutBack',
         shake         : {
                           distance: 10,

@@ -11,22 +11,37 @@
 	    <ul >
 	        <li ><a href="#fragment-1"><span>Info</span></a></li>
 	        <li><a href="#fragment-2"><span>Extra</span></a></li>
-	        <li><a href="#fragment-3"><span>Images</span></a></li>
+	        <li><a href="#fragment-3"><span>Media</span></a></li>
 	    </ul>
-		<% form_for @property, :url => {:action => "update"}  do |f| %>	
+		<% form_for @property, :url => {:action => "update"},:html => { :id => "property_file"} do |f| %>	
 		 <%= f.error_messages %> 
 		  <%= render :partial => "form", :locals => {:f =>f}%>
-
 		<% end %>
 	    <div id="fragment-3">
-		<% if @property.featured %>
-	      	<% form_for(@property.featured_photo, :url => {:controller=>"properties", :action => "update_featured_photo"}, :html => { :multipart => true }) do |form| %>
-				<p>Featured<br />
-				<%= form.file_field :uploaded_data %>
-				</p>
-			   <p><%= form.submit 'Update' %></p>
-			<% end %>
-		<% end %>
+			<div id="image_tabs" class="subtabs">
+			    <ul id="subtabs" >
+			        <li ><a href="#gallery"><span>Gallery</span></a></li>
+			       	<% if @property.featured %> <li><a href="#featured"><span>Featured</span></a></li><% end %>		
+			    </ul>
+
+				<div id="gallery">
+					<h3>Edit gallery</h3>
+				<% if @property.gallery %>
+					<%= render :partial=>"shared/gallery", :object=> @property.gallery %>
+				<% end %>
+				</div>
+				<% if @property.featured %>
+				<div id="featured">
+				<%= image_tag @property.featured_photo.public_filename if @property.featured_photo %>
+			      	<% form_for(@property.featured_photo, :url => {:controller=>"properties", :action => "update_featured_photo"}, :html => { :multipart => true}) do |form| %>
+						<p>Featured<br />
+						<%= form.file_field :uploaded_data %>
+						</p>
+					   <p><%= form.submit 'Update' %></p>
+					<% end %>
+				</div>	
+				<% end %>		
+			</div>
 	    </div>
 	</div>
 </div>
@@ -35,7 +50,66 @@
 <script type='text/javascript'>
 $(document).ready(function(){
   $("#tabs").tabs();
+  $("#image_tabs").tabs();
+  SexyLightbox.initialize({color:'white'});
+ $('#property_file').FormObserve();
+<% if @property.gallery %>
+  $('#tasks_list').sortable(
+	      {
+	        axis: 'y', 
+	        dropOnEmpty:false, 
+	        handle: '.handle', 
+	        cursor: 'crosshair',
+	        items: 'li',
+	        opacity: 0.4,
+	        scroll: true,
+	        update: function(){
+	          $.ajax({
+	              type: 'post', 
+	              data: $('#tasks_list').sortable('serialize') + '&id=<%=@gallery.id-%>', 
+	              dataType: 'script', 
+	              complete: function(request){
+	                  $('#tasks_list').effect('highlight');
+	                },
+	              url: '/admin/galleries/prioritize_uploads'})
+	          }
+
+	});
+<% end %>
+
 });
 	
+</script>
+<%= javascript_include_tag "tiny_mce/tiny_mce"%>
+<script type="text/javascript">
+	tinyMCE.init({
+		// General options
+		mode : "textareas",
+		theme : "advanced",
+		plugins : "safari,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,wordcount",
+
+		// Theme options
+		theme_advanced_buttons1 : "save,newdocument,|,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull",
+		theme_advanced_buttons2 : "cut,copy,paste,pastetext,pasteword,|,search,replace,|,bullist,numlist",
+		theme_advanced_toolbar_location : "top",
+		theme_advanced_toolbar_align : "left",
+		theme_advanced_statusbar_location : "bottom",
+		theme_advanced_resizing : true,
+
+		// Example content CSS (should be your site CSS)
+		content_css : "css/content.css",
+
+		// Drop lists for link/image/media/template dialogs
+		template_external_list_url : "lists/template_list.js",
+		external_link_list_url : "lists/link_list.js",
+		external_image_list_url : "lists/image_list.js",
+		media_external_list_url : "lists/media_list.js",
+
+		// Replace values for the template plugin
+		template_replace_values : {
+			username : "E&V Admin User",
+			staffid : "00001"
+		}
+	});
 </script>
 <% end %>

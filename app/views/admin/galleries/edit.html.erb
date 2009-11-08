@@ -1,2 +1,32 @@
-<h1>Admin::Galleries#edit</h1>
-<p>Find me in app/views/admin/galleries/edit.html.erb</p>
+<div id="side-nav">
+	<ul>
+		<li><%= link_to 'back', :back %></li>
+	</ul>
+</div>
+
+
+
+<h1>Adding more images to gallery</h1>
+<div > 
+	<% form_for @gallery, :url=>{:action=>"update"},:html => { :multipart => true, :method => :put } do |f| %>
+	  <%= f.error_messages %>
+ 
+	  <p>
+	    <%= f.label :title %><br />
+	    <%= f.text_field :title %>
+	  </p>
+ 
+	  <div id='uploads' style='border: 1px solid silver'>
+	    <%= f.render_associated_form(@gallery.uploads, :new => 1) %>
+	  </div>
+ 
+	  <%= f.add_associated_link('Add another photo', @gallery.uploads.build) %>
+
+	 	<%# f.text_field :property_id, :value => @property.id %>
+
+	  <p>
+	    <%= f.submit "Create" %>
+	  </p>
+	<% end %>
+</div>
+

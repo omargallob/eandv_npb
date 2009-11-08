@@ -24,7 +24,15 @@ body a:hover { color: yellow; }
 #content p { margin: 10px 0 10px 0; }
 #content p span.title-name { width: 150px; }
 #content ul { width: 350px; float: right; margin-right: 50px; }
+#content ul#tasks_list { width: 100%; margin: 10px auto; list-style: none; }
+#content ul#tasks_list li { border: 1px solid black; width: 100%; }
+#content ul#tasks_list li div.handle { background-image: url(../images/system/buttons/handle.png); width: 64px; height: 64px; float: left; }
+#content #tabs { width: 100%; float: left; }
 #content #tabs ul li { position: relative; float: left; border-bottom-width: 0 !important; }
+#content #tabs h3 { margin-top: 15px; float: left; }
+#content #tabs #image_tabs div#featured { float: left; padding: 0; margin: 0; }
+#content #tabs #image_tabs ul#subtabs { float: left; width: 100%; }
+#content #tabs #image_tabs ul#subtabs li { background: white; margin: 0px; }
 #content ul.form_list { width: 100%; float: none; margin: 0px; list-style: none; }
 #content #notice { right: 0px; top: 0px; background: green; }
 #content #notice p { padding: 25px; }
@@ -32,3 +40,5 @@ body a:hover { color: yellow; }
 #content #subcontent td { border-bottom: 1px solid black; vertical-align: middle; }
 #content #subcontent td table.nolines td { border: 0px none; }
 #content #subcontent p { width: 350px; }
+
+.changed { background: red; }
