@@ -11,6 +11,17 @@ body
 		-moz-outline-style: none
 	a:hover
 		color: yellow
+	h3
+		text-transform: capitalize
+		color: #e13939
+		font-family: "Georgia"
+		font-variant: small-caps
+		font-size: 16px
+		span
+			color: #d4d4d4
+		strong
+			font-weight: normal
+			color: #d4d4d4
 
 
 #upper_pagewrapper
@@ -134,6 +145,23 @@ body
 		position: relative
 		z-index: 4
 		margin-bottom: -63px
+		#main.properties
+			width: 442px
+			background: url(../images/system/bg/front/main_properties.jpg)
+			.top
+				background-image: url(../images/system/bg/front/main_properties_top.jpg)
+				margin-top: 0
+				width: 442px
+				position: relative
+				height: 15px
+				float: left
+			.bottom
+				background-image: url(../images/system/bg/front/main_properties_bottom.jpg)
+				margin-top: 33px
+				width: 442px
+				position: relative
+				height: 15px				
+				float: left
 		#main
 			width: 463px
 			background: url(../images/system/bg/front/main_width.jpg)
@@ -141,16 +169,20 @@ body
 			color: #4d4d4d
 			overflow: auto
 			font-size: 14px
+			h3
+				margin: 13px 0 0 24px
 			#main_top
 				background-image: url(../images/system/bg/front/main_top.jpg)
 				margin-top: 0
 			#main_bottom
 				background-image: url(../images/system/bg/front/main_bottom.jpg)
-				margin-top: 33px
+				float: left
 			.main_border
 				height: 8px
 				width: 463px
 				position: relative
+			.properties
+				width: 440px
 			p
 				margin: 5px 35px
 				font-style: italic
@@ -166,71 +198,132 @@ body
 				color: red
 			div.toggle
 				overflow: hidden
-		#searchbox
-			height: 245px
-			width: 266px
-			background-color: transparent
+		#right-column
+			width: 304px
 			float: left
 			margin-left: 20px
-			#bottom_b
-				position: absolute
-				height: 2px
-				width: 266px
-				background-image: url(../images/system/form/home_separator.jpg) 
-				margin-top: 216px
+			.top
+				width: 304px
+				height: 15px
+				background: url(../images/system/bg/front/right_tool_top.jpg)
+			.bottom
+				width: 304px
+				height: 15px
+				background: url(../images/system/bg/front/right_tool_bottom.jpg)
+				position: relative
+				float: left
 			h3
-				text-transform: capitalize
-				color: #e13939
-				font-family: "Georgia"
-				font-variant: small-caps
-				span
-					color: #d4d4d4
-				strong
-					font-weight: normal
-					color: #d4d4d4
-			form
-				font-family: "Georgia"
-			form#QuickQuery
-				p
-					margin-bottom: 0px
-					input#QuickQuery
-						padding: 6px 0 0 6px
-						border: 0px
-						width: 223px
-						height: 21px
-						background-image: url(../images/system/form/search_input.jpg) 
-						background-repeat: no-repeat					
-						float: left
-						padding-right: 0px
-						line-height: 25px
-			form#Selectable
+				margin-left: 23px
+			#searchbox.advanced
+				height: 100%
+				width: 304px
+				background: url(../images/system/bg/front/right_tool.jpg)
+				background-repeat: repeat-y
 				div
-					float: right
-					margin-top: 10px					
+					float: left
+			#faq
+				height: 157px
+				background: url(../images/system/bg/front/right_tool.jpg)
+				background-repeat: repeat-y
+				float: left
+				margin-top: 15px
+				#faq_block
+					height: 109px
+					width: 269px
 					p
-						margin: 0px
-						padding: 0px
-						height: 30px
-						width: 198px
-						input.formularios
+						font-style: italic
+						font-family: "Georgia"
+						font-size: 12px
+			#extra
+				width: 174px
+				background: url(../images/system/bg/front/right_small1.jpg)
+				float: left
+				margin-top: 15px
+				img
+					margin: 12px 0 0 24px
+				.top
+					width: 174px
+					height: 15px
+					background: url(../images/system/bg/front/right_small1_top.jpg)
+				.bottom
+					width: 174px
+					height: 15px
+					background: url(../images/system/bg/front/right_small1_bottom.jpg)
+					position: relative
+					float: left
+			#small
+				width: 117px
+				height: 161px
+				float: left
+				background: url(../images/system/bg/front/right_small2.jpg)				
+				margin: 15px 0 0 13px
+				h3
+					margin: 14px 0 0 13px
+			#searchbox
+				height: 245px
+				width: 266px
+				background-color: transparent
+				float: left
+				#bottom_b
+					position: absolute
+					height: 2px
+					width: 266px
+					background-image: url(../images/system/form/home_separator.jpg) 
+					margin-top: 216px
+				form
+					font-family: "Georgia"
+				form#QuickQuery
+					p
+						margin-bottom: 0px
+						input#QuickQuery
 							padding: 6px 0 0 6px
 							border: 0px
-							width: 168px
-							height: 20px
-							background-image: url(../images/system/form/dropdown.jpg)
-							background-repeat: no-repeat	
-							font-family: "Georgia"
-						input.onfocus
-							background-image: url(../images/system/form/dropdown.jpg)
-				div.titles
-					margin-top: 22px
-					color: #838383
-					p
-						width: 68px
-						font-size: 80%
-						font-variant: small-caps
-
-					
+							width: 223px
+							height: 21px
+							background-image: url(../images/system/form/search_input.jpg) 
+							background-repeat: no-repeat					
+							float: left
+							padding-right: 0px
+							line-height: 25px
+					p.advanced
+						margin-left: 24px
+				form#Selectable
+					div
+						float: right
+						margin-top: 10px					
+						p
+							margin: 0px
+							padding: 0px
+							height: 30px
+							width: 198px
+							input.formularios
+								padding: 6px 0 0 6px
+								border: 0px
+								width: 168px
+								height: 20px
+								background-image: url(../images/system/form/dropdown.jpg)
+								background-repeat: no-repeat	
+								font-family: "Georgia"
+							input.onfocus
+								background-image: url(../images/system/form/dropdown.jpg)
+							input.text_input
+								padding: 6px 0 0 6px
+								border: 0px
+								width: 192px
+								height: 20px
+								margin-top: 6px
+								background-image: url(../images/system/form/advanced_search_input.jpg) 
+								background-repeat: no-repeat					
+								float: left
+								padding-right: 0px
+								line-height: 25px
+					div.titles
+						margin-top: 22px
+						color: #838383
+						p
+							width: 68px
+							font-size: 80%
+							font-variant: small-caps		
 		#page_header
 			width: 500px
 			float: left
@@ -246,11 +339,44 @@ body
 				float: left
 				height: 62px		
 		#side-nav
-			width: 150px
-			height: 230px
+			width: 162px
 			float: left
 			background-color: transparent
 			margin-right: 25px
+			.left_tool
+				width: 162px
+				height: 188px
+				background: url(../images/system/bg/front/left_tool.jpg)
+				margin-top: 15px
+				h3
+					margin-left: 14px
+				.top
+					width: 162px
+					height: 15px
+					background: url(../images/system/bg/front/left_tool_top.jpg)
+				.bottom
+					width: 162px
+					height: 15px
+					background: url(../images/system/bg/front/left_tool_bottom.jpg)
+					margin-top: 5px
+				ul
+					width: 162px
+					height: 123px
+					margin: 12px 0 0 0px
+					padding: 0px
+					li
+						height:	 41px
+
+						margin-left: 14px
+						img
+							float: left
+						span
+							float: left
+							font-size: 12px
+							font-style: italic
+							width: 100px
+							margin: 2px 0 0 13px
+							color: #818181
 			#keep_discovering
 				width: 150px
 				height: 80px

@@ -2,9 +2,9 @@
 .jScrollPaneContainer {
 overflow:hidden;
 position:relative;
-border:1px solid #d3d3d3;
 z-index:1;
 float:left;
+margin-left:24px;
 }
 .jScrollPaneTrack {
 -moz-background-clip:border;

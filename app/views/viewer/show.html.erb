@@ -11,13 +11,13 @@
 
 </div>
 
-
-<% if @page.name == "home" %>
-<div id="searchbox">
-	<%= render :partial => "shared/quicksearchbox" %>
+<div id="right-column">
+	<% if @page.name == "home" %>
+	<div id="searchbox">
+		<%= render :partial => "shared/quicksearchbox" %>
+	</div>
+	<% end %>
 </div>
-<% end %>
-
 
 <% content_for :script do %>
 <script type="text/javascript">
@@ -30,6 +30,7 @@ $(document).ready(function() {
 	<% if params[:name] != "home" %>
 		set_nav_pointer("<%= params[:name] %>");
 	<% end %>
+	$("#right-column").css("width","260px");
 });
 </script>
 <% end %>

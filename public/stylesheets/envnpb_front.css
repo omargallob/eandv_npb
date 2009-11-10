@@ -2,6 +2,9 @@ body { background: #222222; color: white; overflow: auto; font-family: "Georgia"
 body a { color: black; outline: none; }
 body a:focus { -moz-outline-style: none; }
 body a:hover { color: yellow; }
+body h3 { text-transform: capitalize; color: #e13939; font-family: "Georgia"; font-variant: small-caps; font-size: 16px; }
+body h3 span { color: #d4d4d4; }
+body h3 strong { font-weight: normal; color: #d4d4d4; }
 
 #upper_pagewrapper { z-index: 0; width: 100%; height: 566px; background-image: url(../images/system/bg/front/header.jpg); }
 #upper_pagewrapper #header { height: 84px; width: 1020px; background-image: url(../images/system/bg/front/header.jpg); margin: 0px auto; }
@@ -30,34 +33,61 @@ body a:hover { color: yellow; }
 #lower_pagewrapper #content_top { background: url(../images/system/bg/front/content_top.jpg); height: 20px; background-repeat: repeat-x; position: absolute; margin-top: 0; width: 100%; z-index: 0; }
 #lower_pagewrapper #content_bottom { background: url(../images/system/bg/front/content_bottom.jpg); height: 63px; background-repeat: repeat-x; position: relative; width: 100%; z-index: 3; }
 #lower_pagewrapper #content { margin: 0px auto; padding: 25px; background: transparent; color: black; width: 970px; font-family: "Georgia"; min-height: 280px; position: relative; z-index: 4; margin-bottom: -63px; }
+#lower_pagewrapper #content #main.properties { width: 442px; background: url(../images/system/bg/front/main_properties.jpg); }
+#lower_pagewrapper #content #main.properties .top { background-image: url(../images/system/bg/front/main_properties_top.jpg); margin-top: 0; width: 442px; position: relative; height: 15px; float: left; }
+#lower_pagewrapper #content #main.properties .bottom { background-image: url(../images/system/bg/front/main_properties_bottom.jpg); margin-top: 33px; width: 442px; position: relative; height: 15px; float: left; }
 #lower_pagewrapper #content #main { width: 463px; background: url(../images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px; }
+#lower_pagewrapper #content #main h3 { margin: 13px 0 0 24px; }
 #lower_pagewrapper #content #main #main_top { background-image: url(../images/system/bg/front/main_top.jpg); margin-top: 0; }
-#lower_pagewrapper #content #main #main_bottom { background-image: url(../images/system/bg/front/main_bottom.jpg); margin-top: 33px; }
+#lower_pagewrapper #content #main #main_bottom { background-image: url(../images/system/bg/front/main_bottom.jpg); float: left; }
 #lower_pagewrapper #content #main .main_border { height: 8px; width: 463px; position: relative; }
+#lower_pagewrapper #content #main .properties { width: 440px; }
 #lower_pagewrapper #content #main p { margin: 5px 35px; font-style: italic; font-family: "Georgia"; }
 #lower_pagewrapper #content #main ul { margin: 5px 30px; }
 #lower_pagewrapper #content #main table { margin: 25px; }
 #lower_pagewrapper #content #main a { float: right; margin-bottom: 0px; margin-right: 50px; color: red; }
 #lower_pagewrapper #content #main div.toggle { overflow: hidden; }
-#lower_pagewrapper #content #searchbox { height: 245px; width: 266px; background-color: transparent; float: left; margin-left: 20px; }
-#lower_pagewrapper #content #searchbox #bottom_b { position: absolute; height: 2px; width: 266px; background-image: url(../images/system/form/home_separator.jpg); margin-top: 216px; }
-#lower_pagewrapper #content #searchbox h3 { text-transform: capitalize; color: #e13939; font-family: "Georgia"; font-variant: small-caps; }
-#lower_pagewrapper #content #searchbox h3 span { color: #d4d4d4; }
-#lower_pagewrapper #content #searchbox h3 strong { font-weight: normal; color: #d4d4d4; }
-#lower_pagewrapper #content #searchbox form { font-family: "Georgia"; }
-#lower_pagewrapper #content #searchbox form#QuickQuery p { margin-bottom: 0px; }
-#lower_pagewrapper #content #searchbox form#QuickQuery p input#QuickQuery { padding: 6px 0 0 6px; border: 0px; width: 223px; height: 21px; background-image: url(../images/system/form/search_input.jpg); background-repeat: no-repeat; float: left; padding-right: 0px; line-height: 25px; }
-#lower_pagewrapper #content #searchbox form#Selectable div { float: right; margin-top: 10px; }
-#lower_pagewrapper #content #searchbox form#Selectable div p { margin: 0px; padding: 0px; height: 30px; width: 198px; }
-#lower_pagewrapper #content #searchbox form#Selectable div p input.formularios { padding: 6px 0 0 6px; border: 0px; width: 168px; height: 20px; background-image: url(../images/system/form/dropdown.jpg); background-repeat: no-repeat; font-family: "Georgia"; }
-#lower_pagewrapper #content #searchbox form#Selectable div p input.onfocus { background-image: url(../images/system/form/dropdown.jpg); }
-#lower_pagewrapper #content #searchbox form#Selectable div.titles { margin-top: 22px; color: #838383; }
-#lower_pagewrapper #content #searchbox form#Selectable div.titles p { width: 68px; font-size: 80%; font-variant: small-caps; }
+#lower_pagewrapper #content #right-column { width: 304px; float: left; margin-left: 20px; }
+#lower_pagewrapper #content #right-column .top { width: 304px; height: 15px; background: url(../images/system/bg/front/right_tool_top.jpg); }
+#lower_pagewrapper #content #right-column .bottom { width: 304px; height: 15px; background: url(../images/system/bg/front/right_tool_bottom.jpg); position: relative; float: left; }
+#lower_pagewrapper #content #right-column h3 { margin-left: 23px; }
+#lower_pagewrapper #content #right-column #searchbox.advanced { height: 100%; width: 304px; background: url(../images/system/bg/front/right_tool.jpg); background-repeat: repeat-y; }
+#lower_pagewrapper #content #right-column #searchbox.advanced div { float: left; }
+#lower_pagewrapper #content #right-column #faq { height: 157px; background: url(../images/system/bg/front/right_tool.jpg); background-repeat: repeat-y; float: left; margin-top: 15px; }
+#lower_pagewrapper #content #right-column #faq #faq_block { height: 109px; width: 269px; }
+#lower_pagewrapper #content #right-column #faq #faq_block p { font-style: italic; font-family: "Georgia"; font-size: 12px; }
+#lower_pagewrapper #content #right-column #extra { width: 174px; background: url(../images/system/bg/front/right_small1.jpg); float: left; margin-top: 15px; }
+#lower_pagewrapper #content #right-column #extra img { margin: 12px 0 0 24px; }
+#lower_pagewrapper #content #right-column #extra .top { width: 174px; height: 15px; background: url(../images/system/bg/front/right_small1_top.jpg); }
+#lower_pagewrapper #content #right-column #extra .bottom { width: 174px; height: 15px; background: url(../images/system/bg/front/right_small1_bottom.jpg); position: relative; float: left; }
+#lower_pagewrapper #content #right-column #small { width: 117px; height: 161px; float: left; background: url(../images/system/bg/front/right_small2.jpg); margin: 15px 0 0 13px; }
+#lower_pagewrapper #content #right-column #small h3 { margin: 14px 0 0 13px; }
+#lower_pagewrapper #content #right-column #searchbox { height: 245px; width: 266px; background-color: transparent; float: left; }
+#lower_pagewrapper #content #right-column #searchbox #bottom_b { position: absolute; height: 2px; width: 266px; background-image: url(../images/system/form/home_separator.jpg); margin-top: 216px; }
+#lower_pagewrapper #content #right-column #searchbox form { font-family: "Georgia"; }
+#lower_pagewrapper #content #right-column #searchbox form#QuickQuery p { margin-bottom: 0px; }
+#lower_pagewrapper #content #right-column #searchbox form#QuickQuery p input#QuickQuery { padding: 6px 0 0 6px; border: 0px; width: 223px; height: 21px; background-image: url(../images/system/form/search_input.jpg); background-repeat: no-repeat; float: left; padding-right: 0px; line-height: 25px; }
+#lower_pagewrapper #content #right-column #searchbox form#QuickQuery p.advanced { margin-left: 24px; }
+#lower_pagewrapper #content #right-column #searchbox form#Selectable div { float: right; margin-top: 10px; }
+#lower_pagewrapper #content #right-column #searchbox form#Selectable div p { margin: 0px; padding: 0px; height: 30px; width: 198px; }
+#lower_pagewrapper #content #right-column #searchbox form#Selectable div p input.formularios { padding: 6px 0 0 6px; border: 0px; width: 168px; height: 20px; background-image: url(../images/system/form/dropdown.jpg); background-repeat: no-repeat; font-family: "Georgia"; }
+#lower_pagewrapper #content #right-column #searchbox form#Selectable div p input.onfocus { background-image: url(../images/system/form/dropdown.jpg); }
+#lower_pagewrapper #content #right-column #searchbox form#Selectable div p input.text_input { padding: 6px 0 0 6px; border: 0px; width: 192px; height: 20px; margin-top: 6px; background-image: url(../images/system/form/advanced_search_input.jpg); background-repeat: no-repeat; float: left; padding-right: 0px; line-height: 25px; }
+#lower_pagewrapper #content #right-column #searchbox form#Selectable div.titles { margin-top: 22px; color: #838383; }
+#lower_pagewrapper #content #right-column #searchbox form#Selectable div.titles p { width: 68px; font-size: 80%; font-variant: small-caps; }
 #lower_pagewrapper #content #page_header { width: 500px; float: left; }
 #lower_pagewrapper #content #sellyourproperty { width: 170px; float: left; margin-top: 15px auto; }
 #lower_pagewrapper #content ul#gallerylinks { height: 230px; width: 130px; }
 #lower_pagewrapper #content ul#gallerylinks li { float: left; height: 62px; }
-#lower_pagewrapper #content #side-nav { width: 150px; height: 230px; float: left; background-color: transparent; margin-right: 25px; }
+#lower_pagewrapper #content #side-nav { width: 162px; float: left; background-color: transparent; margin-right: 25px; }
+#lower_pagewrapper #content #side-nav .left_tool { width: 162px; height: 188px; background: url(../images/system/bg/front/left_tool.jpg); margin-top: 15px; }
+#lower_pagewrapper #content #side-nav .left_tool h3 { margin-left: 14px; }
+#lower_pagewrapper #content #side-nav .left_tool .top { width: 162px; height: 15px; background: url(../images/system/bg/front/left_tool_top.jpg); }
+#lower_pagewrapper #content #side-nav .left_tool .bottom { width: 162px; height: 15px; background: url(../images/system/bg/front/left_tool_bottom.jpg); margin-top: 5px; }
+#lower_pagewrapper #content #side-nav .left_tool ul { width: 162px; height: 123px; margin: 12px 0 0 0px; padding: 0px; }
+#lower_pagewrapper #content #side-nav .left_tool ul li { height: 41px; margin-left: 14px; }
+#lower_pagewrapper #content #side-nav .left_tool ul li img { float: left; }
+#lower_pagewrapper #content #side-nav .left_tool ul li span { float: left; font-size: 12px; font-style: italic; width: 100px; margin: 2px 0 0 13px; color: #818181; }
 #lower_pagewrapper #content #side-nav #keep_discovering { width: 150px; height: 80px; background-image: url(../images/system/bg/front/keepdiscovering.jpg); }
 #lower_pagewrapper #content #side-nav #polaroid { width: 310px; height: 100px; margin-left: -169px; }
 #lower_pagewrapper #content #side-nav ul { padding-left: 5px; width: 120px; float: none; }

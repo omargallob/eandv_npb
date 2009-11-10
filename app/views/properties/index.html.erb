@@ -1,27 +1,32 @@
 <div id="side-nav">
 	<%= render :partial => "shared/home_sidenav" %>
+	<%= render :partial => "shared/tool_set" %>
 </div>
 
 
 <div id="main">
-	<div id="main_top" class="main_border">	</div>
-	<div id="main_bottom" class="main_border">	</div>
-	<h1><%= @page.title %> (total: <%= @properties.size %>)</h1>
+	<div class="top">	</div>
+	<h3><%= @page.title %></h3>
 	<%= @page.body %>
+	<div class="bottom">	</div>
 </div>
 
-<div id="searchbox">
-	<%= render :partial => "shared/quicksearchbox" %>
-</div>
 
-<div id="faq">
+<div id="right-column">
+	<div id="searchbox" class="advanced">
+		<div class="top"></div>
+			<div><%= render :partial => "shared/advancedsearchbox" %></div>
+		<div class='bottom'></div>
+	</div>
 	
+	<%= render :partial => "shared/properties_right" %>
 </div>
+
 <% content_for :script do %>
 <script type="text/javascript">
 $(document).ready(function() {
   	 
-	/*$('#main').jScrollPane({scrollbarWidth:17,showArrows:true});*/
+	/*$('#faq_block').jScrollPane({scrollbarWidth:17,showArrows:true});*/
 	<% if @subpages.empty? %>
 	    /*jQuery('#gallerylinks').jcarousel({
 	        vertical: true,
@@ -41,7 +46,9 @@ $(document).ready(function() {
 	$('#content').css("height","100%"); 
 	$("#main_bottom").appendTo($("#main"))
 	$('.droppies').combobox(); 
-	
+	$('#main').addClass('properties');
+	$('.main_border').addClass('properties');
+	$('#faq_block').jScrollPane({scrollbarWidth:17,showArrows:true});
 	set_nav_pointer("properties");
 });
 </script>
