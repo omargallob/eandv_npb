@@ -39,7 +39,8 @@ body a:hover { color: yellow; }
 #lower_pagewrapper #content #main table { margin: 25px; }
 #lower_pagewrapper #content #main a { float: right; margin-bottom: 0px; margin-right: 50px; color: red; }
 #lower_pagewrapper #content #main div.toggle { overflow: hidden; }
-#lower_pagewrapper #content #searchbox { height: 245px; width: 275px; background-color: transparent; float: left; margin-left: 20px; #border-bottom: 1px solid #bdbdbd; }
+#lower_pagewrapper #content #searchbox { height: 245px; width: 266px; background-color: transparent; float: left; margin-left: 20px; }
+#lower_pagewrapper #content #searchbox #bottom_b { position: absolute; height: 2px; width: 266px; background-image: url(../images/system/form/home_separator.jpg); margin-top: 216px; }
 #lower_pagewrapper #content #searchbox h3 { text-transform: capitalize; color: #e13939; font-family: "Georgia"; font-variant: small-caps; }
 #lower_pagewrapper #content #searchbox h3 span { color: #d4d4d4; }
 #lower_pagewrapper #content #searchbox h3 strong { font-weight: normal; color: #d4d4d4; }
@@ -51,7 +52,7 @@ body a:hover { color: yellow; }
 #lower_pagewrapper #content #searchbox form#Selectable div p input.formularios { padding: 6px 0 0 6px; border: 0px; width: 168px; height: 20px; background-image: url(../images/system/form/dropdown.jpg); background-repeat: no-repeat; font-family: "Georgia"; }
 #lower_pagewrapper #content #searchbox form#Selectable div p input.onfocus { background-image: url(../images/system/form/dropdown.jpg); }
 #lower_pagewrapper #content #searchbox form#Selectable div.titles { margin-top: 22px; color: #838383; }
-#lower_pagewrapper #content #searchbox form#Selectable div.titles p { width: 77px; font-size: 80%; font-variant: small-caps; }
+#lower_pagewrapper #content #searchbox form#Selectable div.titles p { width: 68px; font-size: 80%; font-variant: small-caps; }
 #lower_pagewrapper #content #page_header { width: 500px; float: left; }
 #lower_pagewrapper #content #sellyourproperty { width: 170px; float: left; margin-top: 15px auto; }
 #lower_pagewrapper #content ul#gallerylinks { height: 230px; width: 130px; }

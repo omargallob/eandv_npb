@@ -4796,3 +4796,368 @@ Rendered shared/_front_menu (4.1ms)
   [4;36;1mPageFeaturedPhoto Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `page_featured_photos`[0m
 Rendered shared/admin/images/_featured_photo (5.8ms)
 Completed in 1153ms (View: 62, DB: 1063) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2009-11-10 17:39:51) [GET]
+  Parameters: {"name"=>"home"}
+  [4;35;1mPage Load (0.7ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mPage Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` = 'home') LIMIT 1[0m
+  [4;36;1mMetatag Load (0.3ms)[0m   [0;1mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 1) LIMIT 1[0m
+  [4;35;1mMetatag Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `metatags`[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 1) [0m
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/_home_sidenav (3.2ms)
+Rendered shared/_quicksearchbox (0.1ms)
+Rendered shared/_user_bar (4.6ms)
+Rendered shared/_front_menu (4.3ms)
+  [4;35;1mPageFeaturedPhoto Load (0.4ms)[0m   [0mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;36;1mPageFeaturedPhoto Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `page_featured_photos`[0m
+Rendered shared/admin/images/_featured_photo (6.0ms)
+Completed in 95ms (View: 64, DB: 11) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-10 17:40:49) [GET]
+  [4;35;1mPage Load (0.8ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mProperty Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mLocation Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mProperty Load Including Associations (3.7ms)[0m   [0;1mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;35;1mPage Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;35;1mSQL (1.5ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.7ms)
+Rendered shared/_home_sidenav (5.7ms)
+Rendered shared/_quicksearchbox (0.1ms)
+Rendered shared/_user_bar (4.5ms)
+Rendered shared/_front_menu (4.5ms)
+Completed in 173ms (View: 36, DB: 14) | 200 OK [http://localhost/properties]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (4.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2009-11-10 17:48:24) [GET]
+  Parameters: {"name"=>"home"}
+  [4;36;1mPage Load (1.2ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mPage Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'home') LIMIT 1[0m
+  [4;35;1mMetatag Load (0.3ms)[0m   [0mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 1) LIMIT 1[0m
+  [4;36;1mMetatag Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `metatags`[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 1) [0m
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/_home_sidenav (3.2ms)
+Rendered shared/_quicksearchbox (0.2ms)
+Rendered shared/_user_bar (5.9ms)
+Rendered shared/_front_menu (4.7ms)
+  [4;36;1mPageFeaturedPhoto Load (0.5ms)[0m   [0;1mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;35;1mPageFeaturedPhoto Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `page_featured_photos`[0m
+Rendered shared/admin/images/_featured_photo (6.9ms)
+Completed in 179ms (View: 148, DB: 15) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2009-11-10 17:57:07) [GET]
+  Parameters: {"name"=>"home"}
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mPage Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'home') LIMIT 1[0m
+  [4;35;1mMetatag Load (0.3ms)[0m   [0mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 1) LIMIT 1[0m
+  [4;36;1mMetatag Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `metatags`[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 1) [0m
+Rendered shared/_polaroid (0.6ms)
+Rendered shared/_home_sidenav (3.9ms)
+Rendered shared/_quicksearchbox (2.8ms)
+Rendered shared/_user_bar (4.4ms)
+Rendered shared/_front_menu (5.1ms)
+  [4;36;1mPageFeaturedPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;35;1mPageFeaturedPhoto Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `page_featured_photos`[0m
+Rendered shared/admin/images/_featured_photo (6.0ms)
+Completed in 197ms (View: 170, DB: 9) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2009-11-10 17:57:21) [GET]
+  Parameters: {"name"=>"home"}
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mPage Columns (4.1ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'home') LIMIT 1[0m
+  [4;35;1mMetatag Load (0.3ms)[0m   [0mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 1) LIMIT 1[0m
+  [4;36;1mMetatag Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `metatags`[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 1) [0m
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/_home_sidenav (3.2ms)
+Rendered shared/_quicksearchbox (0.1ms)
+Rendered shared/_user_bar (4.1ms)
+Rendered shared/_front_menu (4.1ms)
+  [4;36;1mPageFeaturedPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;35;1mPageFeaturedPhoto Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `page_featured_photos`[0m
+Rendered shared/admin/images/_featured_photo (5.9ms)
+Completed in 100ms (View: 63, DB: 11) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2009-11-10 18:08:14) [GET]
+  Parameters: {"name"=>"home"}
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mPage Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'home') LIMIT 1[0m
+  [4;35;1mMetatag Load (1.0ms)[0m   [0mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 1) LIMIT 1[0m
+  [4;36;1mMetatag Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `metatags`[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 1) [0m
+Rendered shared/_polaroid (0.6ms)
+Rendered shared/_home_sidenav (3.6ms)
+Rendered shared/_quicksearchbox (3.0ms)
+Rendered shared/_user_bar (4.4ms)
+Rendered shared/_front_menu (4.4ms)
+  [4;36;1mPageFeaturedPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;35;1mPageFeaturedPhoto Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `page_featured_photos`[0m
+Rendered shared/admin/images/_featured_photo (6.3ms)
+Completed in 104ms (View: 71, DB: 10) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2009-11-10 18:08:25) [GET]
+  Parameters: {"name"=>"home"}
+  [4;36;1mPage Load (0.7ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mPage Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'home') LIMIT 1[0m
+  [4;35;1mMetatag Load (0.3ms)[0m   [0mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 1) LIMIT 1[0m
+  [4;36;1mMetatag Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `metatags`[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 1) [0m
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/_home_sidenav (3.4ms)
+Rendered shared/_quicksearchbox (0.1ms)
+Rendered shared/_user_bar (4.1ms)
+Rendered shared/_front_menu (4.0ms)
+  [4;36;1mPageFeaturedPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;35;1mPageFeaturedPhoto Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `page_featured_photos`[0m
+Rendered shared/admin/images/_featured_photo (5.8ms)
+Completed in 92ms (View: 62, DB: 11) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2009-11-10 18:08:37) [GET]
+  Parameters: {"name"=>"home"}
+  [4;36;1mPage Load (0.7ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mPage Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'home') LIMIT 1[0m
+  [4;35;1mMetatag Load (0.4ms)[0m   [0mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 1) LIMIT 1[0m
+  [4;36;1mMetatag Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `metatags`[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 1) [0m
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/_home_sidenav (3.4ms)
+Rendered shared/_quicksearchbox (0.1ms)
+Rendered shared/_user_bar (4.4ms)
+Rendered shared/_front_menu (5.9ms)
+  [4;36;1mPageFeaturedPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;35;1mPageFeaturedPhoto Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `page_featured_photos`[0m
+Rendered shared/admin/images/_featured_photo (6.8ms)
+Completed in 94ms (View: 63, DB: 10) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2009-11-10 18:10:55) [GET]
+  Parameters: {"name"=>"home"}
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mPage Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'home') LIMIT 1[0m
+  [4;35;1mMetatag Load (0.4ms)[0m   [0mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 1) LIMIT 1[0m
+  [4;36;1mMetatag Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `metatags`[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 1) [0m
+Rendered shared/_polaroid (0.6ms)
+Rendered shared/_home_sidenav (3.6ms)
+Rendered shared/_quicksearchbox (3.1ms)
+Rendered shared/_user_bar (4.4ms)
+Rendered shared/_front_menu (4.3ms)
+  [4;36;1mPageFeaturedPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;35;1mPageFeaturedPhoto Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `page_featured_photos`[0m
+Rendered shared/admin/images/_featured_photo (5.9ms)
+Completed in 106ms (View: 73, DB: 10) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2009-11-10 18:14:24) [GET]
+  Parameters: {"name"=>"home"}
+  [4;36;1mPage Load (3.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mPage Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.7ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'home') LIMIT 1[0m
+  [4;35;1mMetatag Load (0.9ms)[0m   [0mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 1) LIMIT 1[0m
+  [4;36;1mMetatag Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `metatags`[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 1) [0m
+Rendered shared/_polaroid (0.6ms)
+Rendered shared/_home_sidenav (4.1ms)
+Rendered shared/_quicksearchbox (0.3ms)
+Rendered shared/_user_bar (4.1ms)
+Rendered shared/_front_menu (4.0ms)
+  [4;36;1mPageFeaturedPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;35;1mPageFeaturedPhoto Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `page_featured_photos`[0m
+Rendered shared/admin/images/_featured_photo (5.9ms)
+Completed in 98ms (View: 63, DB: 13) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2009-11-10 18:15:10) [GET]
+  Parameters: {"name"=>"home"}
+  [4;36;1mPage Load (0.9ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mPage Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'home') LIMIT 1[0m
+  [4;35;1mMetatag Load (0.4ms)[0m   [0mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 1) LIMIT 1[0m
+  [4;36;1mMetatag Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `metatags`[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 1) [0m
+Rendered shared/_polaroid (0.7ms)
+Rendered shared/_home_sidenav (3.7ms)
+Rendered shared/_quicksearchbox (0.5ms)
+Rendered shared/_user_bar (4.2ms)
+Rendered shared/_front_menu (4.3ms)
+  [4;36;1mPageFeaturedPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;35;1mPageFeaturedPhoto Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `page_featured_photos`[0m
+Rendered shared/admin/images/_featured_photo (6.0ms)
+Completed in 95ms (View: 65, DB: 9) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2009-11-10 18:15:33) [GET]
+  Parameters: {"name"=>"home"}
+  [4;36;1mPage Load (0.7ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mPage Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'home') LIMIT 1[0m
+  [4;35;1mMetatag Load (0.4ms)[0m   [0mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 1) LIMIT 1[0m
+  [4;36;1mMetatag Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `metatags`[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 1) [0m
+Rendered shared/_polaroid (0.7ms)
+Rendered shared/_home_sidenav (3.6ms)
+Rendered shared/_quicksearchbox (0.1ms)
+Rendered shared/_user_bar (6.9ms)
+Rendered shared/_front_menu (4.9ms)
+  [4;36;1mPageFeaturedPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;35;1mPageFeaturedPhoto Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `page_featured_photos`[0m
+Rendered shared/admin/images/_featured_photo (6.0ms)
+Completed in 187ms (View: 68, DB: 10) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2009-11-10 18:16:13) [GET]
+  Parameters: {"name"=>"home"}
+  [4;36;1mPage Load (1.2ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mPage Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (1.3ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'home') LIMIT 1[0m
+  [4;35;1mMetatag Load (0.3ms)[0m   [0mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 1) LIMIT 1[0m
+  [4;36;1mMetatag Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `metatags`[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 1) [0m
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/_home_sidenav (3.2ms)
+Rendered shared/_quicksearchbox (0.1ms)
+Rendered shared/_user_bar (4.6ms)
+Rendered shared/_front_menu (4.3ms)
+  [4;36;1mPageFeaturedPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;35;1mPageFeaturedPhoto Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `page_featured_photos`[0m
+Rendered shared/admin/images/_featured_photo (5.8ms)
+Completed in 99ms (View: 66, DB: 10) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2009-11-10 18:16:31) [GET]
+  Parameters: {"name"=>"home"}
+  [4;36;1mPage Load (0.7ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mPage Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'home') LIMIT 1[0m
+  [4;35;1mMetatag Load (0.4ms)[0m   [0mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 1) LIMIT 1[0m
+  [4;36;1mMetatag Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `metatags`[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 1) [0m
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/_home_sidenav (3.4ms)
+Rendered shared/_quicksearchbox (2.9ms)
+Rendered shared/_user_bar (4.2ms)
+Rendered shared/_front_menu (4.7ms)
+  [4;36;1mPageFeaturedPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;35;1mPageFeaturedPhoto Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `page_featured_photos`[0m
+Rendered shared/admin/images/_featured_photo (5.8ms)
+Completed in 102ms (View: 71, DB: 10) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2009-11-10 18:16:58) [GET]
+  Parameters: {"name"=>"home"}
+  [4;36;1mPage Load (0.7ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mPage Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'home') LIMIT 1[0m
+  [4;35;1mMetatag Load (0.4ms)[0m   [0mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 1) LIMIT 1[0m
+  [4;36;1mMetatag Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `metatags`[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 1) [0m
+Rendered shared/_polaroid (88.4ms)
+Rendered shared/_home_sidenav (92.1ms)
+Rendered shared/_quicksearchbox (3.1ms)
+Rendered shared/_user_bar (4.3ms)
+Rendered shared/_front_menu (4.5ms)
+  [4;36;1mPageFeaturedPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;35;1mPageFeaturedPhoto Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `page_featured_photos`[0m
+Rendered shared/admin/images/_featured_photo (7.5ms)
+Completed in 193ms (View: 163, DB: 9) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2009-11-10 18:17:13) [GET]
+  Parameters: {"name"=>"home"}
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mPage Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.6ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'home') LIMIT 1[0m
+  [4;35;1mMetatag Load (1.9ms)[0m   [0mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 1) LIMIT 1[0m
+  [4;36;1mMetatag Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `metatags`[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 1) [0m
+Rendered shared/_polaroid (0.7ms)
+Rendered shared/_home_sidenav (6.2ms)
+Rendered shared/_quicksearchbox (3.2ms)
+Rendered shared/_user_bar (4.2ms)
+Rendered shared/_front_menu (4.6ms)
+  [4;36;1mPageFeaturedPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;35;1mPageFeaturedPhoto Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `page_featured_photos`[0m
+Rendered shared/admin/images/_featured_photo (6.4ms)
+Completed in 105ms (View: 72, DB: 13) | 200 OK [http://localhost/]
