@@ -1,0 +1,167 @@
+html, body {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline}
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, acronym, address, code, del, dfn, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline}
+blockquote, q {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; quotes: "" ""}
+blockquote:before, q:before, blockquote:after, q:after {content: ""}
+th, td, caption {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; text-align: left; font-weight: normal; vertical-align: middle}
+table {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; border-collapse: separate; border-spacing: 0; vertical-align: middle}
+a img {border: none}
+body.bp {line-height: 1.5; font-family: Helvetica Neue, Arial, Helvetica, sans-serif; color: #333333; font-size: 75%}
+body.bp h1 {font-weight: normal; color: #222222; font-size: 3em; line-height: 1; margin-bottom: 0.5em}
+body.bp h1 img {margin: 0}
+body.bp h2 {font-weight: normal; color: #222222; font-size: 2em; margin-bottom: 0.75em}
+body.bp h3 {font-weight: normal; color: #222222; font-size: 1.5em; line-height: 1; margin-bottom: 1em}
+body.bp h4 {font-weight: normal; color: #222222; font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em}
+body.bp h5 {font-weight: normal; color: #222222; font-size: 1em; font-weight: bold; margin-bottom: 1.5em}
+body.bp h6 {font-weight: normal; color: #222222; font-size: 1em; font-weight: bold}
+body.bp h2 img, body.bp h3 img, body.bp h4 img, body.bp h5 img, body.bp h6 img {margin: 0}
+body.bp p {margin: 0 0 1.5em}
+body.bp p img.left {display: inline; float: left; margin: 1.5em 1.5em 1.5em 0; padding: 0}
+body.bp p img.right {display: inline; float: right; margin: 1.5em 0 1.5em 1.5em; padding: 0}
+body.bp a {text-decoration: underline; color: #000099}
+body.bp a:visited {color: #000066}
+body.bp a:focus {color: black}
+body.bp a:hover {color: black}
+body.bp a:active {color: #cc0099}
+body.bp blockquote {margin: 1.5em; color: #666; font-style: italic}
+body.bp strong {font-weight: bold}
+body.bp em {font-style: italic}
+body.bp dfn {font-style: italic; font-weight: bold}
+body.bp sup, body.bp sub {line-height: 0}
+body.bp abbr, body.bp acronym {border-bottom: 1px dotted #666}
+body.bp address {margin: 0 0 1.5em; font-style: italic}
+body.bp del {color: #666}
+body.bp pre {margin: 1.5em 0; white-space: pre}
+body.bp pre, body.bp code, body.bp tt {font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5}
+body.bp li ul, body.bp li ol {margin: 0 1.5em}
+body.bp ul {margin: 0 1.5em 1.5em 1.5em; list-style-type: disc}
+body.bp ol {margin: 0 1.5em 1.5em 1.5em; list-style-type: decimal}
+body.bp dl {margin: 0 0 1.5em 0}
+body.bp dl dt {font-weight: bold}
+body.bp dd {margin-left: 1.5em}
+body.bp table {margin-bottom: 1.4em; width: 100%}
+body.bp th {font-weight: bold}
+body.bp thead th {background: #c3d9ff}
+body.bp th, body.bp td, body.bp caption {padding: 4px 10px 4px 5px}
+body.bp tr.even td {background: #e5ecf9}
+body.bp tfoot {font-style: italic}
+body.bp caption {background: #eee}
+body.bp .quiet {color: #666666}
+body.bp .loud {color: #111111}
+body.bp .box {padding: 1.5em; margin-bottom: 1.5em; background: #E5ECF9}
+body.bp div.border {padding-right: 4px; margin-right: 5px; border-right: 1px solid #eeeeee}
+body.bp div.colborder {padding-right: 24px; margin-right: 25px; border-right: 1px solid #eeeeee}
+body.bp hr {background: #dddddd; color: #dddddd; clear: both; float: none; width: 100%; height: .1em; margin: 0 0 1.45em; border: none}
+body.bp hr.space {background: #dddddd; color: #dddddd; clear: both; float: none; width: 100%; height: .1em; margin: 0 0 1.45em; border: none; background: #fff; color: #fff}
+body.bp .clear {clear: both}
+body.bp .nowrap {white-space: nowrap}
+body.bp .clearfix {overflow: hidden; display: inline-block}
+body.bp .clearfix {display: block}
+body.bp .small {font-size: .8em; margin-bottom: 1.875em; line-height: 1.875em}
+body.bp .large {font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em}
+body.bp .first {margin-left: 0; padding-left: 0}
+body.bp .last {margin-right: 0; padding-right: 0}
+body.bp .top {margin-top: 0; padding-top: 0}
+body.bp .bottom {margin-bottom: 0; padding-bottom: 0}
+body.bp .showgrid {background: url('/images/grid.png?1255711936')}
+body.bp .error {padding: .8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4}
+body.bp .error a {color: #8a1f11}
+body.bp .notice {padding: .8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #fff6bf; color: #514721; border-color: #ffd324}
+body.bp .notice a {color: #514721}
+body.bp .success {padding: .8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #e6efc2; color: #264409; border-color: #c6d880}
+body.bp .success a {color: #264409}
+body.bp .hide {display: none}
+body.bp .highlight {background: yellow}
+body.bp .added {background: #006600; color: white}
+body.bp .removed {background: #990000; color: white}
+form.bp label {font-weight: bold}
+form.bp fieldset {padding: 1.4em; margin: 0 0 1.5em 0}
+form.bp legend {font-weight: bold; font-size: 1.2em}
+form.bp input.text, form.bp input.title, form.bp input[type=text] {margin: 0.5em 0; background-color: #fff; padding: 5px}
+form.bp input.title {font-size: 1.5em}
+form.bp input[type=checkbox], form.bp input.checkbox, form.bp input[type=radio], form.bp input.radio {position: relative; top: 0.25em}
+form.bp textarea {margin: 0.5em 0; padding: 5px}
+form.bp select {margin: 0.5em 0}
+form.bp fieldset {border: 1px solid #cccccc}
+form.bp input.text, form.bp input.title, form.bp textarea, form.bp select {border: 1px solid #bbbbbb}
+form.bp input.text:focus, form.bp input.title:focus, form.bp textarea:focus, form.bp select:focus {border: 1px solid #666666}
+form.bp input.text, form.bp input.title {width: 300px}
+form.bp textarea {width: 390px; height: 250px}
+body.three-col #container {width: 950px; margin: 0 auto; overflow: hidden; display: inline-block}
+body.three-col #container {display: block}
+body.three-col #header, body.three-col #footer {display: inline; float: left; margin-right: 10px; width: 950px}
+* html body.three-col #header, * html body.three-col #footer {overflow-x: hidden}
+body.three-col #sidebar {display: inline; float: left; margin-right: 10px; width: 310px}
+* html body.three-col #sidebar {overflow-x: hidden}
+body.three-col #content {display: inline; float: left; margin-right: 0; width: 630px}
+* html body.three-col #content {overflow-x: hidden}
+body {background: #222222; color: white; overflow: auto; font-family: "Georgia"}
+body a {color: black}
+body a:hover {color: yellow}
+#upper_pagewrapper {width: 100%; height: 566px; background-image: url(../images/system/bg/front/header.jpg)}
+#upper_pagewrapper #header {height: 84px; width: 1020px; background-image: url(../images/system/bg/front/header.jpg); margin: 0px auto}
+#upper_pagewrapper #header #logo {height: 60px; width: 546px}
+#upper_pagewrapper #header #logo a img {margin: 22px 0 0 42px}
+#upper_pagewrapper #header #extra {height: 19px; right: 0px; top: 0px; float: right; margin-top: -55px}
+#upper_pagewrapper #header #extra img {float: left; margin-left: 5px}
+#upper_pagewrapper #navbar {height: 50px; width: 1020px; margin: 0px auto}
+#upper_pagewrapper #navbar ul {margin: 0px auto}
+#upper_pagewrapper #navbar ul li {list-style: none; height: 25px; line-height: 25px; vertical-align: middle; float: left; margin: 17px; font-size: 13px}
+#upper_pagewrapper #navbar ul li a {margin-left: 25px; color: #888888; text-decoration: none; text-transform: uppercase}
+#upper_pagewrapper #navbar ul li a:hover {color: white}
+#upper_pagewrapper #navbar ul li a.active {color: white}
+#upper_pagewrapper #largegallery {width: 100%; height: 433px; background-position: 0 -135px}
+#upper_pagewrapper #holder {width: 961px; margin: 0px auto; height: 359px; padding-top: 24px}
+#upper_pagewrapper #cuber {width: 961px; background: transparent; list-style: none}
+#upper_pagewrapper #listOfImages {background: transparent; height: 359px; margin: 0; padding: 0; width: 961px; position: relative}
+#lower_pagewrapper.large {background: white}
+#lower_pagewrapper {width: 100%; background-image: url(../images/system/bg/front/content_bg.jpg); background-repeat: none}
+#lower_pagewrapper #content.homepage {background-image: url(../images/system/bg/front/content_bg.jpg)}
+#lower_pagewrapper #content.homepage #main {width: 463px}
+#lower_pagewrapper #content.homepage #main_bottom {margin-top: 33px}
+#lower_pagewrapper #content {margin: 0px auto; padding: 25px; background-repeat: none; color: black; width: 970px; font-family: "Georgia"; min-height: 280px}
+#lower_pagewrapper #content #main {width: 463px; background: url(../images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px}
+#lower_pagewrapper #content #main #main_top {background-image: url(../images/system/bg/front/main_top.jpg); margin-top: 0}
+#lower_pagewrapper #content #main #main_bottom {background-image: url(../images/system/bg/front/main_bottom.jpg); margin-top: 33px}
+#lower_pagewrapper #content #main .main_border {height: 8px; width: 463px; position: relative}
+#lower_pagewrapper #content #main p {margin: 5px 35px; font-style: italic; font-family: "Georgia"}
+#lower_pagewrapper #content #main ul {margin: 5px 30px}
+#lower_pagewrapper #content #main table {margin: 25px}
+#lower_pagewrapper #content #main a {float: right; margin-bottom: 0px; margin-right: 50px; color: red}
+#lower_pagewrapper #content #main div.toggle {overflow: hidden}
+#lower_pagewrapper #content #searchbox {height: 245px; width: 275px; background-color: transparent; float: left; margin-left: 20px; #border-bottom: 1px solid #bdbdbd}
+#lower_pagewrapper #content #searchbox h3 {text-transform: capitalize; color: #e13939; font-family: "Georgia"; font-variant: small-caps}
+#lower_pagewrapper #content #searchbox h3 span {color: #d4d4d4}
+#lower_pagewrapper #content #searchbox h3 strong {font-weight: normal; color: #d4d4d4}
+#lower_pagewrapper #content #searchbox form {font-family: "Georgia"}
+#lower_pagewrapper #content #searchbox form#QuickQuery p {margin-bottom: 0px}
+#lower_pagewrapper #content #searchbox form#QuickQuery p input#QuickQuery {padding: 6px 0 0 6px; border: 0px; width: 223px; height: 21px; background-image: url(../images/system/form/search_input.jpg); background-repeat: no-repeat; float: left; padding-right: 0px; line-height: 25px}
+#lower_pagewrapper #content #searchbox form#Selectable div {float: right; margin-top: 10px}
+#lower_pagewrapper #content #searchbox form#Selectable div p {margin: 0px; padding: 0px; height: 30px; width: 198px}
+#lower_pagewrapper #content #searchbox form#Selectable div p input.formularios {padding: 6px 0 0 6px; border: 0px; width: 168px; height: 20px; background-image: url(../images/system/form/dropdown.jpg); background-repeat: no-repeat; font-family: "Georgia"}
+#lower_pagewrapper #content #searchbox form#Selectable div p input.onfocus {background-image: url(../images/system/form/dropdown.jpg)}
+#lower_pagewrapper #content #searchbox form#Selectable div.titles {margin-top: 22px; color: #838383}
+#lower_pagewrapper #content #searchbox form#Selectable div.titles p {width: 77px; font-size: 80%; font-variant: small-caps}
+#lower_pagewrapper #content #page_header {width: 500px; float: left}
+#lower_pagewrapper #content #sellyourproperty {width: 170px; float: left; margin-top: 15px auto}
+#lower_pagewrapper #content ul#gallerylinks {height: 230px; width: 130px}
+#lower_pagewrapper #content ul#gallerylinks li {float: left; height: 62px}
+#lower_pagewrapper #content #side-nav {width: 150px; height: 230px; float: left; background-color: transparent; margin-right: 25px}
+#lower_pagewrapper #content #side-nav #keep_discovering {width: 150px; height: 80px; background-image: url(../images/system/bg/front/keepdiscovering.jpg)}
+#lower_pagewrapper #content #side-nav #polaroid {width: 310px; height: 100px; margin-left: -169px}
+#lower_pagewrapper #content #side-nav ul {padding-left: 5px; width: 120px; float: none}
+#lower_pagewrapper #content #side-nav ul li {list-style: none}
+#lower_pagewrapper #content #side-nav ul li a {color: black}
+#lower_pagewrapper #content #side-nav ul li a:hover {color: red}
+#lower_pagewrapper #content #side-nav ul li ul.sublevel li {list-style: disc; list-style-position: inside}
+#lower_pagewrapper #content h1 {font-size: 22px; padding: 15px 25px 5px 30px; text-align: left; font-family: "Times New Roman"}
+#lower_pagewrapper #content h2 {font-size: 21px; padding: 5px; text-align: left; font-weight: bold}
+#lower_pagewrapper #content p {margin: 10px 0 10px 0}
+#lower_pagewrapper #content ul {margin-right: 50px}
+#lower_pagewrapper #content #subcontent {width: 720px; float: left; margin-left: 40px}
+#lower_pagewrapper #content #subcontent td {border-bottom: 1px solid black; vertical-align: middle}
+#lower_pagewrapper #content #subcontent td table.nolines td {border: 0px none}
+#lower_pagewrapper #footer {margin: 0px auto; width: 100%; height: 35px; background-image: url(../images/system/bg/front/footer_bg.jpg); z-index: 100}
+#lower_pagewrapper #footer ul#links {width: 1020px; margin: 0px auto; list-style: none}
+#lower_pagewrapper #footer ul#links li {line-height: 35px; font-size: 10px}
+#lower_pagewrapper #footer #logbox {float: right; width: 250px; margin-top: 0px}
+#lower_pagewrapper #footer #logbox div {float: left; margin-left: 15px; background-color: white}

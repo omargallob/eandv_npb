@@ -67,3 +67,77 @@ $(document).ready(function() {
   });
 
 });
+function front_paragraph_chop(){
+  var aux = $("#main p");
+  $(aux[0]).css("font-weight", "bold");		$(aux[0]).css("font-style", "italic");
+  //$("#block0").show();
+  //$("#main p").addClass("toggle");
+  var showText='(read more)';
+  var hideText='(back)';
+
+  for (var i=0; i < aux.length; i++) {
+  	var counter=i+1;
+  	var divisible= counter/2;
+  	var s = divisible +'';
+  	var holder= s.split(".")
+  	if(holder.length==2){
+  		$("#main").append("<div id='block"+i+"' class='toggle'></div>");
+  		$(aux[i]).appendTo("#block"+i);
+  		if((i == aux.length-1)&&(i != 0)){
+  	  	var index = i-1;
+  		  $('#block'+i).append(' <a href="#" class="toggleBack">(back)</a>');
+  		}
+  	}else{
+  		var index = i-1;
+  		$(aux[i]).appendTo("#block"+index);
+  		if(i != aux.length-1){
+  		  $('#block'+index).append('<a href="#" class="toggleLink">'+showText+'</a>');
+  		}
+  	}
+
+  	//alert();
+  	/*$(aux[i]).appendTo()*/
+  };
+  // append show/hide links to the element directly preceding the element with a class of "toggle"
+
+
+  // hide all of the elements with a class of 'toggle'
+  $('.toggle').hide();
+  $("#block0").show();
+  // capture clicks on the toggle links
+  $('a.toggleLink').click(function() {
+
+  	// change the link depending on whether the element is shown or hidden
+  	$(this).html ($(this).html()==hideText ? showText : hideText);
+
+  	// toggle the display - uncomment the next line for a basic "accordion" style
+  	$('.toggle').hide();$('a.toggleLink').html(showText);
+  	$(this).parent().next('.toggle').toggle(400);
+  
+  	// return false so any link destination is not followed
+  	return false;
+
+  });
+  $('a.toggleBack').click(function() {
+
+  	// change the link depending on whether the element is shown or hidden
+  	$(this).html ($(this).html()==hideText ? hideText : hideText);
+
+  	// toggle the display - uncomment the next line for a basic "accordion" style
+  	$('.toggle').hide();
+    $('#block0').toggle('fast');
+
+  	// return false so any link destination is not followed
+  	return false;
+
+    });
+}
+function place_main_bottom(fixed){
+  var main_height= $('#main').height();
+  if (fixed == "false"){
+  	$('#main_bottom').css('margin-top',main_height+16);  
+  }else{
+    $('#main_bottom').css('margin-top',main_height);  
+  }
+ 	
+}

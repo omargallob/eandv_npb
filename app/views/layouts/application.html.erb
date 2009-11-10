@@ -3,10 +3,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<%= stylesheet_link_tag "screen","envnpb_front" %>
-	<%= stylesheet_link_tag  'jquery.jcarousel.css','JScrollPane','ui.combobox.css' %>
+	<%# stylesheet_link_tag "screen","envnpb_front" %>
 	<%= display_meta_tags %>
-	<%= javascript_include_tag :all %>
+	<%= javascript_include_merged :base,:secondary %>
+	<%= stylesheet_link_merged :base, :secondary %>
+	
 	<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 	<!--[if lt IE 8]>
 	      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -31,34 +32,7 @@
 	</style>
 	<![endif]-->
 	<%= yield :script %>
-	<script>
-	 $(document).ready(function() {
-	   	 
- 		/*$('#main').jScrollPane({scrollbarWidth:17,showArrows:true});*/
-		<% if @subpages.empty? %>
-		    /*jQuery('#gallerylinks').jcarousel({
-		        vertical: true,
-		        scroll: 1,
-		        auto: 2,
-		        wrap: 'last',
-		        initCallback: mycarousel_initCallback
-		    });*/
-		<% end %>
-
-		$('.droppies').combobox(); 
-		aux = $("#main p");
-
-		$(aux[0]).css("font-weight", "bold");		$(aux[0]).css("font-style", "italic");
-	  	$(aux[0]).show();
-		$(aux[1]).show();
-	  
-	  
-	
-	
-
-	    
- 	 });
-	</script>
+	<link href="http://www.engelvoelkers.com/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
   </head>
   <body>
 	<div id='upper_pagewrapper'>
@@ -72,8 +46,7 @@
 			<ul>
 				<%= render :partial => "shared/front_menu" %>					
 			</ul>
-	  	</div>
-	
+	  	</div>	
 		<% if controller.controller_name == "viewer" %>
 		<div id="largegallery">
 			<div id="holder">
@@ -86,11 +59,10 @@
 				</div>
 			</div>		
 		</div>
-		<% end %>
-		
+		<% end %>		
  	</div>
 	<div id='lower_pagewrapper'>
-		<div id='content' class="clearfix">
+		<div id='content' class="clearfix <% if params[:name]=="home" %>homepage<% end %>">
 	     		<%= yield %>
 		</div>
 		<div id='footer'>

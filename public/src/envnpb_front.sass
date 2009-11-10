@@ -2,6 +2,7 @@ body
 	background: #222222
 	color: white
 	overflow: auto
+	font-family: "Georgia"
 	a
 		color: black
 	a:hover
@@ -76,34 +77,60 @@ body
 		width: 961px
 		position: relative
 
+
+#lower_pagewrapper.large
+	background: white
+
 #lower_pagewrapper
 	width: 100%
 	background-image: url(../images/system/bg/front/content_bg.jpg)
+	background-repeat: none
+	#content.homepage
+		background-image: url(../images/system/bg/front/content_bg.jpg)
+		#main		
+			width: 463px
+		#main_bottom
+			margin-top: 33px
 	#content	
 		margin: 0px auto 
 		padding: 25px
-		background-image: url(../images/system/bg/front/content_bg.jpg)
-		background: "repeat-y"
+		background-repeat: none
 		color: black
 		width: 970px
-		height: 245px
 		font-family: "Georgia"
+		min-height: 280px
 		#main
-			width: 520px
-			height: 252px
-			background-image: url(../images/system/bg/front/main.jpg)
+			width: 463px
+			background: url(../images/system/bg/front/main_width.jpg)
 			float: left
 			color: #4d4d4d
 			overflow: auto
 			font-size: 14px
+			#main_top
+				background-image: url(../images/system/bg/front/main_top.jpg)
+				margin-top: 0
+			#main_bottom
+				background-image: url(../images/system/bg/front/main_bottom.jpg)
+				margin-top: 33px
+			.main_border
+				height: 8px
+				width: 463px
+				position: relative
 			p
 				margin: 5px 35px
-				display: none
 				font-style: italic
+				font-family: "Georgia"
 			ul
 				margin: 5px 30px
 			table
-				margin: 25px			
+				margin: 25px		
+			a
+				float: right
+				margin-bottom: 0px
+				margin-right: 50px
+				color: red
+			div.toggle
+				overflow: hidden
 		#searchbox
 			height: 245px
 			width: 275px
@@ -179,14 +206,14 @@ body
 				float: left
 				height: 62px		
 		#side-nav
-			width: 130px
+			width: 150px
 			height: 230px
 			float: left
 			background-color: transparent
 			margin-right: 25px
 			#keep_discovering
 				width: 150px
-				height: 87px
+				height: 80px
 				background-image: url(../images/system/bg/front/keepdiscovering.jpg)
 			#polaroid
 				width: 310px

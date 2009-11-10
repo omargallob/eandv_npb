@@ -5,7 +5,37 @@
 </div>
 
 <div id="main">
-	<h1><%= @page.title %> (<%= @categories.size %>)</h1>
-	
+	<div id="main_top" class="main_border">	</div>
+	<div id="main_bottom" class="main_border">	</div>
+	<h1><%= @page.title %> (<%= @categories.size %>)</h1>	
 	<%= @page.body %>
 </div>
+<% content_for :script do %>
+<script type="text/javascript">
+$(document).ready(function() {
+  	 
+
+	/*$("#main").ready(function(){
+		var main_h = $("#main").height();	
+		$('#main_bottom').css('margin-top',main_h);
+		alert(main_h);
+	});*/
+	
+
+	$('.droppies').combobox(); 
+	front_paragraph_chop();
+});
+
+
+</script>
+<% end %>
+<script type="text/javascript">
+$(document).ready(function() {
+  	$('#content').css("height","100%"); 
+	 	$("#main_bottom").appendTo($("#main"))	
+		$("#lower_pagewrapper").addClass('large');
+	
+});
+
+
+</script>

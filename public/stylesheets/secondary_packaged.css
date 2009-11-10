@@ -1,0 +1,50 @@
+#SLB-Wrapper {margin:0.5em 0; margin:auto; font-family:Verdana; text-align: left; position: absolute}
+#SLB-Wrapper #SLB-Background {position: absolute; left:7px; top:7px; float:left}
+#SLB-Wrapper #SLB-Top {background:transparent no-repeat scroll 100% 0; height:28px; margin:0 0 0 18px}
+#SLB-Wrapper #SLB-Top a {float:right; display:inline; padding:0; margin:5px 10px; width:41px; height:16px; text-decoration:none}
+#SLB-Wrapper #SLB-Top a:hover {background-position:0px -16px}
+#SLB-Wrapper #SLB-Top img {float:right; border:0px; margin:6px 10px; width:41px; height:16px}
+#SLB-Wrapper #SLB-Top div {background:transparent no-repeat scroll 0 0; font-size:0; height:28px; left:-18px; line-height:0; position:relative; width:18px}
+#SLB-Wrapper #SLB-Bottom {background:transparent no-repeat scroll 0 43%; height:20px; margin:0 18px 0 0}
+#SLB-Wrapper #SLB-Bottom #SLB-BottomRight {background:transparent no-repeat scroll 100% 43%; font-size:0; height:20px; right:-18px; line-height:0; position:relative; width:100%; float:right}
+#SLB-Wrapper #SLB-Bottom.SLB-bbnav, #SLB-Wrapper #SLB-Bottom.SLB-bbnav #SLB-BottomRight {height:52px}
+#SLB-Wrapper #SLB-Bottom.SLB-bbnav {background-position:0 100%}
+#SLB-Wrapper #SLB-Bottom.SLB-bbnav #SLB-BottomRight {background-position:100% 100%}
+#SLB-Wrapper #SLB-Contenido {border-left: 7px solid #000; border-right: 7px solid #000}
+#SLB-Wrapper #SLB-Bottom #SLB-Navegador {font-size: 11px; color: #fff; height:30px; border-left:0px; border-right:0px; padding:10px 0px; margin:0; line-height:11px; float:left; width:100%}
+#SLB-Wrapper #SLB-Navegador #SLB-Right, #SLB-Wrapper #SLB-Navegador #SLB-Left {display:inline; padding:0; margin:0; width:26px; height:26px; text-decoration:none}
+#SLB-Wrapper #SLB-Navegador #SLB-Right {background-position:26px 0; margin:0 18px 0 10px; float:right}
+#SLB-Wrapper #SLB-Navegador #SLB-Right:hover {background-position:26px -26px}
+#SLB-Wrapper #SLB-Navegador #SLB-Left {background-position:52px 0; margin-right:10px; float:left}
+#SLB-Wrapper #SLB-Navegador #SLB-Left:hover {background-position:52px -26px}
+#SLB-Wrapper #SLB-Navegador strong {display: block; padding-top:5px}
+ img.ui-combobox-arrow {position: relative; vertical-align: text-bottom; top: 5px; height: 27px}
+* html img.ui-combobox-arrow {top: 0px}
+.ui-combobox-list {border: 1px solid black; z-index: 780}
+.ui-combobox-list, .ui-combobox-item {display: block; font-family: "Georgia"; font-size:90%; background-image: url(../images/system/form/dropdown.jpg)}
+.ui-combobox-list .selected {background-color: #eeeeff; border-top: 1px solid blue; border-bottom: 1px solid blue; font-weight: bold}
+ .ui-tabs {padding: .2em; zoom: 1}
+.ui-tabs .ui-tabs-nav {list-style: none; position: relative; padding: .2em .2em 0}
+.ui-tabs .ui-tabs-nav li {position: relative; float: left; border-bottom-width: 0 !important; margin: 0 .2em -1px 0; padding: 0}
+.ui-tabs .ui-tabs-nav li a {float: left; text-decoration: none; padding: .5em 1em; color:red;}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {padding-bottom: 1px; border-bottom-width: 0;text-decoration:underline}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a {cursor: text}
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a {cursor: pointer}
+ .ui-tabs .ui-tabs-panel {padding: 1em 1.4em; display: block; border-width: 0; background: none}
+.ui-tabs .ui-tabs-hide {display: none !important}
+ .jcarousel-container {position: relative}
+.jcarousel-clip {z-index: 2; padding: 0; margin: 0; overflow: hidden; position: relative; height:230px}
+.jcarousel-list {z-index: 1; overflow: hidden; position: relative; top: 0; left: 0; margin: 0; padding: 0}
+.jcarousel-list li, .jcarousel-item {float: left; list-style: none;  width: 75px; height: 75px}
+ .jcarousel-next {z-index: 3; display: none}
+.jcarousel-prev {z-index: 3; display: none}
+.jScrollPaneContainer {overflow:hidden; position:relative; border:1px solid #d3d3d3; z-index:1; float:left}
+.jScrollPaneTrack {-moz-background-clip:border; -moz-background-inline-policy:continuous; -moz-background-origin:padding; background: transparent none repeat scroll 0 0; cursor:pointer; height:100%; position:absolute; right:0; top:0; width:17px; padding:5px}
+.jScrollPaneDrag {-moz-background-clip:border; -moz-background-inline-policy:continuous; -moz-background-origin:padding; background:#ec4147 none repeat scroll 0 0; cursor:pointer; overflow:hidden; position:absolute}
+.jScrollPaneDragTop {left:0; overflow:hidden; position:absolute; top:0}
+.jScrollPaneDragBottom {bottom:0; left:0; overflow:hidden; position:absolute}
+a.jScrollArrowUp {display:block; height:17px; width:17px; overflow:hidden; position:absolute; right:0; text-indent:-2000px; top:0;margin:5px; z-index:1; background-image: url(../images/system/buttons/scrollup.jpg)}
+a.jScrollArrowUp:hover {}
+a.jScrollArrowDown {bottom:0; display:block; height:17px; overflow:hidden; position:absolute; right:0; text-indent:-2000px; z-index:1;margin:5px; background-image: url(../images/system/buttons/scrolldown.jpg)}
+a.jScrollArrowDown:hover {}
+a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {}

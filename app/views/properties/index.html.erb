@@ -1,22 +1,55 @@
 <div id="side-nav">
-
-	<% unless @subpages.empty? %>
-	<ul>
-		<% for page in @subpages %>
-			<li><%= link_to page.navlabel, view_page_path(page.name)%></li>
-		<% end %>
-	</ul>
-	<% end %>
-	<%# image_tag "static/gallery.png", :style => "margin:15px 15px 5px" %>
-
+	<%= render :partial => "shared/home_sidenav" %>
 </div>
 
 
 <div id="main">
+	<div id="main_top" class="main_border">	</div>
+	<div id="main_bottom" class="main_border">	</div>
 	<h1><%= @page.title %> (total: <%= @properties.size %>)</h1>
 	<%= @page.body %>
 </div>
 
 <div id="searchbox">
+	<%= render :partial => "shared/quicksearchbox" %>
 </div>
 
+<div id="faq">
+	
+</div>
+<% content_for :script do %>
+<script type="text/javascript">
+$(document).ready(function() {
+  	 
+	/*$('#main').jScrollPane({scrollbarWidth:17,showArrows:true});*/
+	<% if @subpages.empty? %>
+	    /*jQuery('#gallerylinks').jcarousel({
+	        vertical: true,
+	        scroll: 1,
+	        auto: 2,
+	        wrap: 'last',
+	        initCallback: mycarousel_initCallback
+	    });*/
+	<% end %>
+
+	$('#upper_pagewrapper').css("height","133px"); 
+	$('#lower_pagewrapper').addClass("large"); 
+	$('#content').css("height","100%"); 
+
+	var main_height= $('#main').height();
+	$('#main_bottom').css('margin-top',main_height);
+		$('.droppies').combobox(); 
+
+});
+</script>
+<% end %>
+<script type="text/javascript">
+$(document).ready(function() {
+  	$('#content').css("height","100%"); 
+	 	$("#main_bottom").appendTo($("#main"))	
+	/*place_main_bottom(true);*/
+
+});
+
+
+</script>

@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
 
   
   def setmeta
-    set_meta_tags :site => 'E&V Newport Beach'
+    set_meta_tags :site => 'E&V NPB'
   end 
   
   def get_pages_for_tabs
