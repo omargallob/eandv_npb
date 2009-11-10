@@ -3,13 +3,18 @@ body
 	color: white
 	overflow: auto
 	font-family: "Georgia"
+	z-index: -1
 	a
 		color: black
+		outline: none
+	a:focus
+		-moz-outline-style: none
 	a:hover
 		color: yellow
 
 
 #upper_pagewrapper
+	z-index: 0
 	width: 100%
 	height: 566px
 	background-image: url(../images/system/bg/front/header.jpg)
@@ -56,10 +61,28 @@ body
 					color: white
 				a.active
 					color: white
+				img
+					position: absolute
+					margin-top: 7px
+					margin-left: 3px	
+				img.arrow
+					position: absolute
+					margin-top: 7px
+					margin-left: 0px
+					z-index: 4
+					display: none
+				img.active
+					display: block
 	#largegallery
 		width: 100%
 		height: 433px
 		background-position: 0 -135px
+		#shine
+			height: 22px
+			width: 949px
+			background-image: url(../images/system/bg/front/shine.jpg)
+			margin: 0px auto
+			margin-top: 28px
 	#holder
 		width: 961px
 		margin: 0px auto
@@ -83,22 +106,34 @@ body
 
 #lower_pagewrapper
 	width: 100%
-	background-image: url(../images/system/bg/front/content_bg.jpg)
-	background-repeat: none
-	#content.homepage
-		background-image: url(../images/system/bg/front/content_bg.jpg)
-		#main		
-			width: 463px
-		#main_bottom
-			margin-top: 33px
+	background: white
+	z-index: 0
+	#content_top
+		background: url(../images/system/bg/front/content_top.jpg)
+		height: 20px
+		background-repeat: repeat-x
+		position: absolute
+		margin-top: 0
+		width: 100%
+		z-index: 0
+	#content_bottom
+		background: url(../images/system/bg/front/content_bottom.jpg)
+		height: 63px
+		background-repeat: repeat-x
+		position: relative
+		width: 100%
+		z-index: 3
 	#content	
 		margin: 0px auto 
 		padding: 25px
-		background-repeat: none
+		background: transparent
 		color: black
 		width: 970px
 		font-family: "Georgia"
 		min-height: 280px
+		position: relative
+		z-index: 4
+		margin-bottom: -63px
 		#main
 			width: 463px
 			background: url(../images/system/bg/front/main_width.jpg)
@@ -265,12 +300,25 @@ body
 		background-image: url(../images/system/bg/front/footer_bg.jpg)
 		z-index: 100
 		ul#links
-			width: 1020px
+			width: 1000px
 			margin: 0px auto
 			list-style: none
 			li
 				line-height: 35px
-				font-size: 10px
+				font-size: 11px
+				float: left
+				margin: 0 15px
+				color: #888888
+				span
+					font-size: 14px
+					letter-spacing: 2px
+					margin: 0 60px
+				img
+					margin-top: 7px
+				img.button
+					position: absolute
+					margin-top: 10px
+
 		#logbox
 			float: right
 			width: 250px

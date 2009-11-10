@@ -141,3 +141,12 @@ function place_main_bottom(fixed){
   }
  	
 }
+
+function set_nav_pointer(st){
+  	$('#upper_pagewrapper').css("height","133px"); 
+		$("#nav_"+st+" img").addClass("active");
+		x = $("#nav_"+st).width();
+		y= x/2;
+		$("#nav_"+st+" img").css("margin-left",y-5);
+		$("#nav_"+st+" a").css("color","white");
+}

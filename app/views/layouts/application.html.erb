@@ -32,6 +32,7 @@
 	</style>
 	<![endif]-->
 	<%= yield :script %>
+
 	<link href="http://www.engelvoelkers.com/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
   </head>
   <body>
@@ -47,7 +48,7 @@
 				<%= render :partial => "shared/front_menu" %>					
 			</ul>
 	  	</div>	
-		<% if controller.controller_name == "viewer" %>
+		<% if params[:name] == "home" %>
 		<div id="largegallery">
 			<div id="holder">
 				<div id="cuber">
@@ -57,17 +58,27 @@
 						<% end %>
 					</div>
 				</div>
-			</div>		
+			</div>	
+			<div id="shine"></div>
 		</div>
 		<% end %>		
  	</div>
 	<div id='lower_pagewrapper'>
+		<div id="content_top"></div>
 		<div id='content' class="clearfix <% if params[:name]=="home" %>homepage<% end %>">
-	     		<%= yield %>
+			<%= yield %>
 		</div>
+		<div id="content_bottom"></div>
 		<div id='footer'>
 			<ul id="links">
-				<li>Testing</li>
+				<li><%= image_tag "system/buttons/phone.jpg", :class=>"button" %>&nbsp;&nbsp;&nbsp;&nbsp; +1 949 257 7277</li>
+				<li>Office Locations</li>
+				<li>Sitemap</li>
+				<li><span>www.engelandvoelkers.com</span></li>
+				<li><%= image_tag "system/buttons/chat.png", :class=>"button" %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chat</li>
+				<li>Print</li>				
+				<li>Disclaimer</li>
+				<li><%= image_tag "system/buttons/EandV.jpg"%></li>
 			</ul>
 		</div>
 	</div>

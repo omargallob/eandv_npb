@@ -38,18 +38,11 @@ $(document).ready(function() {
 
 	var main_height= $('#main').height();
 	$('#main_bottom').css('margin-top',main_height);
-		$('.droppies').combobox(); 
-
+	$('#content').css("height","100%"); 
+	$("#main_bottom").appendTo($("#main"))
+	$('.droppies').combobox(); 
+	
+	set_nav_pointer("properties");
 });
 </script>
 <% end %>
-<script type="text/javascript">
-$(document).ready(function() {
-  	$('#content').css("height","100%"); 
-	 	$("#main_bottom").appendTo($("#main"))	
-	/*place_main_bottom(true);*/
-
-});
-
-
-</script>

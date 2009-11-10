@@ -27,7 +27,9 @@ $(document).ready(function() {
 	front_paragraph_chop();
   	$('#content').css("height","100%"); 
 	$("#main_bottom").appendTo($("#main"))	
-
+	<% if params[:name] != "home" %>
+		set_nav_pointer("<%= params[:name] %>");
+	<% end %>
 });
 </script>
 <% end %>
