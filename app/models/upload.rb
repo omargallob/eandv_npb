@@ -2,7 +2,7 @@ class Upload < ActiveRecord::Base
   belongs_to :gallery
   has_attached_file :photo,
                       :styles => {
-                        :thumb => ["120x90", :jpg],
+                        :thumb => ["120x90#", :jpg],
                         :pagesize => ["720x560>", :jpg],
                       },:processors => [:cropper],
                       :url => "/assets/property/gallery/:id/:style/:basename.jpg",

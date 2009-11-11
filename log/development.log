@@ -13466,3 +13466,1318 @@ Rendered shared/_properties_right (0.6ms)
 Rendered shared/_user_bar (0.9ms)
 Rendered shared/_front_menu (4.1ms)
 Completed in 80ms (View: 42, DB: 12) | 200 OK [http://localhost/properties]
+  [4;36;1mSQL (22.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2009-11-11 13:09:50) [GET]
+  Parameters: {"name"=>"home"}
+  [4;36;1mPage Load (44.2ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mPage Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (2.1ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'home') LIMIT 1[0m
+  [4;35;1mMetatag Load (30.5ms)[0m   [0mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 1) LIMIT 1[0m
+  [4;36;1mMetatag Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `metatags`[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 1) [0m
+Rendered shared/_polaroid (20.4ms)
+Rendered shared/_home_sidenav (75.1ms)
+Rendered shared/_quicksearchbox (19.5ms)
+Rendered shared/_user_bar (11.8ms)
+Rendered shared/_front_menu (21.1ms)
+  [4;36;1mPageFeaturedPhoto Load (31.6ms)[0m   [0;1mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;35;1mPageFeaturedPhoto Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `page_featured_photos`[0m
+Rendered shared/admin/images/_featured_photo (14.0ms)
+Completed in 2024ms (View: 1767, DB: 139) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:09:57) [GET]
+  [4;36;1mPage Load (1.5ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mProperty Columns (31.9ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mLocation Columns (15.1ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mProperty Load Including Associations (3.6ms)[0m   [0mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;36;1mPage Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.6ms)
+Rendered shared/_home_sidenav (3.3ms)
+Rendered shared/_tool_set (39.8ms)
+Rendered shared/_advancedsearchbox (31.2ms)
+Rendered shared/_properties_right (18.8ms)
+Rendered shared/_user_bar (1.0ms)
+Rendered shared/_front_menu (6.0ms)
+Completed in 297ms (View: 178, DB: 55) | 200 OK [http://localhost/properties]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-11-11 13:13:21) [GET]
+  [4;35;1mPage Load (0.7ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_user_bar (0.9ms)
+  [4;36;1mPage Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendered shared/_front_menu (9.8ms)
+Completed in 63ms (View: 48, DB: 4) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-11-11 13:13:26) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"EvXbG2VD0lRf9e9P1LbLBN2qFy3lzLWE0DdDKemZ+WA=", "login"=>"superuser", "password"=>"123456"}
+  [4;35;1mPage Load (0.7ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mUser Columns (24.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'superuser') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mroles_users Columns (14.8ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (2.0ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+Redirected to http://localhost:3001/admin
+Completed in 108ms (DB: 44) | 302 Found [http://localhost/session]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::OverviewController#index (for 127.0.0.1 at 2009-11-11 13:13:26) [GET]
+  [4;35;1mPage Load (0.7ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mroles_users Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mPage Load (0.5ms)[0m   [0mSELECT * FROM `pages` [0m
+  [4;36;1mCategory Load (25.9ms)[0m   [0;1mSELECT * FROM `categories` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mCountry Load (5.7ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mFacility Load (14.1ms)[0m   [0;1mSELECT * FROM `facilities` [0m
+  [4;35;1mProperty Load (0.5ms)[0m   [0mSELECT * FROM `properties` [0m
+Rendering template within layouts/admin
+Rendering admin/overview/index
+Rendered shared/_user_bar (1.1ms)
+Rendered shared/_back_menu (24.5ms)
+Completed in 209ms (View: 79, DB: 53) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:13:29) [GET]
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.5ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM `locations` WHERE (county='Orange') [0m
+  [4;35;1mProperty Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mLocation Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mProperty Load Including Associations (3.1ms)[0m   [0mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+Rendering template within layouts/admin
+Rendering admin/properties/index
+Rendered shared/admin/_properties_sidenav (12.3ms)
+  [4;36;1mType Columns (14.7ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+  [4;35;1mType Load (0.3ms)[0m   [0mSELECT * FROM `types` WHERE (`types`.`id` = 2) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47admin47properties47_property46html46erb_locals_object_property_property_counter at /Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:14)
+  [4;36;1mGallery Load (13.5ms)[0m   [0;1mSELECT * FROM `galleries` WHERE (`galleries`.property_id = 3) LIMIT 1[0m
+  [4;35;1mGallery Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `galleries`[0m
+Rendered admin/properties/_property (111.6ms)
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = 3) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47admin47properties47_property46html46erb_locals_object_property_property_counter at /Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:14)
+  [4;35;1mGallery Load (0.3ms)[0m   [0mSELECT * FROM `galleries` WHERE (`galleries`.property_id = 4) LIMIT 1[0m
+Rendered admin/properties/_property (11.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = 2) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47admin47properties47_property46html46erb_locals_object_property_property_counter at /Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:14)
+  [4;35;1mGallery Load (0.5ms)[0m   [0mSELECT * FROM `galleries` WHERE (`galleries`.property_id = 5) LIMIT 1[0m
+Rendered admin/properties/_property (10.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = 3) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47admin47properties47_property46html46erb_locals_object_property_property_counter at /Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:14)
+  [4;35;1mGallery Load (0.5ms)[0m   [0mSELECT * FROM `galleries` WHERE (`galleries`.property_id = 2) LIMIT 1[0m
+Rendered admin/properties/_property (10.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = 2) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47admin47properties47_property46html46erb_locals_object_property_property_counter at /Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:14)
+  [4;35;1mGallery Load (0.7ms)[0m   [0mSELECT * FROM `galleries` WHERE (`galleries`.property_id = 1) LIMIT 1[0m
+Rendered admin/properties/_property (11.6ms)
+Rendered shared/_user_bar (1.2ms)
+Rendered shared/_back_menu (1.7ms)
+Completed in 364ms (View: 191, DB: 48) | 200 OK [http://localhost/admin/properties]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::GalleriesController#show (for 127.0.0.1 at 2009-11-11 13:13:33) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mGallery Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `galleries`[0m
+  [4;35;1mGallery Load (0.3ms)[0m   [0mSELECT * FROM `galleries` WHERE (`galleries`.`id` = '10') LIMIT 1[0m
+  [4;36;1mUpload Load (18.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.gallery_id = 10) ORDER BY position[0m
+Rendering template within layouts/admin
+Rendering admin/galleries/show
+  [4;35;1mUpload Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mSQL (4.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `uploads` WHERE (`uploads`.gallery_id = 10) [0m
+Rendered shared/_user_bar (1.1ms)
+Rendered shared/_back_menu (1.9ms)
+Completed in 164ms (View: 91, DB: 36) | 200 OK [http://localhost/admin/galleries/10]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::GalleriesController#destroy (for 127.0.0.1 at 2009-11-11 13:13:55) [DELETE]
+  Parameters: {"authenticity_token"=>"EvXbG2VD0lRf9e9P1LbLBN2qFy3lzLWE0DdDKemZ+WA=", "id"=>"10"}
+  [4;35;1mPage Load (1.4ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mroles_users Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.5ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mGallery Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `galleries`[0m
+  [4;36;1mGallery Load (0.8ms)[0m   [0;1mSELECT * FROM `galleries` WHERE (`galleries`.`id` = '10') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUpload Load (0.5ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.gallery_id = 10) [0m
+  [4;35;1mUpload Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/32/original/Hogan-Bedroom1.jpg
+[paperclip] deleting /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/32/pagesize/Hogan-Bedroom1.jpg
+[paperclip] deleting /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/32/thumb/Hogan-Bedroom1.jpg
+  [4;36;1mUpload Update (0.5ms)[0m   [0;1mUPDATE `uploads` SET position = (position - 1) WHERE (gallery_id = 10 AND position > 4) [0m
+  [4;35;1mUpload Update (0.4ms)[0m   [0mUPDATE `uploads` SET `position` = NULL, `updated_at` = '2009-11-11 13:13:55', `photo_file_size` = NULL, `photo_file_name` = NULL WHERE `id` = 32[0m
+[paperclip] Saving attachments.
+  [4;36;1mUpload Destroy (0.2ms)[0m   [0;1mDELETE FROM `uploads` WHERE `id` = 32[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/33/original/Hogan-LivingRm.jpg
+[paperclip] deleting /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/33/pagesize/Hogan-LivingRm.jpg
+[paperclip] deleting /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/33/thumb/Hogan-LivingRm.jpg
+  [4;35;1mUpload Update (0.4ms)[0m   [0mUPDATE `uploads` SET position = (position - 1) WHERE (gallery_id = 10 AND position > 2) [0m
+  [4;36;1mUpload Update (0.3ms)[0m   [0;1mUPDATE `uploads` SET `position` = NULL, `updated_at` = '2009-11-11 13:13:55', `photo_file_size` = NULL, `photo_file_name` = NULL WHERE `id` = 33[0m
+[paperclip] Saving attachments.
+  [4;35;1mUpload Destroy (0.2ms)[0m   [0mDELETE FROM `uploads` WHERE `id` = 33[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/34/original/Hogan-MstrBed.jpg
+[paperclip] deleting /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/34/pagesize/Hogan-MstrBed.jpg
+[paperclip] deleting /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/34/thumb/Hogan-MstrBed.jpg
+  [4;36;1mUpload Update (0.3ms)[0m   [0;1mUPDATE `uploads` SET position = (position - 1) WHERE (gallery_id = 10 AND position > 1) [0m
+  [4;35;1mUpload Update (0.3ms)[0m   [0mUPDATE `uploads` SET `position` = NULL, `updated_at` = '2009-11-11 13:13:55', `photo_file_size` = NULL, `photo_file_name` = NULL WHERE `id` = 34[0m
+[paperclip] Saving attachments.
+  [4;36;1mUpload Destroy (0.2ms)[0m   [0;1mDELETE FROM `uploads` WHERE `id` = 34[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/35/original/Hogan-Theatre-02.jpg
+[paperclip] deleting /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/35/pagesize/Hogan-Theatre-02.jpg
+[paperclip] deleting /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/35/thumb/Hogan-Theatre-02.jpg
+  [4;35;1mUpload Update (0.3ms)[0m   [0mUPDATE `uploads` SET position = (position - 1) WHERE (gallery_id = 10 AND position > 5) [0m
+  [4;36;1mUpload Update (0.3ms)[0m   [0;1mUPDATE `uploads` SET `position` = NULL, `updated_at` = '2009-11-11 13:13:55', `photo_file_size` = NULL, `photo_file_name` = NULL WHERE `id` = 35[0m
+[paperclip] Saving attachments.
+  [4;35;1mUpload Destroy (0.2ms)[0m   [0mDELETE FROM `uploads` WHERE `id` = 35[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/37/original/Hogan-Nursery.jpg
+[paperclip] deleting /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/37/pagesize/Hogan-Nursery.jpg
+[paperclip] deleting /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/37/thumb/Hogan-Nursery.jpg
+  [4;36;1mUpload Update (0.3ms)[0m   [0;1mUPDATE `uploads` SET position = (position - 1) WHERE (gallery_id = 10 AND position > 6) [0m
+  [4;35;1mUpload Update (0.4ms)[0m   [0mUPDATE `uploads` SET `position` = NULL, `updated_at` = '2009-11-11 13:13:55', `photo_file_size` = NULL, `photo_file_name` = NULL WHERE `id` = 37[0m
+[paperclip] Saving attachments.
+  [4;36;1mUpload Destroy (0.3ms)[0m   [0;1mDELETE FROM `uploads` WHERE `id` = 37[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/38/original/Hogan-Theatre-01.jpg
+[paperclip] deleting /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/38/pagesize/Hogan-Theatre-01.jpg
+[paperclip] deleting /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/38/thumb/Hogan-Theatre-01.jpg
+  [4;35;1mUpload Update (0.3ms)[0m   [0mUPDATE `uploads` SET position = (position - 1) WHERE (gallery_id = 10 AND position > 3) [0m
+  [4;36;1mUpload Update (0.3ms)[0m   [0;1mUPDATE `uploads` SET `position` = NULL, `updated_at` = '2009-11-11 13:13:55', `photo_file_size` = NULL, `photo_file_name` = NULL WHERE `id` = 38[0m
+[paperclip] Saving attachments.
+  [4;35;1mUpload Destroy (0.2ms)[0m   [0mDELETE FROM `uploads` WHERE `id` = 38[0m
+  [4;36;1mGallery Destroy (0.2ms)[0m   [0;1mDELETE FROM `galleries` WHERE `id` = 10[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mProperty Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mProperty Load (0.4ms)[0m   [0mSELECT * FROM `properties` WHERE (`properties`.`id` = 3) [0m
+Redirected to http://localhost:3001/admin/galleries/new?property_id=3
+Completed in 153ms (DB: 23) | 302 Found [http://localhost/admin/galleries/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::GalleriesController#new (for 127.0.0.1 at 2009-11-11 13:13:55) [GET]
+  Parameters: {"property_id"=>"3"}
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mProperty Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mProperty Load (0.4ms)[0m   [0mSELECT * FROM `properties` WHERE (`properties`.`id` = '3') LIMIT 1[0m
+  [4;36;1mGallery Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `galleries`[0m
+Rendering template within layouts/admin
+Rendering admin/galleries/new
+  [4;35;1mUpload Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+Rendered admin/galleries/_upload (31.0ms)
+Rendered admin/galleries/_upload (2.7ms)
+Rendered admin/galleries/_upload (2.8ms)
+Rendered admin/galleries/_upload (2.8ms)
+Rendered admin/galleries/_upload (2.5ms)
+Rendered admin/galleries/_upload (2.6ms)
+Rendered shared/_user_bar (4.4ms)
+Rendered shared/_back_menu (1.6ms)
+Completed in 261ms (View: 119, DB: 14) | 200 OK [http://localhost/admin/galleries/new?property_id=3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-11 13:13:57) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::GalleriesController#create (for 127.0.0.1 at 2009-11-11 13:14:39) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"EvXbG2VD0lRf9e9P1LbLBN2qFy3lzLWE0DdDKemZ+WA=", "gallery"=>{"title"=>"test", "property_id"=>"3", "upload_attributes"=>{"new"=>{"0"=>{"photo"=>#<File:/var/folders/xa/xa7iu3vzHUuAFP5lU76qZU+++TI/-Tmp-/RackMultipart242-0>, "description"=>""}, "1"=>{"description"=>""}, "2"=>{"description"=>""}, "3"=>{"description"=>""}, "4"=>{"description"=>""}}}}}
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mUser Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mGallery Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `galleries`[0m
+  [4;35;1mUpload Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mGallery Create (0.4ms)[0m   [0mINSERT INTO `galleries` (`updated_at`, `title`, `property_id`, `description`, `created_at`) VALUES('2009-11-11 13:14:41', 'test', 3, NULL, '2009-11-11 13:14:41')[0m
+  [4;36;1mUpload Load (0.4ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (gallery_id = 11) ORDER BY position DESC LIMIT 1[0m
+  [4;35;1mUpload Create (0.2ms)[0m   [0mINSERT INTO `uploads` (`gallery_id`, `photo_file_name`, `photo_file_size`, `updated_at`, `title`, `description`, `position`, `created_at`) VALUES(11, 'Hogan-Theatre-01.jpg', 1675407, '2009-11-11 13:14:41', NULL, '', 1, '2009-11-11 13:14:41')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/39/pagesize/Hogan-Theatre-01.jpg
+[paperclip] saving /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/39/original/Hogan-Theatre-01.jpg
+[paperclip] saving /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/39/thumb/Hogan-Theatre-01.jpg
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3001/admin/galleries/11
+Completed in 2714ms (DB: 13) | 302 Found [http://localhost/admin/galleries]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::GalleriesController#show (for 127.0.0.1 at 2009-11-11 13:14:41) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mPage Load (0.8ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mroles_users Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.9ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mGallery Columns (15.2ms)[0m   [0mSHOW FIELDS FROM `galleries`[0m
+  [4;36;1mGallery Load (1.2ms)[0m   [0;1mSELECT * FROM `galleries` WHERE (`galleries`.`id` = '11') LIMIT 1[0m
+  [4;35;1mUpload Load (0.5ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.gallery_id = 11) ORDER BY position[0m
+Rendering template within layouts/admin
+Rendering admin/galleries/show
+  [4;36;1mUpload Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `uploads` WHERE (`uploads`.gallery_id = 11) [0m
+Rendered shared/_user_bar (4.7ms)
+Rendered shared/_back_menu (2.1ms)
+Completed in 209ms (View: 142, DB: 27) | 200 OK [http://localhost/admin/galleries/11]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::GalleriesController#destroy (for 127.0.0.1 at 2009-11-11 13:15:17) [DELETE]
+  Parameters: {"authenticity_token"=>"EvXbG2VD0lRf9e9P1LbLBN2qFy3lzLWE0DdDKemZ+WA=", "id"=>"11"}
+  [4;36;1mPage Load (0.9ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mUser Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.5ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mGallery Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `galleries`[0m
+  [4;35;1mGallery Load (1.4ms)[0m   [0mSELECT * FROM `galleries` WHERE (`galleries`.`id` = '11') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUpload Load (0.4ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.gallery_id = 11) [0m
+  [4;36;1mUpload Columns (5.4ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/39/original/Hogan-Theatre-01.jpg
+[paperclip] deleting /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/39/pagesize/Hogan-Theatre-01.jpg
+[paperclip] deleting /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/39/thumb/Hogan-Theatre-01.jpg
+  [4;35;1mUpload Update (0.7ms)[0m   [0mUPDATE `uploads` SET position = (position - 1) WHERE (gallery_id = 11 AND position > 1) [0m
+  [4;36;1mUpload Update (0.5ms)[0m   [0;1mUPDATE `uploads` SET `position` = NULL, `updated_at` = '2009-11-11 13:15:17', `photo_file_size` = NULL, `photo_file_name` = NULL WHERE `id` = 39[0m
+[paperclip] Saving attachments.
+  [4;35;1mUpload Destroy (0.9ms)[0m   [0mDELETE FROM `uploads` WHERE `id` = 39[0m
+  [4;36;1mGallery Destroy (0.3ms)[0m   [0;1mDELETE FROM `galleries` WHERE `id` = 11[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mProperty Columns (4.3ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mProperty Load (1.3ms)[0m   [0mSELECT * FROM `properties` WHERE (`properties`.`id` = 3) [0m
+Redirected to http://localhost:3001/admin/galleries/new?property_id=3
+Completed in 111ms (DB: 29) | 302 Found [http://localhost/admin/galleries/11]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::GalleriesController#new (for 127.0.0.1 at 2009-11-11 13:15:17) [GET]
+  Parameters: {"property_id"=>"3"}
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mUser Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.5ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mProperty Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mProperty Load (0.4ms)[0m   [0mSELECT * FROM `properties` WHERE (`properties`.`id` = '3') LIMIT 1[0m
+  [4;36;1mGallery Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `galleries`[0m
+Rendering template within layouts/admin
+Rendering admin/galleries/new
+  [4;35;1mUpload Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+Rendered admin/galleries/_upload (2.7ms)
+Rendered admin/galleries/_upload (3.3ms)
+Rendered admin/galleries/_upload (3.0ms)
+Rendered admin/galleries/_upload (2.9ms)
+Rendered admin/galleries/_upload (4.0ms)
+Rendered admin/galleries/_upload (4.5ms)
+Rendered shared/_user_bar (4.5ms)
+Rendered shared/_back_menu (1.9ms)
+Completed in 217ms (View: 67, DB: 14) | 200 OK [http://localhost/admin/galleries/new?property_id=3]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-11 13:15:19) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::GalleriesController#create (for 127.0.0.1 at 2009-11-11 13:15:36) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"EvXbG2VD0lRf9e9P1LbLBN2qFy3lzLWE0DdDKemZ+WA=", "gallery"=>{"title"=>"testing", "property_id"=>"3", "upload_attributes"=>{"new"=>{"0"=>{"photo"=>#<File:/var/folders/xa/xa7iu3vzHUuAFP5lU76qZU+++TI/-Tmp-/RackMultipart242-1>, "description"=>""}, "1"=>{"description"=>""}, "2"=>{"description"=>""}, "3"=>{"description"=>""}, "4"=>{"description"=>""}}}}}
+  [4;36;1mPage Load (1.1ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mUser Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.8ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mGallery Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `galleries`[0m
+  [4;35;1mUpload Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mGallery Create (0.3ms)[0m   [0mINSERT INTO `galleries` (`updated_at`, `title`, `property_id`, `description`, `created_at`) VALUES('2009-11-11 13:15:38', 'testing', 3, NULL, '2009-11-11 13:15:38')[0m
+  [4;36;1mUpload Load (0.4ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (gallery_id = 12) ORDER BY position DESC LIMIT 1[0m
+  [4;35;1mUpload Create (0.2ms)[0m   [0mINSERT INTO `uploads` (`gallery_id`, `photo_file_name`, `photo_file_size`, `updated_at`, `title`, `description`, `position`, `created_at`) VALUES(12, 'Hogan-Theatre-01.jpg', 1675407, '2009-11-11 13:15:38', NULL, '', 1, '2009-11-11 13:15:38')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/40/pagesize/Hogan-Theatre-01.jpg
+[paperclip] saving /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/40/original/Hogan-Theatre-01.jpg
+[paperclip] saving /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/40/thumb/Hogan-Theatre-01.jpg
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3001/admin/galleries/12
+Completed in 2554ms (DB: 16) | 302 Found [http://localhost/admin/galleries]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::GalleriesController#show (for 127.0.0.1 at 2009-11-11 13:15:39) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mPage Load (0.8ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mUser Columns (608.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mroles_users Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mGallery Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `galleries`[0m
+  [4;36;1mGallery Load (0.3ms)[0m   [0;1mSELECT * FROM `galleries` WHERE (`galleries`.`id` = '12') LIMIT 1[0m
+  [4;35;1mUpload Load (0.4ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.gallery_id = 12) ORDER BY position[0m
+Rendering template within layouts/admin
+Rendering admin/galleries/show
+  [4;36;1mUpload Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `uploads` WHERE (`uploads`.gallery_id = 12) [0m
+Rendered shared/_user_bar (5.2ms)
+Rendered shared/_back_menu (1.7ms)
+Completed in 699ms (View: 38, DB: 619) | 200 OK [http://localhost/admin/galleries/12]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UploadsController#edit (for 127.0.0.1 at 2009-11-11 13:15:52) [GET]
+  Parameters: {"id"=>"40"}
+  [4;36;1mPage Load (1.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mUser Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.5ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mUpload Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.`id` = '40') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/uploads/edit
+Rendered shared/_user_bar (1.7ms)
+Rendered shared/_back_menu (2.8ms)
+Completed in 167ms (View: 114, DB: 11) | 200 OK [http://localhost/admin/uploads/40/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-11 13:15:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/Jcrop.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UploadsController#update (for 127.0.0.1 at 2009-11-11 13:16:05) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"EvXbG2VD0lRf9e9P1LbLBN2qFy3lzLWE0DdDKemZ+WA=", "id"=>"40", "upload"=>{"title"=>"", "crop_h"=>"1429", "description"=>"", "crop_w"=>"1906", "crop_x"=>"1395", "crop_y"=>"282"}}
+  [4;36;1mPage Load (1.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mUser Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mUpload Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.`id` = '40') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUpload Update (0.4ms)[0m   [0mUPDATE `uploads` SET `title` = '', `updated_at` = '2009-11-11 13:16:05' WHERE `id` = 40[0m
+[paperclip] saving /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/40/pagesize/Hogan-Theatre-01.jpg
+[paperclip] saving /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/40/original/Hogan-Theatre-01.jpg
+[paperclip] saving /Users/ryan/Dev/2.3.4/eandv_npb/public/assets/property/gallery/40/thumb/Hogan-Theatre-01.jpg
+[paperclip] Saving attachments.
+  [4;36;1mSQL (3.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mGallery Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `galleries`[0m
+  [4;36;1mGallery Load (1.3ms)[0m   [0;1mSELECT * FROM `galleries` WHERE (`galleries`.`id` = 12) [0m
+Redirected to http://localhost:3001/admin/galleries/12
+Completed in 1813ms (DB: 18) | 302 Found [http://localhost/admin/uploads/40]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::GalleriesController#show (for 127.0.0.1 at 2009-11-11 13:16:07) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mPage Load (0.9ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mroles_users Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mGallery Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `galleries`[0m
+  [4;36;1mGallery Load (0.3ms)[0m   [0;1mSELECT * FROM `galleries` WHERE (`galleries`.`id` = '12') LIMIT 1[0m
+  [4;35;1mUpload Load (0.6ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.gallery_id = 12) ORDER BY position[0m
+Rendering template within layouts/admin
+Rendering admin/galleries/show
+  [4;36;1mUpload Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `uploads` WHERE (`uploads`.gallery_id = 12) [0m
+Rendered shared/_user_bar (4.5ms)
+Rendered shared/_back_menu (1.8ms)
+Completed in 98ms (View: 38, DB: 13) | 200 OK [http://localhost/admin/galleries/12]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-11-11 13:18:11) [GET]
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3001/
+Completed in 32ms (DB: 6) | 302 Found [http://localhost/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2009-11-11 13:18:11) [GET]
+  Parameters: {"name"=>"home"}
+  [4;35;1mPage Load (0.9ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mPage Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` = 'home') LIMIT 1[0m
+  [4;36;1mMetatag Load (0.4ms)[0m   [0;1mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 1) LIMIT 1[0m
+  [4;35;1mMetatag Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `metatags`[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 1) [0m
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/_home_sidenav (3.0ms)
+Rendered shared/_quicksearchbox (0.1ms)
+Rendered shared/_user_bar (4.1ms)
+Rendered shared/_front_menu (4.0ms)
+  [4;35;1mPageFeaturedPhoto Load (0.4ms)[0m   [0mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;36;1mPageFeaturedPhoto Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `page_featured_photos`[0m
+Rendered shared/admin/images/_featured_photo (5.8ms)
+Completed in 90ms (View: 60, DB: 10) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:18:14) [GET]
+  [4;35;1mPage Load (0.8ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mProperty Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mLocation Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mProperty Load Including Associations (3.3ms)[0m   [0;1mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;35;1mPage Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.7ms)
+Rendered shared/_home_sidenav (3.3ms)
+Rendered shared/_tool_set (95.4ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.6ms)
+Rendered shared/_user_bar (1.0ms)
+Rendered shared/_front_menu (4.4ms)
+Completed in 183ms (View: 146, DB: 12) | 200 OK [http://localhost/properties]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-11 13:18:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/system/static/thumb.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:18:36) [GET]
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mProperty Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mLocation Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mProperty Load Including Associations (3.4ms)[0m   [0mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;36;1mPage Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.6ms)
+Rendered shared/_home_sidenav (3.7ms)
+Rendered shared/_tool_set (2.8ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.5ms)
+Rendered shared/_user_bar (1.0ms)
+Rendered shared/_front_menu (4.2ms)
+Completed in 92ms (View: 52, DB: 12) | 200 OK [http://localhost/properties]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:20:10) [GET]
+  [4;35;1mPage Load (0.8ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mProperty Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mLocation Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mProperty Load Including Associations (3.3ms)[0m   [0;1mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;35;1mPage Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/_home_sidenav (3.2ms)
+Rendered shared/_tool_set (3.2ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.5ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (3.9ms)
+Completed in 80ms (View: 42, DB: 12) | 200 OK [http://localhost/properties]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:21:32) [GET]
+  [4;36;1mPage Load (0.9ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mProperty Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mLocation Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mProperty Load Including Associations (5.8ms)[0m   [0mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;36;1mPage Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.6ms)
+Rendered shared/_home_sidenav (3.7ms)
+Rendered shared/_tool_set (2.9ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (1.6ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (4.0ms)
+Completed in 93ms (View: 49, DB: 15) | 200 OK [http://localhost/properties]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:31:35) [GET]
+  [4;35;1mPage Load (1.0ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mProperty Columns (75.6ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mLocation Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mProperty Load Including Associations (3.0ms)[0m   [0;1mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;35;1mPage Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.5ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/_home_sidenav (3.3ms)
+Rendered shared/_tool_set (3.4ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.7ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (5.6ms)
+Completed in 256ms (View: 57, DB: 85) | 200 OK [http://localhost/properties]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:31:57) [GET]
+  [4;36;1mPage Load (1.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mProperty Columns (77.5ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mLocation Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mProperty Load Including Associations (3.2ms)[0m   [0mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;36;1mPage Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.5ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/_home_sidenav (3.0ms)
+Rendered shared/_tool_set (3.0ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.5ms)
+Rendered shared/_user_bar (1.0ms)
+Rendered shared/_front_menu (95.1ms)
+Completed in 248ms (View: 136, DB: 87) | 200 OK [http://localhost/properties]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:33:06) [GET]
+  [4;35;1mPage Load (0.8ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mProperty Columns (79.6ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mLocation Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mProperty Load Including Associations (3.1ms)[0m   [0;1mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;35;1mPage Columns (3.7ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/_home_sidenav (3.1ms)
+Rendered shared/_tool_set (2.9ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.6ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (4.1ms)
+Completed in 161ms (View: 45, DB: 91) | 200 OK [http://localhost/properties]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:33:46) [GET]
+  [4;36;1mPage Load (0.9ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mProperty Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mLocation Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mProperty Load Including Associations (4.9ms)[0m   [0mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;36;1mPage Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.5ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.6ms)
+Rendered shared/_home_sidenav (3.9ms)
+Rendered shared/_tool_set (3.2ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.5ms)
+Rendered shared/_user_bar (1.0ms)
+Rendered shared/_front_menu (4.1ms)
+Completed in 92ms (View: 49, DB: 14) | 200 OK [http://localhost/properties]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:34:30) [GET]
+  [4;35;1mPage Load (0.9ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mProperty Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mLocation Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mProperty Load Including Associations (6.6ms)[0m   [0;1mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;35;1mPage Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.6ms)
+Rendered shared/_home_sidenav (3.6ms)
+Rendered shared/_tool_set (3.2ms)
+Rendered shared/_advancedsearchbox (0.2ms)
+Rendered shared/_properties_right (1.3ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (5.3ms)
+Completed in 92ms (View: 49, DB: 15) | 200 OK [http://localhost/properties]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:34:52) [GET]
+  [4;36;1mPage Load (1.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mProperty Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mLocation Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mProperty Load Including Associations (5.3ms)[0m   [0mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;36;1mPage Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.7ms)
+Rendered shared/_home_sidenav (3.6ms)
+Rendered shared/_tool_set (3.0ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.5ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (4.2ms)
+Completed in 174ms (View: 47, DB: 15) | 200 OK [http://localhost/properties]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:35:03) [GET]
+  [4;35;1mPage Load (0.9ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mProperty Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mLocation Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mProperty Load Including Associations (4.3ms)[0m   [0;1mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;35;1mPage Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.6ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/_home_sidenav (3.5ms)
+Rendered shared/_tool_set (3.0ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.5ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (4.1ms)
+Completed in 85ms (View: 45, DB: 15) | 200 OK [http://localhost/properties]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:36:15) [GET]
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mProperty Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mLocation Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mProperty Load Including Associations (3.7ms)[0m   [0mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;36;1mPage Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.5ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/_home_sidenav (3.5ms)
+Rendered shared/_tool_set (4.2ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.5ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (5.3ms)
+Completed in 94ms (View: 54, DB: 12) | 200 OK [http://localhost/properties]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:36:41) [GET]
+  [4;35;1mPage Load (1.1ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mProperty Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mLocation Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mProperty Load Including Associations (3.5ms)[0m   [0;1mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;35;1mPage Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (1.0ms)
+Rendered shared/_home_sidenav (4.8ms)
+Rendered shared/_tool_set (3.6ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.5ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (5.4ms)
+Completed in 86ms (View: 47, DB: 12) | 200 OK [http://localhost/properties]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:37:25) [GET]
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mProperty Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mLocation Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mProperty Load Including Associations (5.5ms)[0m   [0mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;36;1mPage Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.6ms)
+Rendered shared/_home_sidenav (4.6ms)
+Rendered shared/_tool_set (3.6ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.5ms)
+Rendered shared/_user_bar (1.8ms)
+Rendered shared/_front_menu (4.6ms)
+Completed in 91ms (View: 49, DB: 14) | 200 OK [http://localhost/properties]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:38:38) [GET]
+  [4;35;1mPage Load (1.4ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mProperty Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mLocation Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mProperty Load Including Associations (6.6ms)[0m   [0;1mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;35;1mPage Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.6ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.7ms)
+Rendered shared/_home_sidenav (3.6ms)
+Rendered shared/_tool_set (3.9ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.5ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (4.1ms)
+Completed in 188ms (View: 145, DB: 16) | 200 OK [http://localhost/properties]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:39:08) [GET]
+  [4;36;1mPage Load (0.9ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mProperty Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mLocation Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mProperty Load Including Associations (4.7ms)[0m   [0mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;36;1mPage Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (1.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/_home_sidenav (3.5ms)
+Rendered shared/_tool_set (2.8ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.8ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (4.3ms)
+Completed in 88ms (View: 45, DB: 15) | 200 OK [http://localhost/properties]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:39:25) [GET]
+  [4;35;1mPage Load (0.9ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mProperty Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mLocation Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mProperty Load Including Associations (5.8ms)[0m   [0;1mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;35;1mPage Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.6ms)
+Rendered shared/_home_sidenav (4.8ms)
+Rendered shared/_tool_set (3.0ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.5ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (4.2ms)
+Completed in 91ms (View: 46, DB: 16) | 200 OK [http://localhost/properties]
+  [4;36;1mSQL (3.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:40:54) [GET]
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mProperty Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mLocation Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mProperty Load Including Associations (3.8ms)[0m   [0mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;36;1mPage Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.5ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.6ms)
+Rendered shared/_home_sidenav (4.2ms)
+Rendered shared/_tool_set (2.9ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.5ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (4.1ms)
+Completed in 86ms (View: 45, DB: 16) | 200 OK [http://localhost/properties]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:41:11) [GET]
+  [4;35;1mPage Load (0.8ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mProperty Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mLocation Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mProperty Load Including Associations (3.5ms)[0m   [0;1mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;35;1mPage Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.6ms)
+Rendered shared/_home_sidenav (3.4ms)
+Rendered shared/_tool_set (3.2ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.5ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (4.3ms)
+Completed in 87ms (View: 47, DB: 12) | 200 OK [http://localhost/properties]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:41:43) [GET]
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mProperty Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mLocation Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mProperty Load Including Associations (3.4ms)[0m   [0mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;36;1mPage Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.8ms)
+Rendered shared/_home_sidenav (5.5ms)
+Rendered shared/_tool_set (3.2ms)
+Rendered shared/_advancedsearchbox (0.2ms)
+Rendered shared/_properties_right (0.7ms)
+Rendered shared/_user_bar (1.0ms)
+Rendered shared/_front_menu (4.9ms)
+Completed in 183ms (View: 143, DB: 12) | 200 OK [http://localhost/properties]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:41:51) [GET]
+  [4;35;1mPage Load (0.9ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mProperty Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mLocation Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mProperty Load Including Associations (4.9ms)[0m   [0;1mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;35;1mPage Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.5ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/_home_sidenav (3.1ms)
+Rendered shared/_tool_set (3.6ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.8ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (5.1ms)
+Completed in 89ms (View: 46, DB: 14) | 200 OK [http://localhost/properties]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:42:09) [GET]
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mProperty Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mLocation Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mProperty Load Including Associations (3.7ms)[0m   [0mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;36;1mPage Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.6ms)
+Rendered shared/_home_sidenav (6.4ms)
+Rendered shared/_tool_set (3.2ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.5ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (4.1ms)
+Completed in 90ms (View: 49, DB: 12) | 200 OK [http://localhost/properties]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:42:29) [GET]
+  [4;35;1mPage Load (0.8ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mProperty Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mLocation Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mProperty Load Including Associations (3.2ms)[0m   [0;1mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;35;1mPage Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.7ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (1.2ms)
+Rendered shared/_home_sidenav (4.0ms)
+Rendered shared/_tool_set (3.0ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.6ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (4.1ms)
+Completed in 85ms (View: 47, DB: 12) | 200 OK [http://localhost/properties]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:42:46) [GET]
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mProperty Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mLocation Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mProperty Load Including Associations (4.6ms)[0m   [0mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;36;1mPage Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.6ms)
+Rendered shared/_home_sidenav (3.3ms)
+Rendered shared/_tool_set (3.0ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.6ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (4.2ms)
+Completed in 180ms (View: 46, DB: 13) | 200 OK [http://localhost/properties]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:43:17) [GET]
+  [4;35;1mPage Load (1.3ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mProperty Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mLocation Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mProperty Load Including Associations (3.6ms)[0m   [0;1mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;35;1mPage Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.7ms)
+Rendered shared/_home_sidenav (3.8ms)
+Rendered shared/_tool_set (2.9ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.5ms)
+Rendered shared/_user_bar (1.0ms)
+Rendered shared/_front_menu (5.4ms)
+Completed in 91ms (View: 50, DB: 14) | 200 OK [http://localhost/properties]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:43:41) [GET]
+  [4;36;1mPage Load (0.9ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mProperty Columns (74.0ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mLocation Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mProperty Load Including Associations (3.5ms)[0m   [0mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;36;1mPage Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/_home_sidenav (3.3ms)
+Rendered shared/_tool_set (2.7ms)
+Rendered shared/_advancedsearchbox (0.2ms)
+Rendered shared/_properties_right (0.5ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (4.0ms)
+Completed in 163ms (View: 53, DB: 83) | 200 OK [http://localhost/properties]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:44:22) [GET]
+  [4;35;1mPage Load (0.8ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mProperty Columns (245.2ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mLocation Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mProperty Load Including Associations (3.8ms)[0m   [0;1mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;35;1mPage Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.5ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.7ms)
+Rendered shared/_home_sidenav (5.8ms)
+Rendered shared/_tool_set (7.2ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.5ms)
+Rendered shared/_user_bar (1.2ms)
+Rendered shared/_front_menu (4.6ms)
+Completed in 353ms (View: 65, DB: 256) | 200 OK [http://localhost/properties]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:45:21) [GET]
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mProperty Columns (71.9ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mLocation Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mProperty Load Including Associations (3.8ms)[0m   [0mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;36;1mPage Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/_home_sidenav (3.2ms)
+Rendered shared/_tool_set (3.0ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.6ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (4.2ms)
+Completed in 166ms (View: 55, DB: 82) | 200 OK [http://localhost/properties]
+  [4;35;1mSQL (0.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:46:35) [GET]
+  [4;35;1mPage Load (0.8ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mProperty Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mLocation Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mProperty Load Including Associations (6.4ms)[0m   [0;1mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;35;1mPage Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/_home_sidenav (3.2ms)
+Rendered shared/_tool_set (2.9ms)
+
+ActionView::TemplateError (undefined local variable or method `proeprty' for #<ActionView::Base:0x231b968>) on line #22 of app/views/properties/index.html.erb:
+19: 	<hr />
+20: 	<% for property in @properties %>
+21: 	
+22: 	<div id="property_<%= proeprty.id %>" class="property">
+23: 		<div class="image">
+24: 			<%= image_tag "static/thumb.jpg" %>
+25: 		</div>
+
+    app/views/properties/index.html.erb:22
+    app/views/properties/index.html.erb:20:in `each'
+    app/views/properties/index.html.erb:20
+    haml (2.2.7) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.7) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/properties_controller.rb:6:in `index'
+    haml (2.2.7) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    vendor/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+
+Rendered rescues/_trace (62.5ms)
+Rendered rescues/_request_and_response (15.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:46:45) [GET]
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mProperty Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mLocation Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mProperty Load Including Associations (3.1ms)[0m   [0mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;36;1mPage Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.9ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/_home_sidenav (3.4ms)
+Rendered shared/_tool_set (3.1ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.5ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (4.1ms)
+Completed in 93ms (View: 53, DB: 13) | 200 OK [http://localhost/properties]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:48:16) [GET]
+  [4;35;1mPage Load (0.8ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mProperty Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mLocation Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mProperty Load Including Associations (3.5ms)[0m   [0;1mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;35;1mPage Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (1.7ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/_home_sidenav (3.3ms)
+Rendered shared/_tool_set (3.6ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.5ms)
+Rendered shared/_user_bar (1.0ms)
+Rendered shared/_front_menu (4.2ms)
+Completed in 102ms (View: 58, DB: 16) | 200 OK [http://localhost/properties]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#show (for 127.0.0.1 at 2009-11-11 13:48:22) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+Rendering template within layouts/application
+Rendering properties/show
+Rendered shared/_user_bar (4.1ms)
+  [4;35;1mPage Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendered shared/_front_menu (12.3ms)
+Completed in 63ms (View: 48, DB: 4) | 200 OK [http://localhost/properties/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:50:17) [GET]
+  [4;36;1mPage Load (1.2ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mProperty Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mLocation Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mProperty Load Including Associations (3.5ms)[0m   [0mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;36;1mPage Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/_home_sidenav (3.1ms)
+Rendered shared/_tool_set (2.7ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.5ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (4.1ms)
+Completed in 94ms (View: 54, DB: 13) | 200 OK [http://localhost/properties]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-11 13:52:44) [GET]
+  [4;35;1mPage Load (0.8ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mProperty Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mLocation Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mProperty Load Including Associations (3.0ms)[0m   [0;1mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;35;1mPage Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.5ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.7ms)
+Rendered shared/_home_sidenav (3.7ms)
+Rendered shared/_tool_set (2.9ms)
+Rendered shared/_property (8.4ms)
+Rendered shared/_property (1.3ms)
+Rendered shared/_property (1.2ms)
+Rendered shared/_property (1.2ms)
+Rendered shared/_property (1.1ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.5ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (4.2ms)
+Completed in 176ms (View: 138, DB: 13) | 200 OK [http://localhost/properties]

@@ -61,10 +61,12 @@ body h3 strong { font-weight: normal; color: #d4d4d4; }
 #lower_pagewrapper #content #main .property .extra ul.facility { margin: 6px 0 0 5px; list-style: none; width: 282px; height: 29px; }
 #lower_pagewrapper #content #main .property .extra ul.facility li { float: left; color: white; text-align: center; }
 #lower_pagewrapper #content #main .property .extra ul.facility li p { margin: -2px 0 0 0; padding: 0; }
-#lower_pagewrapper #content #main .property .extra ul.facility li.number { height: 16px; width: 17px; background: url(../images/system/buttons/Facility/Facilites_NumBG.jpg); margin-right: 4px; }
-#lower_pagewrapper #content #main .property .extra ul.facility li.bed { height: 16px; width: 24px; background: url(../images/system/buttons/Facility/Facilities_Bed.jpg); margin-right: 15px; }
-#lower_pagewrapper #content #main .property .extra ul.facility li.bath { height: 20px; width: 22px; background: url(../images/system/buttons/Facility/Facilities_Shower.jpg); margin-right: 15px; margin-top: -2px; }
-#lower_pagewrapper #content #main .property .extra ul.facility li.garage { height: 20px; width: 22px; background: url(../images/system/buttons/Facility/Facilities_Garage.jpg); margin-right: 15px; margin-top: -2px; }
+#lower_pagewrapper #content #main .property .extra ul.facility li.number { height: 16px; width: 17px; background: url(../images/system/buttons/Facility/Facilites_NumBG.jpg); margin-right: 3px; }
+#lower_pagewrapper #content #main .property .extra ul.facility li.bed { height: 16px; width: 24px; background: url(../images/system/buttons/Facility/Facilities_Bed.jpg); margin-right: 12px; }
+#lower_pagewrapper #content #main .property .extra ul.facility li.bath { height: 20px; width: 22px; background: url(../images/system/buttons/Facility/Facilities_Shower.jpg); margin-right: 12px; margin-top: -2px; }
+#lower_pagewrapper #content #main .property .extra ul.facility li.garage { height: 20px; width: 22px; background: url(../images/system/buttons/Facility/Facilities_Garage.jpg); margin-right: 12px; margin-top: -2px; }
+#lower_pagewrapper #content #main .property .extra ul.facility li.viewproperty { height: 16px; width: 84px; background: url(../images/system/buttons/viewproperty.jpg); margin-left: 17px; text-align: center; }
+#lower_pagewrapper #content #main .property .extra ul.facility li.viewproperty a { font-size: 10px; color: red; float: left; margin: 1px 0 0 8px; font-variant: small-caps; text-decoration: none; }
 #lower_pagewrapper #content #main .property .price { height: 18px; }
 #lower_pagewrapper #content #main .property .price p { margin: 0 0 0 5px; }
 #lower_pagewrapper #content #main .featured { background: url(../images/system/bg/front/featured_property_bg.jpg); }
