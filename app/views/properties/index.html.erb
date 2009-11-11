@@ -7,7 +7,45 @@
 <div id="main">
 	<div class="top">	</div>
 	<h3><%= @page.title %></h3>
-	<%= @page.body %>
+	<hr />
+	<ul id="view_options">
+		<li class="first"><span>View Options</span></li>
+		<li class="buy">Buy</li>
+		<li class="rent">Rent</li>
+		<li class="mls">MLS</li>
+		<li class="date">Date <%= image_tag "system/buttons/Filters/Filter_Arrow.jpg" %></li>
+		<li class="price">Price <%= image_tag "system/buttons/Filters/Filter_Arrow_down.jpg" %></li>
+	</ul>
+	<hr />
+	<% for property in @properties %>
+	
+	<div class="property">
+		<div class="image">
+			
+		</div>
+		<div class="title text"><p><%= property.title %></p></div>
+		<div class="text address"><p> <%= property.location.region %></p></div>
+		<div class="price text"><p> <%= number_to_currency (property.price) %></p></div>
+		<div class="extra text">
+			<ul class="facility">
+				<li class="number"><p> <%= property.bedrooms %></p></li>
+				<li class="bed"></li>
+				<li class="number"><p> <%= property.bathrooms %></p></li>
+				<li class="bath"></li>
+				<li class="number"><p>3</p></li>
+				<li class="garage"></li>
+				
+			</ul>
+		</div>
+	</div>
+	<hr />
+	<% end %>
+	<div id="result_info">
+		<h5>
+			<span class="left"><%= @properties.size %> results</span>
+			<span class="right">Next page & Go to page 2 3 4 5 results</span>
+		</h5>
+	</div>
 	<div class="bottom">	</div>
 </div>
 

@@ -35,11 +35,44 @@ body h3 strong { font-weight: normal; color: #d4d4d4; }
 #lower_pagewrapper #content { margin: 0px auto; padding: 25px; background: transparent; color: black; width: 970px; font-family: "Georgia"; min-height: 280px; position: relative; z-index: 4; margin-bottom: -63px; }
 #lower_pagewrapper #content #main.properties { width: 442px; background: url(../images/system/bg/front/main_properties.jpg); }
 #lower_pagewrapper #content #main.properties .top { background-image: url(../images/system/bg/front/main_properties_top.jpg); margin-top: 0; width: 442px; position: relative; height: 15px; float: left; }
-#lower_pagewrapper #content #main.properties .bottom { background-image: url(../images/system/bg/front/main_properties_bottom.jpg); margin-top: 33px; width: 442px; position: relative; height: 15px; float: left; }
+#lower_pagewrapper #content #main.properties .bottom { background-image: url(../images/system/bg/front/main_properties_bottom.jpg); width: 442px; position: relative; height: 15px; float: left; }
 #lower_pagewrapper #content #main { width: 463px; background: url(../images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px; }
+#lower_pagewrapper #content #main ul#view_options { width: 409px; padding: 0px; float: left; margin-top: 0px; }
+#lower_pagewrapper #content #main ul#view_options li { float: left; list-style: none; text-align: center; background-repeat: no-repeat; color: white; font-size: 12px; height: 22px; line-height: 22px; margin: 5px 5px 0 0; }
+#lower_pagewrapper #content #main ul#view_options li span { font-weight: bold; color: black; }
+#lower_pagewrapper #content #main ul#view_options li.buy { width: 37px; background: url(../images/system/buttons/Filters/Filter_Buy.jpg); }
+#lower_pagewrapper #content #main ul#view_options li.rent { width: 41px; background: url(../images/system/buttons/Filters/Filter_Rent.jpg); }
+#lower_pagewrapper #content #main ul#view_options li.mls { width: 42px; background: url(../images/system/buttons/Filters/Filter_MLS.jpg); }
+#lower_pagewrapper #content #main ul#view_options li.date { width: 54px; background: url(../images/system/buttons/Filters/Filter_Date.jpg); }
+#lower_pagewrapper #content #main ul#view_options li.price { width: 56px; background: url(../images/system/buttons/Filters/Filter_Price.jpg); }
+#lower_pagewrapper #content #main ul#view_options li.first { width: 60px; margin-right: 15px; line-height: 14px; margin-top: 0; text-transform: uppercase; }
+#lower_pagewrapper #content #main #result_info { width: 409px; height: 74px; float: left; margin-left: 16px; }
+#lower_pagewrapper #content #main #result_info h5 { margin-top: 48px; width: 90%; color: red; font-style: italic; }
+#lower_pagewrapper #content #main #result_info h5 span.left { float: left; }
+#lower_pagewrapper #content #main #result_info h5 span.right { float: right; }
+#lower_pagewrapper #content #main .property { height: 107px; width: 426px; float: left; margin-left: 5px; background: transparent; }
+#lower_pagewrapper #content #main .property .image { height: 90px; width: 120px; float: left; margin: 9px; background: green; }
+#lower_pagewrapper #content #main .property .text { margin: 0px; width: 282px; height: 21px; float: left; margin-bottom: 1px; }
+#lower_pagewrapper #content #main .property .text p { margin-left: 5px; font-style: normal; }
+#lower_pagewrapper #content #main .property .title { margin-top: 9px; text-transform: uppercase; }
+#lower_pagewrapper #content #main .property .address { background: url(../images/system/bg/front/Prop_Top_BG.jpg); height: 20px; }
+#lower_pagewrapper #content #main .property .address p { font-style: italic; margin-top: 2px; }
+#lower_pagewrapper #content #main .property .extra { background: url(../images/system/bg/front/Prop_Bot_BG.jpg); height: 29px; }
+#lower_pagewrapper #content #main .property .extra ul.facility { margin: 6px 0 0 5px; list-style: none; width: 282px; height: 29px; }
+#lower_pagewrapper #content #main .property .extra ul.facility li { float: left; color: white; text-align: center; }
+#lower_pagewrapper #content #main .property .extra ul.facility li p { margin: -2px 0 0 0; padding: 0; }
+#lower_pagewrapper #content #main .property .extra ul.facility li.number { height: 16px; width: 17px; background: url(../images/system/buttons/Facility/Facilites_NumBG.jpg); margin-right: 4px; }
+#lower_pagewrapper #content #main .property .extra ul.facility li.bed { height: 16px; width: 24px; background: url(../images/system/buttons/Facility/Facilities_Bed.jpg); margin-right: 15px; }
+#lower_pagewrapper #content #main .property .extra ul.facility li.bath { height: 20px; width: 22px; background: url(../images/system/buttons/Facility/Facilities_Shower.jpg); margin-right: 15px; margin-top: -2px; }
+#lower_pagewrapper #content #main .property .extra ul.facility li.garage { height: 20px; width: 22px; background: url(../images/system/buttons/Facility/Facilities_Garage.jpg); margin-right: 15px; margin-top: -2px; }
+#lower_pagewrapper #content #main .property .price { height: 18px; }
+#lower_pagewrapper #content #main .property .price p { margin: 0 0 0 5px; }
+#lower_pagewrapper #content #main .featured { background: url(../images/system/bg/front/featured_property_bg.jpg); }
+#lower_pagewrapper #content #main .testing { background: url(../images/system/bg/front/featBG.jpg); }
+#lower_pagewrapper #content #main hr { width: 409px; height: 1px; align: center; background-color: #e1e1e1; border: 0px none; float: left; margin-left: 16px; }
 #lower_pagewrapper #content #main h3 { margin: 13px 0 0 24px; }
 #lower_pagewrapper #content #main #main_top { background-image: url(../images/system/bg/front/main_top.jpg); margin-top: 0; }
-#lower_pagewrapper #content #main #main_bottom { background-image: url(../images/system/bg/front/main_bottom.jpg); float: left; }
+#lower_pagewrapper #content #main #main_bottom { background-image: url(../images/system/bg/front/main_bottom.jpg); float: left; margin-top: 33px; }
 #lower_pagewrapper #content #main .main_border { height: 8px; width: 463px; position: relative; }
 #lower_pagewrapper #content #main .properties { width: 440px; }
 #lower_pagewrapper #content #main p { margin: 5px 35px; font-style: italic; font-family: "Georgia"; }
