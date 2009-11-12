@@ -1,0 +1,21 @@
+git push ssh://serveradmin%omarandryan.com@omarandryan.com/home/81909/domains/git.omarandryan.com/html/mt-example.git master 
+
+git remote add gridtest ssh://serveradmin%omarandryan.com@omarandryan.com/home/81909/domains/git.omarandryan.com/html/mt-example.git
+
+
+ssh serveradmin%omarandryan.com@omarandryan.com
+cd container/rails/eandv_npb/eandv_npb.git
+git --bare update-server-info
+cd hooks
+mv post-update.sample post-update
+chmod a+x post-update
+
+
+git push ssh://serveradmin%omarandryan.com@omarandryan.com/home/81909/domains/envnpb.omarandryan.com/html/eandv_npb.git master 
+
+git remote add gridtest ssh://serveradmin%omarandryan.com@omarandryan.com/home/81909/domains/git.omarandryan.com/html/mt-example.git
+
+
+
+
+sftp://omarandryan.com//nfs/c03/h05/mnt/81909/domains/envnpb.omarandryan.com/html
