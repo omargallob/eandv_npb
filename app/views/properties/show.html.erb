@@ -1,2 +1,108 @@
-<h1>Properties#show</h1>
-<p>Find me in app/views/properties/show.html.erb</p>
+<div id="property_gallery">
+</div>
+
+<div id="right-column">
+	<div id="searchbox" class="advanced">
+		<div class="top"></div>
+			<div><%= render :partial => "shared/advancedsearchbox" %></div>
+		<div class='bottom'></div>
+	</div>
+	
+	<%# render :partial => "shared/property_right" %>
+</div>
+
+<div id="side-nav" class="property">
+	<%= render :partial => "shared/left_sidenav" %>
+	<%= render :partial => "shared/tool_set" %>
+</div>
+
+<div id="main" class="property">
+	<div class="top">	</div>
+
+	<h3>property</h3>
+	<hr />
+	<div id="property_header">
+		<h1><%= @property.title %></h1>
+		<p class="code">Property code: #CA8900-11</p>
+		<p class="address"><%= @property.location.region %>,&nbsp;<%= @property.location.county %> county </p>
+		<p class="state"><strong><%= "CA" %></strong> - <%= @property.location.country.title %> </p>
+		<p class="price"><%= number_to_currency(@property.price,:precision => 0) %> </p>
+		<ul class="facility">
+			<li class="number"><p> <%= @property.bedrooms %></p></li>
+			<li class="bed"></li>
+			<li class="number"><p> <%= @property.bathrooms %></p></li>
+			<li class="bath"></li>
+			<li class="number"><p>3</p></li>
+			<li class="garage"></li>
+		</ul>
+	</div>
+	<hr/>
+	<div id="property_content">
+		<%= @property.description%>
+	</div>
+	<div id="facility_list">
+		<div class="top"></div>
+		<h3>facilities</h3>
+		<ul>
+		<% for facility in @property.facilities %>
+			<li><%= facility.title %></li>
+		<% end %>
+		</ul>
+		<div class="bottom"></div>		
+	</div>
+	<hr />
+	<div class="further">
+		<p>Further details of this property are available exclusively through E&V.</p>
+	</div>
+	<hr />
+	<div class="further">
+		<p>Land size: <%= @property.plot %> ft.</p>
+		
+		<p>Built size: <%= @property.built %> f.t</p>
+	</div>
+	<hr />
+	<div id="map"></div>
+	<hr />
+	<div class="further">
+		<h3>You may also be interested</h3>		
+	</div>
+	<div id="maylike">
+		
+	</div>
+	<div class="bottom">	</div>
+
+</div>
+
+<div id='eanvvip'>
+	<p>Join and receive updates on properties when they are fresh, up to date property market.<br/>	<%= image_tag "system/buttons/joinnow.jpg", :style=> "margin-top:7px"%></p>
+</div>
+
+<div id="schools">
+	<div class="top"></div>
+	<h3>nearest schools</h3>
+	<hr />
+	<ul><li><span><%= @property.title %></span>,<br><%= @property.location.region %> (<%= @property.location.zipcod %>),&nbsp;<%= @property.location.county %> county</li></ul>
+	<hr />
+	<div class="bottom"></div>
+</div>
+<% content_for :script do %>
+<script type="text/javascript">
+$(document).ready(function() {
+  	 
+
+	$('#upper_pagewrapper').css("height","133px"); 
+	$('#lower_pagewrapper').addClass("large"); 
+	$('#content').css("height","100%"); 
+
+	var main_height= $('#main').height();
+	$('#main_bottom').css('margin-top',main_height);
+	$('#content').css("height","100%"); 
+	$("#main_bottom").appendTo($("#main"))
+		$('.droppies').combobox(); 
+	$('#main').addClass('properties');
+	$('.main_border').addClass('properties');
+	//$('#faq_block').jScrollPane({scrollbarWidth:17,showArrows:true});
+	set_nav_pointer("properties");
+});
+</script>
+<% end %>

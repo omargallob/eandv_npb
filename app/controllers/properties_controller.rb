@@ -9,6 +9,10 @@ class PropertiesController < ApplicationController
         end
   end
 
+  def show
+    @property = Property.find_by_id(params[:id])
+  end 
+  
   def feed
     @favs = Page.find(:all, :conditions=>['featured=?',true])
     respond_to do |format|

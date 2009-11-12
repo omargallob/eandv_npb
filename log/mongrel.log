@@ -1771,3 +1771,8 @@ Wed Oct 21 15:23:00 +0100 2009: Error calling Dispatcher.dispatch #<SyntaxError:
 /Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/index.html.erb:28: warning: don't put space before argument parentheses
 /Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/index.html.erb:28: warning: don't put space before argument parentheses
 /Users/ryan/Dev/2.3.4/eandv_npb/app/views/shared/_property.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/shared/_property.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/pages/index.html.erb:40: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/pages/index.html.erb:41: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/pages/index.html.erb:42: warning: don't put space before argument parentheses
+** TERM signal received.

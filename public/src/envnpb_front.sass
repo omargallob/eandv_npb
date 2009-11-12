@@ -22,6 +22,12 @@ body
 		strong
 			font-weight: normal
 			color: #d4d4d4
+	h1
+		font-family: "Georgia"
+		font-variant: small-caps
+		color: #e2001a
+
+
 
 
 #upper_pagewrapper
@@ -145,6 +151,8 @@ body
 		position: relative
 		z-index: 4
 		margin-bottom: -63px
+		.property
+			margin-top: 14px
 		#main.properties
 			width: 442px
 			background: url(../images/system/bg/front/main_properties.jpg)
@@ -161,6 +169,56 @@ body
 				position: relative
 				height: 15px				
 				float: left
+		#property_gallery
+			width: 621px
+			height: 404px
+			float: left
+			background: green
+		#schools
+			width: 304px
+			float: left
+			margin: 0px 0 0 16px
+			background: url(../images/system/bg/front/right_tool.jpg)
+			hr
+				width: 280px
+				float: left
+				border: 0px none
+				background: #E1E1E1
+				margin-left: 12px
+			h3
+				margin-left: 24px
+			.top
+				width: 304px
+				height: 15px
+				background: url(../images/system/bg/front/right_tool_top.jpg)
+			.bottom
+				width: 304px
+				height: 15px
+				background: url(../images/system/bg/front/right_tool_bottom.jpg)
+				position: relative
+				float: left
+			ul
+				margin: 0 0 0 24px
+				li
+					color: black
+					font-size: 12px
+					font-style: italic
+					span
+						text-transform: uppercase
+						font-style: normal
+		#eanvvip
+			width: 302px
+			height: 159px
+			background: url(../images/system/bg/front/ev_vip_bg.jpg)
+			float: left
+			margin: 14px 16px
+			p
+				margin: 50px
+				color: white
+				text-align: center
+				font-size: 14px
+				line-height: 18px
+				font-style: italic
 		#main
 			width: 463px
 			background: url(../images/system/bg/front/main_width.jpg)
@@ -168,6 +226,131 @@ body
 			color: #4d4d4d
 			overflow: auto
 			font-size: 14px
+
+			#maylike
+				width: 402px
+				height: 85px
+				float: left
+				margin: 9px 0 0 20px
+				background: url(../images/static/youmaylike.jpg)
+			#map
+				width: 419px
+				height: 317px
+				float: left
+				background: url(../images/static/map.jpg)
+				margin: 10px 11px
+			.further
+				width: 248px
+				float: left
+				h3
+					font-variant: normal
+					font-style: italic
+					:text-transform none
+			#facility_list
+				width: 136px
+				background: url(../images/system/bg/front/property_facility.jpg)
+				float: left
+				margin: 3px 0 0 25px
+				.top
+					width: 136px
+					height: 4px
+					background: url(../images/system/bg/front/property_facility_top.jpg)
+				.bottom
+					width: 136px
+					height: 4px
+					background: url(../images/system/bg/front/property_facility_bottom.jpg)
+				h3
+					text-align: center
+					margin: 10px 0 0 0
+				p
+					margin: 0 0 0 12px
+				ul 
+					margin: 0 0 0 12px
+					list-style-position: inside
+					li
+						font-size: 12px
+			#property_content
+				width: 248px
+				float: left
+				background: transparent
+				margin-left: 16px
+				margin-top: 3px
+				p
+					font-style: normal
+					font-size: 12px
+					margin: 0 0 0 6px
+			#property_header
+				height: 84px
+				background: transparent
+				float: left
+				margin-left: 16px
+				width: 409px
+				h1
+					text-transform: uppercase
+					color: #e2001a
+					font-style: normal
+					margin: 0 0 0 6px
+					width: 223px
+					padding: 0
+					font-size: 16px
+					float: left
+				p
+					float: left
+					margin: 0
+				.code
+					float: right
+					margin: 4px 0 0 0
+					font-size: 11px
+				.address
+					background: url(../images/system/bg/front/main_property_address.jpg)
+					height: 20px
+					width: 225px
+					margin: 0 0 0 0px
+					padding: 2px 0 0 6px
+					background-repeat: no-repeat
+				.state
+					width: 409px
+					margin: 3px 0 0 6px
+					font-style: normal
+					strong
+						text-transform: uppercase
+				.price
+					width: 159px
+					margin: 3px 0 0 6px
+				ul.facility
+					margin: 6px 0 0 5px
+					list-style: none
+					width: 152px
+					height: 17px
+					float: right
+					li 
+						float: left
+						color: white
+						text-align: center
+						p
+							margin: -2px 0 0 5px
+							padding: 0
+					li.number
+						height: 16px
+						width: 17px
+						background: url(../images/system/buttons/Facility/Facilites_NumBG.jpg)
+						margin-right: 3px
+					li.bed
+						height: 16px
+						width: 24px
+						background: url(../images/system/buttons/Facility/Facilities_Bed.jpg)
+						margin-right: 12px
+					li.bath
+						height: 20px
+						width: 22px
+						background: url(../images/system/buttons/Facility/Facilities_Shower.jpg)
+						margin-right: 12px
+						margin-top: -2px
+					li.garage
+						height: 20px
+						width: 22px
+						background: url(../images/system/buttons/Facility/Facilities_Garage.jpg)
+						margin-top: -2px
 			ul#view_options
 				width: 409px
 				padding: 0px
@@ -351,7 +534,7 @@ body
 		#right-column
 			width: 304px
 			float: left
-			margin-left: 20px
+			margin-left: 16px
 			.top
 				width: 304px
 				height: 15px
@@ -492,7 +675,7 @@ body
 			width: 162px
 			float: left
 			background-color: transparent
-			margin-right: 25px
+			margin-right: 20px
 			.left_tool
 				width: 162px
 				height: 188px
