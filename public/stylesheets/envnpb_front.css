@@ -6,6 +6,7 @@ body h3 { text-transform: capitalize; color: #e13939; font-family: "Georgia"; fo
 body h3 span { color: #d4d4d4; }
 body h3 strong { font-weight: normal; color: #d4d4d4; }
 body h1 { font-family: "Georgia"; font-variant: small-caps; color: #e2001a; }
+body object { outline: none; }
 
 #upper_pagewrapper { z-index: 0; width: 100%; height: 566px; background-image: url(../images/system/bg/front/header.jpg); }
 #upper_pagewrapper #header { height: 84px; width: 1020px; background-image: url(../images/system/bg/front/header.jpg); margin: 0px auto; }
