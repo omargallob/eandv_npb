@@ -153,12 +153,12 @@ function set_nav_pointer(st){
 }
 
 function nice_fonts(){
-  	Cufon.replace('#navbar ul li.cufon-active h2', {
+  	Cufon.replace('li.cufon-active h2', {
 		  hover: false
 	 });
 	
 	
-	Cufon.replace('#navbar ul li h2', {
+	Cufon.replace('h2', {
 		   fontFamily: "AGaramond LT",
 		   color: '#818181',
 		   fontSize: "14px",
@@ -168,18 +168,18 @@ function nice_fonts(){
 	 });
 
 
-  	Cufon.replace('#navbar ul li.cufon-active h2', {
+  	Cufon.replace('li.cufon-active h2', {
 		  fontFamily: "AGaramond LT",
 		  color: 'white',
 		  fontSize: "14px",
 	 });
     
-  Cufon.replace('#content h3', {
+  Cufon.replace('h3', {
 	  fontFamily: "AGaramond LT",
 	  color: '#E13939',
 	  fontSize: "12px",
  });
-  Cufon.replace('#content h1', {
+  Cufon.replace('h1', {
 	  fontFamily: "AGaramond LT",
 	  color: '#E13939',
 	  fontSize: "16px",
