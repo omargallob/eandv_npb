@@ -36,7 +36,8 @@
 	</style>
 	<![endif]-->
 	<%= yield :script %>
-	<%= javascript_include_tag "cufon" %>
+	<%# javascript_include_tag "cufon" %>
+	<script src="/javascripts/cufon.js" type="text/javascript" charset="utf-8"></script>
 
 	<script src="/fonts/AGaramond_LT_400-AGaramond_BoldOsF_400-AGaramond_LT_italic_400-AGaramond_LT_italic_700.font.js" type="text/javascript" charset="utf-8"></script>
 	<script>
@@ -93,5 +94,7 @@
 			</ul>
 		</div>
 	</div>
+	<script type="text/javascript"> Cufon.now(); </script>
+	
  </body>
 </html>
