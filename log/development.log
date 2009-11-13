@@ -20778,3 +20778,419 @@ Rendered shared/_user_bar (0.9ms)
   [4;35;1mPage Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
 Rendered shared/_front_menu (9.6ms)
 Completed in 140ms (View: 61, DB: 60) | 200 OK [http://localhost/properties/3]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2009-11-12 17:58:54) [GET]
+  Parameters: {"name"=>"home"}
+  [4;36;1mPage Load (0.9ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mPage Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'home') LIMIT 1[0m
+  [4;35;1mMetatag Load (0.4ms)[0m   [0mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 1) LIMIT 1[0m
+  [4;36;1mMetatag Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `metatags`[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 1) [0m
+Rendered shared/_polaroid (1.0ms)
+Rendered shared/_home_sidenav (9.4ms)
+Rendered shared/_quicksearchbox (2.9ms)
+Rendered shared/_user_bar (2.2ms)
+Rendered shared/_front_menu (5.8ms)
+  [4;36;1mPageFeaturedPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;35;1mPageFeaturedPhoto Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `page_featured_photos`[0m
+Rendered shared/admin/images/_featured_photo (6.5ms)
+Completed in 1656ms (View: 1490, DB: 9) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2009-11-12 19:47:20) [GET]
+  Parameters: {"name"=>"home"}
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mPage Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'home') LIMIT 1[0m
+  [4;35;1mMetatag Load (0.4ms)[0m   [0mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 1) LIMIT 1[0m
+  [4;36;1mMetatag Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `metatags`[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 1) [0m
+Rendered shared/_polaroid (0.1ms)
+Rendered shared/_home_sidenav (2.6ms)
+Rendered shared/_quicksearchbox (0.1ms)
+Rendered shared/_user_bar (2.1ms)
+Rendered shared/_front_menu (5.5ms)
+  [4;36;1mPageFeaturedPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;35;1mPageFeaturedPhoto Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `page_featured_photos`[0m
+Rendered shared/admin/images/_featured_photo (5.7ms)
+Completed in 176ms (View: 147, DB: 9) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RssController#favs (for 127.0.0.1 at 2009-11-12 19:47:25) [GET]
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mPage Load (0.7ms)[0m   [0mSELECT * FROM `pages` WHERE (featured=1) [0m
+Rendering rss/favs
+  [4;36;1mPage Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPageFeaturedPhoto Load (0.3ms)[0m   [0mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;36;1mPageFeaturedPhoto Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `page_featured_photos`[0m
+Completed in 158ms (View: 141, DB: 6) | 200 OK [http://localhost/rss/favs]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-11-12 19:47:33) [GET]
+  [4;35;1mPage Load (0.8ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_user_bar (1.0ms)
+  [4;36;1mPage Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendered shared/_front_menu (10.2ms)
+Completed in 53ms (View: 40, DB: 3) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-11-12 19:47:39) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"4UHNaEY4oWE+n3okuE7NRE6sJAUSXwgAORvmJ3TMJgQ=", "login"=>"superuser", "password"=>"123456"}
+  [4;35;1mPage Load (0.8ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mUser Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'superuser') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mroles_users Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.7ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+Redirected to http://localhost:3001/admin
+Completed in 67ms (DB: 9) | 302 Found [http://localhost/session]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::OverviewController#index (for 127.0.0.1 at 2009-11-12 19:47:39) [GET]
+  [4;35;1mPage Load (0.9ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mroles_users Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mPage Load (0.8ms)[0m   [0mSELECT * FROM `pages` [0m
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM `categories` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mCountry Load (0.3ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mFacility Load (0.3ms)[0m   [0;1mSELECT * FROM `facilities` [0m
+  [4;35;1mProperty Load (0.5ms)[0m   [0mSELECT * FROM `properties` [0m
+Rendering template within layouts/admin
+Rendering admin/overview/index
+Rendered shared/_user_bar (1.1ms)
+Rendered shared/_back_menu (11.2ms)
+Completed in 103ms (View: 46, DB: 10) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PropertiesController#index (for 127.0.0.1 at 2009-11-12 19:47:41) [GET]
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM `locations` WHERE (county='Orange') [0m
+  [4;35;1mProperty Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mLocation Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mProperty Load Including Associations (3.1ms)[0m   [0mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+Rendering template within layouts/admin
+Rendering admin/properties/index
+Rendered shared/admin/_properties_sidenav (1.5ms)
+  [4;36;1mType Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+  [4;35;1mType Load (0.3ms)[0m   [0mSELECT * FROM `types` WHERE (`types`.`id` = 2) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47admin47properties47_property46html46erb_locals_object_property_property_counter at /Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:14)
+  [4;36;1mGallery Load (0.4ms)[0m   [0;1mSELECT * FROM `galleries` WHERE (`galleries`.property_id = 3) LIMIT 1[0m
+  [4;35;1mGallery Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `galleries`[0m
+Rendered admin/properties/_property (33.5ms)
+  [4;36;1mType Load (0.4ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = 3) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47admin47properties47_property46html46erb_locals_object_property_property_counter at /Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:14)
+  [4;35;1mGallery Load (0.3ms)[0m   [0mSELECT * FROM `galleries` WHERE (`galleries`.property_id = 4) LIMIT 1[0m
+Rendered admin/properties/_property (10.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = 2) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47admin47properties47_property46html46erb_locals_object_property_property_counter at /Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:14)
+  [4;35;1mGallery Load (0.4ms)[0m   [0mSELECT * FROM `galleries` WHERE (`galleries`.property_id = 5) LIMIT 1[0m
+Rendered admin/properties/_property (8.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = 3) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47admin47properties47_property46html46erb_locals_object_property_property_counter at /Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:14)
+  [4;35;1mGallery Load (0.3ms)[0m   [0mSELECT * FROM `galleries` WHERE (`galleries`.property_id = 2) LIMIT 1[0m
+Rendered admin/properties/_property (8.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = 2) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47admin47properties47_property46html46erb_locals_object_property_property_counter at /Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:14)
+  [4;35;1mGallery Load (0.3ms)[0m   [0mSELECT * FROM `galleries` WHERE (`galleries`.property_id = 1) LIMIT 1[0m
+Rendered admin/properties/_property (8.7ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_back_menu (2.1ms)
+Completed in 166ms (View: 103, DB: 21) | 200 OK [http://localhost/admin/properties]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::GalleriesController#show (for 127.0.0.1 at 2009-11-12 19:47:44) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mPage Load (0.9ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mGallery Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `galleries`[0m
+  [4;35;1mGallery Load (0.3ms)[0m   [0mSELECT * FROM `galleries` WHERE (`galleries`.`id` = '13') LIMIT 1[0m
+  [4;36;1mUpload Load (0.5ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.gallery_id = 13) ORDER BY position[0m
+Rendering template within layouts/admin
+Rendering admin/galleries/show
+  [4;35;1mUpload Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `uploads` WHERE (`uploads`.gallery_id = 13) [0m
+Rendered shared/_user_bar (1.2ms)
+Rendered shared/_back_menu (1.7ms)
+Completed in 107ms (View: 54, DB: 14) | 200 OK [http://localhost/admin/galleries/13]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::OverviewController#index (for 127.0.0.1 at 2009-11-12 19:59:20) [GET]
+  [4;35;1mPage Load (0.8ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mroles_users Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.6ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mPage Load (0.8ms)[0m   [0mSELECT * FROM `pages` [0m
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM `categories` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mCountry Load (0.3ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mFacility Load (0.3ms)[0m   [0;1mSELECT * FROM `facilities` [0m
+  [4;35;1mProperty Load (0.5ms)[0m   [0mSELECT * FROM `properties` [0m
+Rendering template within layouts/admin
+Rendering admin/overview/index
+Rendered shared/_user_bar (1.0ms)
+Rendered shared/_back_menu (1.7ms)
+Completed in 75ms (View: 20, DB: 10) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PropertiesController#index (for 127.0.0.1 at 2009-11-12 20:09:04) [GET]
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM `locations` WHERE (county='Orange') [0m
+  [4;35;1mProperty Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mLocation Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mProperty Load Including Associations (3.1ms)[0m   [0mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+Rendering template within layouts/admin
+Rendering admin/properties/index
+Rendered shared/admin/_properties_sidenav (0.8ms)
+  [4;36;1mType Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+  [4;35;1mType Load (0.2ms)[0m   [0mSELECT * FROM `types` WHERE (`types`.`id` = 2) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47admin47properties47_property46html46erb_locals_object_property_property_counter at /Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:14)
+  [4;36;1mGallery Load (0.4ms)[0m   [0;1mSELECT * FROM `galleries` WHERE (`galleries`.property_id = 3) LIMIT 1[0m
+  [4;35;1mGallery Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `galleries`[0m
+Rendered admin/properties/_property (30.3ms)
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = 3) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47admin47properties47_property46html46erb_locals_object_property_property_counter at /Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:14)
+  [4;35;1mGallery Load (0.4ms)[0m   [0mSELECT * FROM `galleries` WHERE (`galleries`.property_id = 4) LIMIT 1[0m
+Rendered admin/properties/_property (9.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = 2) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47admin47properties47_property46html46erb_locals_object_property_property_counter at /Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:14)
+  [4;35;1mGallery Load (0.3ms)[0m   [0mSELECT * FROM `galleries` WHERE (`galleries`.property_id = 5) LIMIT 1[0m
+Rendered admin/properties/_property (8.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = 3) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47admin47properties47_property46html46erb_locals_object_property_property_counter at /Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:14)
+  [4;35;1mGallery Load (0.3ms)[0m   [0mSELECT * FROM `galleries` WHERE (`galleries`.property_id = 2) LIMIT 1[0m
+Rendered admin/properties/_property (8.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = 2) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47admin47properties47_property46html46erb_locals_object_property_property_counter at /Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:14)
+  [4;35;1mGallery Load (0.3ms)[0m   [0mSELECT * FROM `galleries` WHERE (`galleries`.property_id = 1) LIMIT 1[0m
+Rendered admin/properties/_property (8.3ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_back_menu (1.6ms)
+Completed in 141ms (View: 77, DB: 21) | 200 OK [http://localhost/admin/properties]
+/!\ FAILSAFE /!\  Fri Nov 13 11:43:35 +0000 2009
+  Status: 500 Internal Server Error
+  Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/mysql_adapter.rb:585:in `real_connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/mysql_adapter.rb:585:in `connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/mysql_adapter.rb:199:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/mysql_adapter.rb:71:in `new'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/mysql_adapter.rb:71:in `mysql_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:101:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:27:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/bin/mongrel_rails:19:in `load'
+    /usr/bin/mongrel_rails:19
+  [4;36;1mSQL (33.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2009-11-13 11:44:34) [GET]
+  Parameters: {"name"=>"home"}
+  [4;36;1mPage Load (48.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mPage Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.5ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'home') LIMIT 1[0m
+  [4;35;1mMetatag Load (30.1ms)[0m   [0mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 1) LIMIT 1[0m
+  [4;36;1mMetatag Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `metatags`[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 1) [0m
+Rendered shared/_polaroid (1.6ms)
+Rendered shared/_home_sidenav (26.8ms)
+Rendered shared/_quicksearchbox (13.5ms)
+Rendered shared/_user_bar (18.0ms)
+Rendered shared/_front_menu (13.3ms)
+  [4;36;1mPageFeaturedPhoto Load (48.0ms)[0m   [0;1mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;35;1mPageFeaturedPhoto Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `page_featured_photos`[0m
+Rendered shared/admin/images/_featured_photo (13.8ms)
+Completed in 2125ms (View: 1786, DB: 167) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 192.168.1.67 at 2009-11-13 11:52:58) [GET]
+  Parameters: {"name"=>"home"}
+  [4;36;1mPage Load (0.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mPage Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'home') LIMIT 1[0m
+  [4;35;1mMetatag Load (0.4ms)[0m   [0mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 1) LIMIT 1[0m
+  [4;36;1mMetatag Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `metatags`[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 1) [0m
+Rendered shared/_polaroid (0.1ms)
+Rendered shared/_home_sidenav (2.7ms)
+Rendered shared/_quicksearchbox (0.1ms)
+Rendered shared/_user_bar (0.8ms)
+Rendered shared/_front_menu (5.0ms)
+  [4;36;1mPageFeaturedPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;35;1mPageFeaturedPhoto Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `page_featured_photos`[0m
+Rendered shared/admin/images/_featured_photo (6.0ms)
+Completed in 174ms (View: 145, DB: 8) | 200 OK [http://192.168.1.64/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 192.168.1.67 at 2009-11-13 11:53:03) [GET]
+  [4;36;1mPage Load (0.7ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mProperty Columns (31.8ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mLocation Columns (15.3ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mProperty Load Including Associations (3.2ms)[0m   [0mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;36;1mPage Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.1ms)
+Rendered shared/_home_sidenav (2.7ms)
+Rendered shared/_tool_set (14.2ms)
+Rendered shared/_property (33.4ms)
+Rendered shared/_property (1.1ms)
+Rendered shared/_property (1.1ms)
+Rendered shared/_property (1.0ms)
+Rendered shared/_property (1.1ms)
+Rendered shared/_advancedsearchbox (14.2ms)
+Rendered shared/_properties_right (19.6ms)
+Rendered shared/_user_bar (0.9ms)
+Rendered shared/_front_menu (4.2ms)
+Completed in 270ms (View: 156, DB: 54) | 200 OK [http://192.168.1.64/properties]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#show (for 192.168.1.67 at 2009-11-13 11:53:07) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mPage Load (1.0ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mProperty Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mProperty Load (0.5ms)[0m   [0mSELECT * FROM `properties` WHERE (`properties`.`id` = '3') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/show
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_polaroid (0.1ms)
+Rendered shared/_left_sidenav (6.0ms)
+Rendered shared/_tool_set (3.2ms)
+  [4;36;1mLocation Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.5ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 16) [0m
+  [4;36;1mCountry Columns (13.2ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+  [4;35;1mCountry Load (0.3ms)[0m   [0mSELECT * FROM `countries` WHERE (`countries`.`id` = 9) [0m
+  [4;36;1mfacilities_properties Columns (6.3ms)[0m   [0;1mSHOW FIELDS FROM `facilities_properties`[0m
+  [4;35;1mFacility Load (6.7ms)[0m   [0mSELECT * FROM `facilities` INNER JOIN `facilities_properties` ON `facilities`.id = `facilities_properties`.facility_id WHERE (`facilities_properties`.property_id = 3 ) [0m
+  [4;36;1mFacility Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `facilities`[0m
+Rendered shared/_user_bar (0.8ms)
+  [4;35;1mPage Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendered shared/_front_menu (10.0ms)
+Completed in 170ms (View: 115, DB: 37) | 200 OK [http://192.168.1.64/properties/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 192.168.1.67 at 2009-11-13 11:53:38) [GET]
+  Parameters: {"name"=>"home"}
+  [4;36;1mPage Load (0.9ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mPage Columns (245.2ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'home') LIMIT 1[0m
+  [4;35;1mMetatag Load (0.4ms)[0m   [0mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 1) LIMIT 1[0m
+  [4;36;1mMetatag Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `metatags`[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 1) [0m
+Rendered shared/_polaroid (0.1ms)
+Rendered shared/_home_sidenav (2.8ms)
+Rendered shared/_quicksearchbox (0.1ms)
+Rendered shared/_user_bar (1.0ms)
+Rendered shared/_front_menu (4.8ms)
+  [4;36;1mPageFeaturedPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM `page_featured_photos` WHERE (`page_featured_photos`.page_id = 1) LIMIT 1[0m
+  [4;35;1mPageFeaturedPhoto Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `page_featured_photos`[0m
+Rendered shared/admin/images/_featured_photo (6.5ms)
+Completed in 424ms (View: 61, DB: 252) | 200 OK [http://192.168.1.64/]

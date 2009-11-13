@@ -127,7 +127,7 @@ body h1 { font-family: "Georgia"; font-variant: small-caps; color: #e2001a; }
 #lower_pagewrapper #content #right-column .top { width: 304px; height: 15px; background: url(../images/system/bg/front/right_tool_top.jpg); }
 #lower_pagewrapper #content #right-column .bottom { width: 304px; height: 15px; background: url(../images/system/bg/front/right_tool_bottom.jpg); position: relative; float: left; }
 #lower_pagewrapper #content #right-column h3 { margin-left: 23px; }
-#lower_pagewrapper #content #right-column #searchbox.advanced { height: 100%; width: 304px; background: url(../images/system/bg/front/right_tool.jpg); background-repeat: repeat-y; }
+#lower_pagewrapper #content #right-column #searchbox.advanced { height: 404px; width: 304px; background: url(../images/system/bg/front/right_tool.jpg); background-repeat: repeat-y; }
 #lower_pagewrapper #content #right-column #searchbox.advanced div { float: left; }
 #lower_pagewrapper #content #right-column #faq { height: 157px; background: url(../images/system/bg/front/right_tool.jpg); background-repeat: repeat-y; float: left; margin-top: 15px; }
 #lower_pagewrapper #content #right-column #faq #faq_block { height: 109px; width: 269px; }

@@ -3,10 +3,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<%# stylesheet_link_tag "screen","envnpb_front" %>
+	<%= stylesheet_link_tag "screen","envnpb_front","sexylightbox"
+   "ui.combobox",
+   "ui.tabs",
+   "jquery.jcarousel",
+   "JScrollPane"
+   %>
 	<%= display_meta_tags %>
 	<%= javascript_include_merged :base,:secondary %>
-	<%= stylesheet_link_merged :base, :secondary %>
+	<%# stylesheet_link_merged :base, :secondary %>
 	
 	<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 	<!--[if lt IE 8]>

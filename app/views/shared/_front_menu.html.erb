@@ -1,4 +1,4 @@
-<% @tabs.each do |page| -%>
+<% for page in @tabs -%>
 	<% unless page.name == 'home' %>
 		<% if page.name == 'properties' %>
 			<li id="nav_<%= page.name %>"><%= link_to 'Find your Home', properties_path %><%= image_tag("system/buttons/nav_arrow.png", :class=>"arrow") %></li>

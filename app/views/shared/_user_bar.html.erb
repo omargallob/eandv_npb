@@ -4,11 +4,11 @@
  <%= t('options.logbox.logged_as')%> <%= link_to_current_user :content_method => :login %>			
  </div>
  <div id="user-bar-action"  >
-	(<%= link_to t('options.logbox.logout'), logout_path, { :title =>  t('options.logbox.logout') }    %>)
+	(<%= link_to  'options.logbox.logout' , logout_path, { :title =>   'options.logbox.logout' }    %>)
  </div>
 <% else -%>
  <div id="user-bar-greeting">
-	<%= link_to_login_with_IP t('options.logbox.notlogged') , :style => 'border: none;' %>
+	<%= link_to_login_with_IP 'options.logbox.notlogged' , :style => 'border: none;' %>
  </div>
  <div id="user-bar-action"  >
 	<%= link_to "Log in",  login_path,  { :title => "Log in" } %> or
