@@ -36,11 +36,11 @@ body object { outline: none; }
 #lower_pagewrapper #content_top { background: url(../images/system/bg/front/content_top.jpg); height: 20px; background-repeat: repeat-x; position: absolute; margin-top: 0; width: 100%; z-index: 0; }
 #lower_pagewrapper #content_bottom { background: url(../images/system/bg/front/content_bottom.jpg); height: 63px; background-repeat: repeat-x; position: relative; width: 100%; z-index: 3; }
 #lower_pagewrapper #content { margin: 0px auto; padding: 25px; background: transparent; color: black; width: 970px; font-family: "Georgia"; min-height: 280px; position: relative; z-index: 4; margin-bottom: -63px; }
-#lower_pagewrapper #content .property { margin-top: 14px; }
+#lower_pagewrapper #content .property { margin-top: 0px; }
 #lower_pagewrapper #content #main.properties { width: 442px; background: url(../images/system/bg/front/main_properties.jpg); }
 #lower_pagewrapper #content #main.properties .top { background-image: url(../images/system/bg/front/main_properties_top.jpg); margin-top: 0; width: 442px; position: relative; height: 15px; float: left; }
 #lower_pagewrapper #content #main.properties .bottom { background-image: url(../images/system/bg/front/main_properties_bottom.jpg); width: 442px; position: relative; height: 15px; float: left; }
-#lower_pagewrapper #content #property_gallery { width: 621px; height: 404px; float: left; background: green; }
+#lower_pagewrapper #content #property_gallery { width: 623px; height: 388px; float: left; background: green; }
 #lower_pagewrapper #content #schools { width: 304px; float: left; margin: 0px 0 0 16px; background: url(../images/system/bg/front/right_tool.jpg); }
 #lower_pagewrapper #content #schools hr { width: 280px; float: left; border: 0px none; background: #E1E1E1; margin-left: 12px; }
 #lower_pagewrapper #content #schools h3 { margin-left: 24px; }
@@ -169,7 +169,7 @@ body object { outline: none; }
 #lower_pagewrapper #content #side-nav .left_tool ul li img { float: left; }
 #lower_pagewrapper #content #side-nav .left_tool ul li span { float: left; font-size: 12px; font-style: italic; width: 100px; margin: 2px 0 0 13px; color: #818181; }
 #lower_pagewrapper #content #side-nav #keep_discovering { width: 150px; height: 80px; background-image: url(../images/system/bg/front/keepdiscovering.jpg); }
-#lower_pagewrapper #content #side-nav #polaroid { width: 310px; height: 100px; margin-left: -169px; }
+#lower_pagewrapper #content #side-nav #polaroid { width: 310px; height: 100px; margin-left: -190px; }
 #lower_pagewrapper #content #side-nav ul { padding-left: 5px; width: 120px; float: none; }
 #lower_pagewrapper #content #side-nav ul li { list-style: none; }
 #lower_pagewrapper #content #side-nav ul li a { color: black; }
