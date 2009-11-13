@@ -38,7 +38,7 @@
 .jcarousel-list li, .jcarousel-item {float: left; list-style: none;  width: 75px; height: 75px}
  .jcarousel-next {z-index: 3; display: none}
 .jcarousel-prev {z-index: 3; display: none}
-.jScrollPaneContainer {overflow:hidden; position:relative; border:1px solid #d3d3d3; z-index:1; float:left}
+.jScrollPaneContainer {overflow:hidden; position:relative; z-index:1; float:left; margin-left:24px}
 .jScrollPaneTrack {-moz-background-clip:border; -moz-background-inline-policy:continuous; -moz-background-origin:padding; background: transparent none repeat scroll 0 0; cursor:pointer; height:100%; position:absolute; right:0; top:0; width:17px; padding:5px}
 .jScrollPaneDrag {-moz-background-clip:border; -moz-background-inline-policy:continuous; -moz-background-origin:padding; background:#ec4147 none repeat scroll 0 0; cursor:pointer; overflow:hidden; position:absolute}
 .jScrollPaneDragTop {left:0; overflow:hidden; position:absolute; top:0}

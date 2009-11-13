@@ -151,3 +151,27 @@ function set_nav_pointer(st){
 		$("#nav_"+st+" img").css("margin-left",y-5);
 		$("#nav_"+st+" a").css("color","white");
 }
+
+function nice_fonts(){
+  	Cufon.replace('#navbar ul li.cufon-active h2', {
+		  hover: false
+	 });
+	
+	
+	Cufon.replace('#navbar ul li h2', {
+		   fontFamily: "AGaramond LT",
+		   color: '#818181',
+		   fontSize: "14px",
+		   hover: {
+		   		color: 'white'
+		   }
+	 });
+
+
+  	Cufon.replace('#navbar ul li.cufon-active h2', {
+		  fontFamily: "AGaramond LT",
+		  color: 'white',
+		  fontSize: "14px",
+	 });
+  
+}

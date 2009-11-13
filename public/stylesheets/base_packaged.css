@@ -94,10 +94,16 @@ body.three-col #sidebar {display: inline; float: left; margin-right: 10px; width
 * html body.three-col #sidebar {overflow-x: hidden}
 body.three-col #content {display: inline; float: left; margin-right: 0; width: 630px}
 * html body.three-col #content {overflow-x: hidden}
-body {background: #222222; color: white; overflow: auto; font-family: "Georgia"}
-body a {color: black}
+body {background: #222222; color: white; overflow: auto; font-family: "Georgia"; z-index: -1}
+body a {color: black; outline: none}
+body a:focus {-moz-outline-style: none}
 body a:hover {color: yellow}
-#upper_pagewrapper {width: 100%; height: 566px; background-image: url(../images/system/bg/front/header.jpg)}
+body h3 {text-transform: capitalize; color: #e13939; font-family: "Georgia"; font-variant: small-caps; font-size: 16px}
+body h3 span {color: #d4d4d4}
+body h3 strong {font-weight: normal; color: #d4d4d4}
+body h1 {font-family: "Georgia"; font-variant: small-caps; color: #e2001a}
+body object {outline: none}
+#upper_pagewrapper {z-index: 0; width: 100%; height: 566px; background-image: url(../images/system/bg/front/header.jpg)}
 #upper_pagewrapper #header {height: 84px; width: 1020px; background-image: url(../images/system/bg/front/header.jpg); margin: 0px auto}
 #upper_pagewrapper #header #logo {height: 60px; width: 546px}
 #upper_pagewrapper #header #logo a img {margin: 22px 0 0 42px}
@@ -109,43 +115,149 @@ body a:hover {color: yellow}
 #upper_pagewrapper #navbar ul li a {margin-left: 25px; color: #888888; text-decoration: none; text-transform: uppercase}
 #upper_pagewrapper #navbar ul li a:hover {color: white}
 #upper_pagewrapper #navbar ul li a.active {color: white}
+#upper_pagewrapper #navbar ul li img {position: absolute; margin-top: 7px; margin-left: 3px}
+#upper_pagewrapper #navbar ul li img.arrow {position: absolute; margin-top: 7px; margin-left: 0px; z-index: 4; display: none}
+#upper_pagewrapper #navbar ul li img.active {display: block}
 #upper_pagewrapper #largegallery {width: 100%; height: 433px; background-position: 0 -135px}
+#upper_pagewrapper #largegallery #shine {height: 22px; width: 949px; background-image: url(../images/system/bg/front/shine.jpg); margin: 0px auto; margin-top: 28px}
 #upper_pagewrapper #holder {width: 961px; margin: 0px auto; height: 359px; padding-top: 24px}
 #upper_pagewrapper #cuber {width: 961px; background: transparent; list-style: none}
 #upper_pagewrapper #listOfImages {background: transparent; height: 359px; margin: 0; padding: 0; width: 961px; position: relative}
 #lower_pagewrapper.large {background: white}
-#lower_pagewrapper {width: 100%; background-image: url(../images/system/bg/front/content_bg.jpg); background-repeat: none}
-#lower_pagewrapper #content.homepage {background-image: url(../images/system/bg/front/content_bg.jpg)}
-#lower_pagewrapper #content.homepage #main {width: 463px}
-#lower_pagewrapper #content.homepage #main_bottom {margin-top: 33px}
-#lower_pagewrapper #content {margin: 0px auto; padding: 25px; background-repeat: none; color: black; width: 970px; font-family: "Georgia"; min-height: 280px}
+#lower_pagewrapper {width: 100%; background: white; z-index: 0}
+#lower_pagewrapper #content_top {background: url(../images/system/bg/front/content_top.jpg); height: 20px; background-repeat: repeat-x; position: absolute; margin-top: 0; width: 100%; z-index: 0}
+#lower_pagewrapper #content_bottom {background: url(../images/system/bg/front/content_bottom.jpg); height: 63px; background-repeat: repeat-x; position: relative; width: 100%; z-index: 3}
+#lower_pagewrapper #content {margin: 0px auto; padding: 25px; background: transparent; color: black; width: 970px; font-family: "Georgia"; min-height: 280px; position: relative; z-index: 4; margin-bottom: -63px}
+#lower_pagewrapper #content .property {margin-top: 14px}
+#lower_pagewrapper #content #main.properties {width: 442px; background: url(../images/system/bg/front/main_properties.jpg)}
+#lower_pagewrapper #content #main.properties .top {background-image: url(../images/system/bg/front/main_properties_top.jpg); margin-top: 0; width: 442px; position: relative; height: 15px; float: left}
+#lower_pagewrapper #content #main.properties .bottom {background-image: url(../images/system/bg/front/main_properties_bottom.jpg); width: 442px; position: relative; height: 15px; float: left}
+#lower_pagewrapper #content #property_gallery {width: 621px; height: 404px; float: left; background: green}
+#lower_pagewrapper #content #schools {width: 304px; float: left; margin: 0px 0 0 16px; background: url(../images/system/bg/front/right_tool.jpg)}
+#lower_pagewrapper #content #schools hr {width: 280px; float: left; border: 0px none; background: #E1E1E1; margin-left: 12px}
+#lower_pagewrapper #content #schools h3 {margin-left: 24px}
+#lower_pagewrapper #content #schools .top {width: 304px; height: 15px; background: url(../images/system/bg/front/right_tool_top.jpg)}
+#lower_pagewrapper #content #schools .bottom {width: 304px; height: 15px; background: url(../images/system/bg/front/right_tool_bottom.jpg); position: relative; float: left}
+#lower_pagewrapper #content #schools ul {margin: 0 0 0 24px}
+#lower_pagewrapper #content #schools ul li {color: black; font-size: 12px; font-style: italic}
+#lower_pagewrapper #content #schools ul li span {text-transform: uppercase; font-style: normal}
+#lower_pagewrapper #content #eanvvip {width: 302px; height: 159px; background: url(../images/system/bg/front/ev_vip_bg.jpg); float: left; margin: 14px 16px}
+#lower_pagewrapper #content #eanvvip p {margin: 50px; color: white; text-align: center; font-size: 14px; line-height: 18px; font-style: italic}
 #lower_pagewrapper #content #main {width: 463px; background: url(../images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px}
+#lower_pagewrapper #content #main #maylike {width: 402px; height: 85px; float: left; margin: 9px 0 0 20px; background: url(../images/static/youmaylike.jpg)}
+#lower_pagewrapper #content #main #map {width: 419px; height: 317px; float: left; background: url(../images/static/map.jpg); margin: 10px 11px}
+#lower_pagewrapper #content #main .further {width: 248px; float: left}
+#lower_pagewrapper #content #main .further h3 {font-variant: normal; font-style: italic; text-transform: none}
+#lower_pagewrapper #content #main #facility_list {width: 136px; background: url(../images/system/bg/front/property_facility.jpg); float: left; margin: 3px 0 0 25px}
+#lower_pagewrapper #content #main #facility_list .top {width: 136px; height: 4px; background: url(../images/system/bg/front/property_facility_top.jpg)}
+#lower_pagewrapper #content #main #facility_list .bottom {width: 136px; height: 4px; background: url(../images/system/bg/front/property_facility_bottom.jpg)}
+#lower_pagewrapper #content #main #facility_list h3 {text-align: center; margin: 10px 0 0 0}
+#lower_pagewrapper #content #main #facility_list p {margin: 0 0 0 12px}
+#lower_pagewrapper #content #main #facility_list ul {margin: 0 0 0 12px; list-style-position: inside}
+#lower_pagewrapper #content #main #facility_list ul li {font-size: 12px}
+#lower_pagewrapper #content #main #property_content {width: 248px; float: left; background: transparent; margin-left: 16px; margin-top: 3px}
+#lower_pagewrapper #content #main #property_content p {font-style: normal; font-size: 12px; margin: 0 0 0 6px}
+#lower_pagewrapper #content #main #property_header {height: 84px; background: transparent; float: left; margin-left: 16px; width: 409px}
+#lower_pagewrapper #content #main #property_header h1 {text-transform: uppercase; color: #e2001a; font-style: normal; margin: 0 0 0 6px; width: 223px; padding: 0; font-size: 16px; float: left}
+#lower_pagewrapper #content #main #property_header p {float: left; margin: 0}
+#lower_pagewrapper #content #main #property_header .code {float: right; margin: 4px 0 0 0; font-size: 11px}
+#lower_pagewrapper #content #main #property_header .address {background: url(../images/system/bg/front/main_property_address.jpg); height: 20px; width: 225px; margin: 0 0 0 0px; padding: 2px 0 0 6px; background-repeat: no-repeat}
+#lower_pagewrapper #content #main #property_header .state {width: 409px; margin: 3px 0 0 6px; font-style: normal}
+#lower_pagewrapper #content #main #property_header .state strong {text-transform: uppercase}
+#lower_pagewrapper #content #main #property_header .price {width: 159px; margin: 3px 0 0 6px}
+#lower_pagewrapper #content #main #property_header ul.facility {margin: 6px 0 0 5px; list-style: none; width: 152px; height: 17px; float: right}
+#lower_pagewrapper #content #main #property_header ul.facility li {float: left; color: white; text-align: center}
+#lower_pagewrapper #content #main #property_header ul.facility li p {margin: -2px 0 0 5px; padding: 0}
+#lower_pagewrapper #content #main #property_header ul.facility li.number {height: 16px; width: 17px; background: url(../images/system/buttons/Facility/Facilites_NumBG.jpg); margin-right: 3px}
+#lower_pagewrapper #content #main #property_header ul.facility li.bed {height: 16px; width: 24px; background: url(../images/system/buttons/Facility/Facilities_Bed.jpg); margin-right: 12px}
+#lower_pagewrapper #content #main #property_header ul.facility li.bath {height: 20px; width: 22px; background: url(../images/system/buttons/Facility/Facilities_Shower.jpg); margin-right: 12px; margin-top: -2px}
+#lower_pagewrapper #content #main #property_header ul.facility li.garage {height: 20px; width: 22px; background: url(../images/system/buttons/Facility/Facilities_Garage.jpg); margin-top: -2px}
+#lower_pagewrapper #content #main ul#view_options {width: 409px; padding: 0px; float: left; margin-top: 0px}
+#lower_pagewrapper #content #main ul#view_options li {float: left; list-style: none; text-align: center; background-repeat: no-repeat; color: white; font-size: 12px; height: 22px; line-height: 22px; margin: 5px 5px 0 0}
+#lower_pagewrapper #content #main ul#view_options li span {font-weight: bold; color: black}
+#lower_pagewrapper #content #main ul#view_options li.buy {width: 37px; background: url(../images/system/buttons/Filters/Filter_Buy.jpg)}
+#lower_pagewrapper #content #main ul#view_options li.rent {width: 41px; background: url(../images/system/buttons/Filters/Filter_Rent.jpg)}
+#lower_pagewrapper #content #main ul#view_options li.mls {width: 42px; background: url(../images/system/buttons/Filters/Filter_MLS.jpg)}
+#lower_pagewrapper #content #main ul#view_options li.date {width: 54px; background: url(../images/system/buttons/Filters/Filter_Date.jpg)}
+#lower_pagewrapper #content #main ul#view_options li.price {width: 56px; background: url(../images/system/buttons/Filters/Filter_Price.jpg)}
+#lower_pagewrapper #content #main ul#view_options li.first {width: 60px; margin-right: 15px; line-height: 14px; margin-top: 0; text-transform: uppercase}
+#lower_pagewrapper #content #main #result_info {width: 409px; height: 74px; float: left; margin-left: 16px}
+#lower_pagewrapper #content #main #result_info h5 {margin-top: 48px; width: 90%; color: red; font-style: italic}
+#lower_pagewrapper #content #main #result_info h5 span.left {float: left}
+#lower_pagewrapper #content #main #result_info h5 span.right {float: right}
+#lower_pagewrapper #content #main .property {height: 107px; width: 426px; float: left; margin-left: 5px; background: transparent}
+#lower_pagewrapper #content #main .property .image {height: 90px; width: 120px; float: left; margin: 9px; background: green}
+#lower_pagewrapper #content #main .property .text {margin: 0px; width: 282px; height: 21px; float: left; margin-bottom: 1px}
+#lower_pagewrapper #content #main .property .text p {margin-left: 5px; font-style: normal}
+#lower_pagewrapper #content #main .property .title {margin-top: 9px; text-transform: uppercase}
+#lower_pagewrapper #content #main .property .address {background: url(../images/system/bg/front/Prop_Top_BG.jpg); height: 20px}
+#lower_pagewrapper #content #main .property .address p {font-style: italic; margin-top: 2px}
+#lower_pagewrapper #content #main .property .extra {background: url(../images/system/bg/front/Prop_Bot_BG.jpg); height: 29px}
+#lower_pagewrapper #content #main .property .extra ul.facility {margin: 6px 0 0 5px; list-style: none; width: 282px; height: 29px}
+#lower_pagewrapper #content #main .property .extra ul.facility li {float: left; color: white; text-align: center}
+#lower_pagewrapper #content #main .property .extra ul.facility li p {margin: -2px 0 0 0; padding: 0}
+#lower_pagewrapper #content #main .property .extra ul.facility li.number {height: 16px; width: 17px; background: url(../images/system/buttons/Facility/Facilites_NumBG.jpg); margin-right: 3px}
+#lower_pagewrapper #content #main .property .extra ul.facility li.bed {height: 16px; width: 24px; background: url(../images/system/buttons/Facility/Facilities_Bed.jpg); margin-right: 12px}
+#lower_pagewrapper #content #main .property .extra ul.facility li.bath {height: 20px; width: 22px; background: url(../images/system/buttons/Facility/Facilities_Shower.jpg); margin-right: 12px; margin-top: -2px}
+#lower_pagewrapper #content #main .property .extra ul.facility li.garage {height: 20px; width: 22px; background: url(../images/system/buttons/Facility/Facilities_Garage.jpg); margin-right: 12px; margin-top: -2px}
+#lower_pagewrapper #content #main .property .extra ul.facility li.viewproperty {height: 16px; width: 84px; background: url(../images/system/buttons/viewproperty.jpg); margin-left: 17px; text-align: center}
+#lower_pagewrapper #content #main .property .extra ul.facility li.viewproperty a {font-size: 10px; color: red; float: left; margin: 1px 0 0 8px; font-variant: small-caps; text-decoration: none}
+#lower_pagewrapper #content #main .property .price {height: 18px}
+#lower_pagewrapper #content #main .property .price p {margin: 0 0 0 5px}
+#lower_pagewrapper #content #main .featured {background: url(../images/system/bg/front/featured_property_bg.jpg)}
+#lower_pagewrapper #content #main .testing {background: url(../images/system/bg/front/featBG.jpg)}
+#lower_pagewrapper #content #main hr {width: 409px; height: 1px; align: center; background-color: #e1e1e1; border: 0px none; float: left; margin-left: 16px}
+#lower_pagewrapper #content #main h3 {margin: 13px 0 0 24px}
 #lower_pagewrapper #content #main #main_top {background-image: url(../images/system/bg/front/main_top.jpg); margin-top: 0}
-#lower_pagewrapper #content #main #main_bottom {background-image: url(../images/system/bg/front/main_bottom.jpg); margin-top: 33px}
+#lower_pagewrapper #content #main #main_bottom {background-image: url(../images/system/bg/front/main_bottom.jpg); float: left; margin-top: 33px}
 #lower_pagewrapper #content #main .main_border {height: 8px; width: 463px; position: relative}
+#lower_pagewrapper #content #main .properties {width: 440px}
 #lower_pagewrapper #content #main p {margin: 5px 35px; font-style: italic; font-family: "Georgia"}
 #lower_pagewrapper #content #main ul {margin: 5px 30px}
 #lower_pagewrapper #content #main table {margin: 25px}
 #lower_pagewrapper #content #main a {float: right; margin-bottom: 0px; margin-right: 50px; color: red}
 #lower_pagewrapper #content #main div.toggle {overflow: hidden}
-#lower_pagewrapper #content #searchbox {height: 245px; width: 275px; background-color: transparent; float: left; margin-left: 20px; #border-bottom: 1px solid #bdbdbd}
-#lower_pagewrapper #content #searchbox h3 {text-transform: capitalize; color: #e13939; font-family: "Georgia"; font-variant: small-caps}
-#lower_pagewrapper #content #searchbox h3 span {color: #d4d4d4}
-#lower_pagewrapper #content #searchbox h3 strong {font-weight: normal; color: #d4d4d4}
-#lower_pagewrapper #content #searchbox form {font-family: "Georgia"}
-#lower_pagewrapper #content #searchbox form#QuickQuery p {margin-bottom: 0px}
-#lower_pagewrapper #content #searchbox form#QuickQuery p input#QuickQuery {padding: 6px 0 0 6px; border: 0px; width: 223px; height: 21px; background-image: url(../images/system/form/search_input.jpg); background-repeat: no-repeat; float: left; padding-right: 0px; line-height: 25px}
-#lower_pagewrapper #content #searchbox form#Selectable div {float: right; margin-top: 10px}
-#lower_pagewrapper #content #searchbox form#Selectable div p {margin: 0px; padding: 0px; height: 30px; width: 198px}
-#lower_pagewrapper #content #searchbox form#Selectable div p input.formularios {padding: 6px 0 0 6px; border: 0px; width: 168px; height: 20px; background-image: url(../images/system/form/dropdown.jpg); background-repeat: no-repeat; font-family: "Georgia"}
-#lower_pagewrapper #content #searchbox form#Selectable div p input.onfocus {background-image: url(../images/system/form/dropdown.jpg)}
-#lower_pagewrapper #content #searchbox form#Selectable div.titles {margin-top: 22px; color: #838383}
-#lower_pagewrapper #content #searchbox form#Selectable div.titles p {width: 77px; font-size: 80%; font-variant: small-caps}
+#lower_pagewrapper #content #right-column {width: 304px; float: left; margin-left: 16px}
+#lower_pagewrapper #content #right-column .top {width: 304px; height: 15px; background: url(../images/system/bg/front/right_tool_top.jpg)}
+#lower_pagewrapper #content #right-column .bottom {width: 304px; height: 15px; background: url(../images/system/bg/front/right_tool_bottom.jpg); position: relative; float: left}
+#lower_pagewrapper #content #right-column h3 {margin-left: 23px}
+#lower_pagewrapper #content #right-column #searchbox.advanced {height: 404px; width: 304px; background: url(../images/system/bg/front/right_tool.jpg); background-repeat: repeat-y}
+#lower_pagewrapper #content #right-column #searchbox.advanced div {float: left}
+#lower_pagewrapper #content #right-column #faq {height: 157px; background: url(../images/system/bg/front/right_tool.jpg); background-repeat: repeat-y; float: left; margin-top: 15px}
+#lower_pagewrapper #content #right-column #faq #faq_block {height: 109px; width: 269px}
+#lower_pagewrapper #content #right-column #faq #faq_block p {font-style: italic; font-family: "Georgia"; font-size: 12px}
+#lower_pagewrapper #content #right-column #extra {width: 174px; background: url(../images/system/bg/front/right_small1.jpg); float: left; margin-top: 15px}
+#lower_pagewrapper #content #right-column #extra img {margin: 12px 0 0 24px}
+#lower_pagewrapper #content #right-column #extra .top {width: 174px; height: 15px; background: url(../images/system/bg/front/right_small1_top.jpg)}
+#lower_pagewrapper #content #right-column #extra .bottom {width: 174px; height: 15px; background: url(../images/system/bg/front/right_small1_bottom.jpg); position: relative; float: left}
+#lower_pagewrapper #content #right-column #small {width: 117px; height: 161px; float: left; background: url(../images/system/bg/front/right_small2.jpg); margin: 15px 0 0 13px}
+#lower_pagewrapper #content #right-column #small h3 {margin: 14px 0 0 13px}
+#lower_pagewrapper #content #right-column #searchbox {height: 245px; width: 266px; background-color: transparent; float: left}
+#lower_pagewrapper #content #right-column #searchbox #bottom_b {position: absolute; height: 2px; width: 266px; background-image: url(../images/system/form/home_separator.jpg); margin-top: 216px}
+#lower_pagewrapper #content #right-column #searchbox form {font-family: "Georgia"}
+#lower_pagewrapper #content #right-column #searchbox form#QuickQuery p {margin-bottom: 0px}
+#lower_pagewrapper #content #right-column #searchbox form#QuickQuery p input#QuickQuery {padding: 6px 0 0 6px; border: 0px; width: 223px; height: 21px; background-image: url(../images/system/form/search_input.jpg); background-repeat: no-repeat; float: left; padding-right: 0px; line-height: 25px}
+#lower_pagewrapper #content #right-column #searchbox form#QuickQuery p.advanced {margin-left: 24px}
+#lower_pagewrapper #content #right-column #searchbox form#Selectable div {float: right; margin-top: 10px}
+#lower_pagewrapper #content #right-column #searchbox form#Selectable div p {margin: 0px; padding: 0px; height: 30px; width: 198px}
+#lower_pagewrapper #content #right-column #searchbox form#Selectable div p input.formularios {padding: 6px 0 0 6px; border: 0px; width: 168px; height: 20px; background-image: url(../images/system/form/dropdown.jpg); background-repeat: no-repeat; font-family: "Georgia"}
+#lower_pagewrapper #content #right-column #searchbox form#Selectable div p input.onfocus {background-image: url(../images/system/form/dropdown.jpg)}
+#lower_pagewrapper #content #right-column #searchbox form#Selectable div p input.text_input {padding: 6px 0 0 6px; border: 0px; width: 192px; height: 20px; margin-top: 6px; background-image: url(../images/system/form/advanced_search_input.jpg); background-repeat: no-repeat; float: left; padding-right: 0px; line-height: 25px}
+#lower_pagewrapper #content #right-column #searchbox form#Selectable div.titles {margin-top: 22px; color: #838383}
+#lower_pagewrapper #content #right-column #searchbox form#Selectable div.titles p {width: 68px; font-size: 80%; font-variant: small-caps}
 #lower_pagewrapper #content #page_header {width: 500px; float: left}
 #lower_pagewrapper #content #sellyourproperty {width: 170px; float: left; margin-top: 15px auto}
 #lower_pagewrapper #content ul#gallerylinks {height: 230px; width: 130px}
 #lower_pagewrapper #content ul#gallerylinks li {float: left; height: 62px}
-#lower_pagewrapper #content #side-nav {width: 150px; height: 230px; float: left; background-color: transparent; margin-right: 25px}
+#lower_pagewrapper #content #side-nav {width: 162px; float: left; background-color: transparent; margin-right: 20px}
+#lower_pagewrapper #content #side-nav .left_tool {width: 162px; height: 188px; background: url(../images/system/bg/front/left_tool.jpg); margin-top: 15px}
+#lower_pagewrapper #content #side-nav .left_tool h3 {margin-left: 14px}
+#lower_pagewrapper #content #side-nav .left_tool .top {width: 162px; height: 15px; background: url(../images/system/bg/front/left_tool_top.jpg)}
+#lower_pagewrapper #content #side-nav .left_tool .bottom {width: 162px; height: 15px; background: url(../images/system/bg/front/left_tool_bottom.jpg); margin-top: 5px}
+#lower_pagewrapper #content #side-nav .left_tool ul {width: 162px; height: 123px; margin: 12px 0 0 0px; padding: 0px}
+#lower_pagewrapper #content #side-nav .left_tool ul li {height: 41px; margin-left: 14px}
+#lower_pagewrapper #content #side-nav .left_tool ul li img {float: left}
+#lower_pagewrapper #content #side-nav .left_tool ul li span {float: left; font-size: 12px; font-style: italic; width: 100px; margin: 2px 0 0 13px; color: #818181}
 #lower_pagewrapper #content #side-nav #keep_discovering {width: 150px; height: 80px; background-image: url(../images/system/bg/front/keepdiscovering.jpg)}
 #lower_pagewrapper #content #side-nav #polaroid {width: 310px; height: 100px; margin-left: -169px}
 #lower_pagewrapper #content #side-nav ul {padding-left: 5px; width: 120px; float: none}
@@ -161,7 +273,10 @@ body a:hover {color: yellow}
 #lower_pagewrapper #content #subcontent td {border-bottom: 1px solid black; vertical-align: middle}
 #lower_pagewrapper #content #subcontent td table.nolines td {border: 0px none}
 #lower_pagewrapper #footer {margin: 0px auto; width: 100%; height: 35px; background-image: url(../images/system/bg/front/footer_bg.jpg); z-index: 100}
-#lower_pagewrapper #footer ul#links {width: 1020px; margin: 0px auto; list-style: none}
-#lower_pagewrapper #footer ul#links li {line-height: 35px; font-size: 10px}
+#lower_pagewrapper #footer ul#links {width: 1000px; margin: 0px auto; list-style: none}
+#lower_pagewrapper #footer ul#links li {line-height: 35px; font-size: 11px; float: left; margin: 0 15px; color: #888888}
+#lower_pagewrapper #footer ul#links li span {font-size: 14px; letter-spacing: 2px; margin: 0 60px}
+#lower_pagewrapper #footer ul#links li img {margin-top: 7px}
+#lower_pagewrapper #footer ul#links li img.button {position: absolute; margin-top: 10px}
 #lower_pagewrapper #footer #logbox {float: right; width: 250px; margin-top: 0px}
 #lower_pagewrapper #footer #logbox div {float: left; margin-left: 15px; background-color: white}

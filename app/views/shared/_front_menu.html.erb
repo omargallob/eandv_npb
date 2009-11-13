@@ -1,12 +1,20 @@
 <% for page in @tabs -%>
 	<% unless page.name == 'home' %>
 		<% if page.name == 'properties' %>
-			<li id="nav_<%= page.name %>"><%= link_to 'Find your Home', properties_path %><%= image_tag("system/buttons/nav_arrow.png", :class=>"arrow") %></li>
+			<% if @page.name == page.name %>
+			<li id="nav_<%= page.name %>" class="cufon-active"><h2><%= link_to 'Find your Home', properties_path %><%= image_tag("system/buttons/nav_arrow.png", :class=>"arrow") %></h2></li>
+			<% else %>
+			<li id="nav_<%= page.name %>"><h2><%= link_to 'Find your Home', properties_path %><%= image_tag("system/buttons/nav_arrow.png", :class=>"arrow") %></h2></li>
+			<% end %>
 		<% else %>
-			<li id="nav_<%= page.name %>"><%= link_to page.navlabel, view_page_path(page.name)%> <%= image_tag("system/buttons/nav_arrow.png", :class=>"arrow") %></li>
+			<% if @page.name == page.name %>
+			<li id="nav_<%= page.name %>" class="cufon-active"><h2><%= link_to page.navlabel, view_page_path(page.name)%> <%= image_tag("system/buttons/nav_arrow.png", :class=>"arrow") %></h2></li>
+			<% else %>
+			<li id="nav_<%= page.name %>" ><h2><%= link_to page.navlabel, view_page_path(page.name)%> <%= image_tag("system/buttons/nav_arrow.png", :class=>"arrow") %></h2></li>
+			<% end %>
 		<% end %>	
 	<% end %>
 <% end -%>
-<li><%= link_to 'E&V TV', "#" %><%= image_tag("system/buttons/TV.jpg")%></li>	
-<li><%= link_to 'E&V'+image_tag("system/buttons/EVMother.jpg"), "#" %></li>
-<li><%= link_to image_tag('system/buttons/rss.png',:height=>"15px",:title=>'favs'), feed_favs_path %></li>
+<li><h2><%= link_to 'E&V TV', "#" %><%= image_tag("system/buttons/TV.jpg")%></h2></li>	
+<li><h2><%= link_to 'E&V'+image_tag("system/buttons/EVMother.jpg"), "#" %></h2></li>
+<li><h2><%= link_to image_tag('system/buttons/rss.png',:height=>"15px",:title=>'favs'), feed_favs_path %></h2></li>
