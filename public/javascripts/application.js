@@ -52,7 +52,7 @@ $.ajaxSetup({
   'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
 })
 
-$(document).ready(function() {
+/*$(document).ready(function() {
 
   // UJS authenticity token fix: add the authenticy_token parameter
   // expected by any Rails POST request.
@@ -67,6 +67,7 @@ $(document).ready(function() {
   });
 
 });
+*/
 function front_paragraph_chop(){
   var aux = $("#main p");
   $(aux[0]).css("font-weight", "bold");		$(aux[0]).css("font-style", "italic");

@@ -65,3 +65,21 @@
 ** Mongrel 1.1.4 available at 0.0.0.0:3001
 ** Writing PID file to log/mongrel.pid
 /Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:47: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:46: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/shared/_property.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/pages/index.html.erb:40: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/pages/index.html.erb:41: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/pages/index.html.erb:42: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/countries/_country.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/countries/_country.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/types/index.html.erb:26: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/types/index.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/facilities/_facility.html.erb:5: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/facilities/_facility.html.erb:6: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/users/index.html.erb:37: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/users/index.html.erb:38: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:29: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:30: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:31: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:34: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:36: warning: don't put space before argument parentheses

@@ -7,10 +7,11 @@ body a:hover { color: yellow; }
 #pagewrapper #header #logbox { float: right; width: 250px; margin-top: 0px; }
 #pagewrapper #header #logbox div { float: left; margin-left: 15px; background-color: black; }
 #pagewrapper #navbar { height: 50px; background-image: url(../images/system/bg/admin/navbar.png); }
-#pagewrapper #navbar ul li { list-style: none; height: 25px; line-height: 25px; vertical-align: middle; float: left; margin: 15px; }
+#pagewrapper #navbar ul li { list-style: none; height: 25px; line-height: 25px; vertical-align: middle; float: left; margin: 15px 10px; }
 #pagewrapper #navbar ul li a { margin-left: 25px; color: #4d4d4d; text-decoration: none; }
 #pagewrapper #navbar ul li a:hover { color: white; }
 #pagewrapper #navbar ul li a.active { color: white; }
+#pagewrapper #navbar ul li.cufon-active h2 { color: white; }
 
 #content { margin: 0px auto; padding: 25px; background-color: #d4d4d4; color: black; width: 970px; }
 #content div.fieldWithErrors input { border: 2px solid red; }

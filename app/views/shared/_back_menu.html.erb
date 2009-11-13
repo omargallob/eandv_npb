@@ -1,49 +1,49 @@
 <% if controller.controller_name == "overview" %>
-<li><%= link_to 'Overview', {:controller => 'admin/overview', :action => 'index'},:class=>"active" %></li>
+<li  class="cufon-active"><h2><%= link_to 'Overview'.upcase , {:controller => 'admin/overview', :action => 'index'},:class=>"active" %></h2></li>
 <% else %>
-<li><%= link_to 'Overview', {:controller => 'admin/overview', :action => 'index'} %></li>
+<li ><h2><%= link_to 'Overview'.upcase , {:controller => 'admin/overview', :action => 'index'} %></h2></li>
 <% end %>
 <% if controller.controller_name == "pages" %>
-<li><%= link_to 'Pages', {:controller => 'admin/pages', :action => 'index'},:class=>"active" %></li>
+<li class="cufon-active"><h2><%= link_to 'Pages'.upcase , {:controller => 'admin/pages', :action => 'index'},:class=>"active" %></h2></li>
 <% else %>
-<li><%= link_to 'Pages', {:controller => 'admin/pages', :action => 'index'} %></li>
+<li><h2><%= link_to 'Pages'.upcase , {:controller => 'admin/pages', :action => 'index'} %></h2></li>
 <% end %>
 <% if controller.controller_name == "metatag" %>
-<li><%= link_to 'Metatags', {:controller => 'admin/metatag', :action => 'index'},:class=>"active"  %></li>
+<li class="cufon-active"><h2><%= link_to 'Metatags'.upcase , {:controller => 'admin/metatag', :action => 'index'},:class=>"active"  %></h2></li>
 <% else %>
-<li><%= link_to 'Metatags', {:controller => 'admin/metatag', :action => 'index'} %></li>
+<li><h2><%= link_to 'Metatags'.upcase , {:controller => 'admin/metatag', :action => 'index'} %></h2></li>
 <% end %>
 <% if controller.controller_name == "services" %>
-<li><%= link_to 'Services', {:controller => 'admin/services', :action => 'index'},:class=>"active" %></li>
+<li class="cufon-active"><h2><%= link_to 'Services'.upcase , {:controller => 'admin/services', :action => 'index'},:class=>"active" %></h2></li>
 <% else %>
-<li><%= link_to 'Services', {:controller => 'admin/services', :action => 'index'} %></li>
+<li><h2><%= link_to 'Services'.upcase , {:controller => 'admin/services', :action => 'index'} %></h2></li>
 <% end %>
 
 <% if current_user.has_role?('admin')%>
 	<% if controller.controller_name == "countries" %>
-	<li><%= link_to 'Countries', {:controller => 'admin/countries', :action => 'index'},:class => "active"  %></li>
+	<li class="cufon-active"><h2><%= link_to 'Countries'.upcase , {:controller => 'admin/countries', :action => 'index'},:class => "active"  %></h2></li>
 	<% else %>
-	<li><%= link_to 'Countries', {:controller => 'admin/countries', :action => 'index'} %></li>
+	<li><h2><%= link_to 'Countries'.upcase , {:controller => 'admin/countries', :action => 'index'} %></h2></li>
 	<% end %>
 	<% if controller.controller_name == "types" %>
-	<li><%= link_to 'Types', {:controller => 'admin/types', :action => 'index'},:class=>"active" %></li>
+	<li class="cufon-active" ><h2><%= link_to 'Types'.upcase , {:controller => 'admin/types', :action => 'index'},:class=>"active" %></h2></li>
 	<% else %>
-	<li><%= link_to 'Types', {:controller => 'admin/types', :action => 'index'} %></li>
+	<li><h2><%= link_to 'Types'.upcase , {:controller => 'admin/types', :action => 'index'} %></h2></li>
 	<% end %>
 	<% if controller.controller_name == "facilities" %>
-	<li><%= link_to 'Facilities', admin_facilities_path,:class => "active" %></li>
+	<li class="cufon-active"><h2><%= link_to 'Facilities'.upcase , admin_facilities_path,:class => "active" %></h2></li>
 	<% else %>
-	<li><%= link_to 'Facilities', admin_facilities_path %></li>
+	<li><h2><%= link_to 'Facilities'.upcase , admin_facilities_path %></h2></li>
 	<% end %>
 	<% if controller.controller_name == "users" %>
-	<li><%= link_to 'Users', admin_users_path,:class => "active" %></li>
+	<li class="cufon-active"><h2><%= link_to 'Users'.upcase , admin_users_path,:class => "active" %></h2></li>
 	<% else %>
-	<li><%= link_to 'Users', admin_users_path %></li>
+	<li><h2><%= link_to 'Users'.upcase , admin_users_path %></h2></li>
 	<% end %>
 <% end %>
 
 <% if controller.controller_name == "properties" %>
-<li><%= link_to 'Properties', admin_properties_path,:class=>"active" %></li>
+<li class="cufon-active"><h2><%= link_to 'Properties'.upcase , admin_properties_path,:class=>"active" %></h2></li>
 <% else %>
-<li><%= link_to 'Properties', admin_properties_path %></li>
+<li><h2><%= link_to 'Properties'.upcase , admin_properties_path %></h2></li>
 <% end %>

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<%= display_meta_tags %>	
-	<%= javascript_include_tag :all %>
+
     <%= stylesheet_link_tag "screen","envnpb_backend","ui.tabs.css","sexylightbox" %>
 	<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 	<!--[if lt IE 8]>
@@ -23,7 +23,9 @@
 	    }
 
 	</style>
-
+	<%= javascript_include_tag :all %>
+	<script src="/fonts/AGaramond_LT_400-AGaramond_BoldOsF_400-AGaramond_LT_italic_400-AGaramond_LT_italic_700.font.js" type="text/javascript" charset="utf-8"></script>
+	
 	<!--[if IE]>
 	<style type="text/css">
 	  .clearfix {
@@ -32,6 +34,28 @@
 	</style>
 	<![endif]-->
 	<script>jQuery.noConflict();
+	
+  	Cufon.replace('#navbar ul li.cufon-active h2', {
+		  hover: false
+	 });
+	
+	
+	Cufon.replace('#navbar ul li h2', {
+		   fontFamily: "AGaramond LT",
+		   color: '#818181',
+		   fontSize: "14px",
+		   hover: {
+		   		color: 'white'
+		   }
+	 });
+
+
+  	Cufon.replace('#navbar ul li.cufon-active h2', {
+		  fontFamily: "AGaramond LT",
+		  color: 'white',
+		  fontSize: "14px",
+	 });
+
 	</script>
 	<%= yield :script %>
   </head>
