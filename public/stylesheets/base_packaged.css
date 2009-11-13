@@ -111,12 +111,13 @@ body object {outline: none}
 #upper_pagewrapper #header #extra img {float: left; margin-left: 5px}
 #upper_pagewrapper #navbar {height: 50px; width: 1020px; margin: 0px auto}
 #upper_pagewrapper #navbar ul {margin: 0px auto}
-#upper_pagewrapper #navbar ul li {list-style: none; height: 25px; line-height: 25px; vertical-align: middle; float: left; margin: 17px; font-size: 13px}
-#upper_pagewrapper #navbar ul li a {margin-left: 25px; color: #888888; text-decoration: none; text-transform: uppercase}
+#upper_pagewrapper #navbar ul li.cufon-active h2 {color: white}
+#upper_pagewrapper #navbar ul li {list-style: none; height: 25px; line-height: 25px; vertical-align: middle; float: left; margin: 14px 17px}
+#upper_pagewrapper #navbar ul li a {margin-left: 25px; color: #4d4d4d; text-decoration: none; text-transform: uppercase}
 #upper_pagewrapper #navbar ul li a:hover {color: white}
 #upper_pagewrapper #navbar ul li a.active {color: white}
 #upper_pagewrapper #navbar ul li img {position: absolute; margin-top: 7px; margin-left: 3px}
-#upper_pagewrapper #navbar ul li img.arrow {position: absolute; margin-top: 7px; margin-left: 0px; z-index: 4; display: none}
+#upper_pagewrapper #navbar ul li img.arrow {position: absolute; margin-top: 10px; margin-left: 0px; z-index: 4; display: none}
 #upper_pagewrapper #navbar ul li img.active {display: block}
 #upper_pagewrapper #largegallery {width: 100%; height: 433px; background-position: 0 -135px}
 #upper_pagewrapper #largegallery #shine {height: 22px; width: 949px; background-image: url(../images/system/bg/front/shine.jpg); margin: 0px auto; margin-top: 28px}
