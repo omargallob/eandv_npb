@@ -25863,3 +25863,30 @@ Rendered shared/_properties_right (0.6ms)
 Rendered shared/_user_bar (1.0ms)
 Rendered shared/_front_menu (4.4ms)
 Completed in 88ms (View: 48, DB: 13) | 200 OK [http://localhost/properties]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2009-11-13 17:28:13) [GET]
+  [4;35;1mPage Load (1.0ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mProperty Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mLocation Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mProperty Load Including Associations (3.5ms)[0m   [0;1mSELECT `properties`.`id` AS t0_r0, `properties`.`title` AS t0_r1, `properties`.`description` AS t0_r2, `properties`.`bedrooms` AS t0_r3, `properties`.`bathrooms` AS t0_r4, `properties`.`living_areas` AS t0_r5, `properties`.`built` AS t0_r6, `properties`.`plot` AS t0_r7, `properties`.`garden` AS t0_r8, `properties`.`price` AS t0_r9, `properties`.`location_id` AS t0_r10, `properties`.`type_id` AS t0_r11, `properties`.`created_at` AS t0_r12, `properties`.`updated_at` AS t0_r13, `properties`.`address` AS t0_r14, `properties`.`rental` AS t0_r15, `properties`.`facility_ids` AS t0_r16, `properties`.`featured` AS t0_r17, `properties`.`mls_id` AS t0_r18, `locations`.`id` AS t1_r0, `locations`.`state` AS t1_r1, `locations`.`county` AS t1_r2, `locations`.`region` AS t1_r3, `locations`.`other` AS t1_r4, `locations`.`zipcod` AS t1_r5, `locations`.`country_id` AS t1_r6, `locations`.`created_at` AS t1_r7, `locations`.`updated_at` AS t1_r8 FROM `properties` LEFT OUTER JOIN `locations` ON `locations`.id = `properties`.location_id ORDER BY locations.region[0m
+  [4;35;1mPage Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.5ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'properties') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering properties/index
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 4) [0m
+Rendered shared/_polaroid (0.1ms)
+Rendered shared/_home_sidenav (2.9ms)
+Rendered shared/_tool_set (2.9ms)
+Rendered shared/_property (9.3ms)
+Rendered shared/_property (1.2ms)
+Rendered shared/_property (1.0ms)
+Rendered shared/_property (1.0ms)
+Rendered shared/_property (1.1ms)
+Rendered shared/_advancedsearchbox (0.1ms)
+Rendered shared/_properties_right (0.5ms)
+Rendered shared/_user_bar (0.8ms)
+Rendered shared/_front_menu (4.3ms)
+Completed in 100ms (View: 55, DB: 13) | 200 OK [http://localhost/properties]
