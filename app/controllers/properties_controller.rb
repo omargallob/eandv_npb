@@ -11,6 +11,7 @@ class PropertiesController < ApplicationController
 
   def show
     @property = Property.find_by_id(params[:id])
+    @page = Page.find_by_name('properties')
   end 
   
   def feed
