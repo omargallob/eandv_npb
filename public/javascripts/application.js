@@ -179,4 +179,5 @@ function nice_fonts(){
 	  color: '#E13939',
 	  fontSize: "12px",
  });
+ 
 }

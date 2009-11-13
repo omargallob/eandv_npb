@@ -16,7 +16,6 @@ javascripts:
   - reflection
   - jScrollPane
   - jquery.tmpl.1.1.1
-  - jquery.selectbox-0.6.1
   - jquery.mousewheel
   - jquery.jcarousel
   - jquery.easing.1.3
