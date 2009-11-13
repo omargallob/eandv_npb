@@ -173,5 +173,10 @@ function nice_fonts(){
 		  color: 'white',
 		  fontSize: "14px",
 	 });
-  
+    
+  Cufon.replace('#main h3', {
+	  fontFamily: "AGaramond LT",
+	  color: '#E13939',
+	  fontSize: "12px",
+ });
 }
