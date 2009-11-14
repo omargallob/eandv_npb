@@ -12,18 +12,19 @@ body object { outline: none; }
 #upper_pagewrapper #header { height: 84px; width: 1020px; background-image: url(../images/system/bg/front/header.jpg); margin: 0px auto; }
 #upper_pagewrapper #header #logo { height: 60px; width: 546px; }
 #upper_pagewrapper #header #logo a img { margin: 22px 0 0 42px; }
-#upper_pagewrapper #header #extra { height: 19px; right: 0px; top: 0px; float: right; margin-top: -55px; }
+#upper_pagewrapper #header #extra { height: 19px; right: 0px; margin-top: -55px; float: right; margin-right: 42px; }
 #upper_pagewrapper #header #extra img { float: left; margin-left: 5px; }
 #upper_pagewrapper #navbar { height: 50px; width: 1020px; margin: 0px auto; }
 #upper_pagewrapper #navbar ul { margin: 0px auto; }
 #upper_pagewrapper #navbar ul li.cufon-active h2 { color: white; }
-#upper_pagewrapper #navbar ul li { list-style: none; height: 25px; line-height: 25px; vertical-align: middle; float: left; margin: 14px 17px; }
+#upper_pagewrapper #navbar ul li { list-style: none; height: 25px; line-height: 25px; vertical-align: middle; float: left; margin: 14px 22px; }
 #upper_pagewrapper #navbar ul li a { margin-left: 25px; color: #4d4d4d; text-decoration: none; text-transform: uppercase; }
 #upper_pagewrapper #navbar ul li a:hover { color: white; }
 #upper_pagewrapper #navbar ul li a.active { color: white; }
 #upper_pagewrapper #navbar ul li img { position: absolute; margin-top: 7px; margin-left: 3px; }
 #upper_pagewrapper #navbar ul li img.arrow { position: absolute; margin-top: 10px; margin-left: 0px; z-index: 4; display: none; }
 #upper_pagewrapper #navbar ul li img.active { display: block; }
+#upper_pagewrapper #navbar ul #nav_properties { margin-right: 15px; }
 #upper_pagewrapper #largegallery { width: 100%; height: 433px; background-position: 0 -135px; }
 #upper_pagewrapper #largegallery #shine { height: 22px; width: 949px; background-image: url(../images/system/bg/front/shine.jpg); margin: 0px auto; margin-top: 28px; }
 #upper_pagewrapper #holder { width: 961px; margin: 0px auto; height: 359px; padding-top: 24px; }
@@ -36,11 +37,11 @@ body object { outline: none; }
 #lower_pagewrapper #content_top { background: url(../images/system/bg/front/content_top.jpg); height: 20px; background-repeat: repeat-x; position: absolute; margin-top: 0; width: 100%; z-index: 0; }
 #lower_pagewrapper #content_bottom { background: url(../images/system/bg/front/content_bottom.jpg); height: 63px; background-repeat: repeat-x; position: relative; width: 100%; z-index: 3; }
 #lower_pagewrapper #content { margin: 0px auto; padding: 25px; background: transparent; color: black; width: 970px; font-family: "Georgia"; min-height: 280px; position: relative; z-index: 4; margin-bottom: -63px; }
-#lower_pagewrapper #content .property { margin-top: 0px; }
+#lower_pagewrapper #content .property { margin-top: 14px; }
 #lower_pagewrapper #content #main.properties { width: 442px; background: url(../images/system/bg/front/main_properties.jpg); }
 #lower_pagewrapper #content #main.properties .top { background-image: url(../images/system/bg/front/main_properties_top.jpg); margin-top: 0; width: 442px; position: relative; height: 15px; float: left; }
 #lower_pagewrapper #content #main.properties .bottom { background-image: url(../images/system/bg/front/main_properties_bottom.jpg); width: 442px; position: relative; height: 15px; float: left; }
-#lower_pagewrapper #content #property_gallery { width: 623px; height: 388px; float: left; background: green; }
+#lower_pagewrapper #content #property_gallery { width: 621px; height: 374px; float: left; margin-left: 2px; background-image: url(../images/static/GalleryImage.jpg); }
 #lower_pagewrapper #content #schools { width: 304px; float: left; margin: 0px 0 0 16px; background: url(../images/system/bg/front/right_tool.jpg); }
 #lower_pagewrapper #content #schools hr { width: 280px; float: left; border: 0px none; background: #E1E1E1; margin-left: 12px; }
 #lower_pagewrapper #content #schools h3 { margin-left: 24px; }
@@ -129,7 +130,7 @@ body object { outline: none; }
 #lower_pagewrapper #content #right-column .top { width: 304px; height: 15px; background: url(../images/system/bg/front/right_tool_top.jpg); }
 #lower_pagewrapper #content #right-column .bottom { width: 304px; height: 15px; background: url(../images/system/bg/front/right_tool_bottom.jpg); position: relative; float: left; }
 #lower_pagewrapper #content #right-column h3 { margin-left: 24px; }
-#lower_pagewrapper #content #right-column #searchbox.advanced { height: 404px; width: 304px; background: url(../images/system/bg/front/right_tool.jpg); background-repeat: repeat-y; }
+#lower_pagewrapper #content #right-column #searchbox.advanced { height: 374px; width: 304px; background: url(../images/system/bg/front/right_tool.jpg); background-repeat: repeat-y; }
 #lower_pagewrapper #content #right-column #searchbox.advanced div { float: left; }
 #lower_pagewrapper #content #right-column #searchbox.advanced div h3 { margin-left: 24px; }
 #lower_pagewrapper #content #right-column #faq { height: 157px; background: url(../images/system/bg/front/right_tool.jpg); background-repeat: repeat-y; float: left; margin-top: 15px; }
@@ -149,10 +150,12 @@ body object { outline: none; }
 #lower_pagewrapper #content #right-column #searchbox form#QuickQuery p input#QuickQuery { padding: 6px 0 0 6px; border: 0px; width: 223px; height: 21px; background-image: url(../images/system/form/search_input.jpg); background-repeat: no-repeat; float: left; padding-right: 0px; line-height: 25px; }
 #lower_pagewrapper #content #right-column #searchbox form#QuickQuery p.advanced { margin-left: 24px; }
 #lower_pagewrapper #content #right-column #searchbox form#Selectable div { float: right; margin-top: 10px; }
-#lower_pagewrapper #content #right-column #searchbox form#Selectable div p { margin: 0px; padding: 0px; height: 30px; width: 198px; }
-#lower_pagewrapper #content #right-column #searchbox form#Selectable div p input.formularios { padding: 6px 0 0 6px; border: 0px; width: 168px; height: 20px; background-image: url(../images/system/form/dropdown.jpg); background-repeat: no-repeat; font-family: "Georgia"; }
+#lower_pagewrapper #content #right-column #searchbox form#Selectable div p { margin: 0px; padding: 0px; height: 30px; width: 198px; font-family: "Georgia"; font-size: 12px; }
+#lower_pagewrapper #content #right-column #searchbox form#Selectable div p input.formularios { padding: 6px 0 0 6px; border: 0px; width: 168px; height: 20px; background-image: url(../images/system/form/dropdown.jpg); background-repeat: no-repeat; font-family: "Georgia"; font-size: 12px; }
 #lower_pagewrapper #content #right-column #searchbox form#Selectable div p input.onfocus { background-image: url(../images/system/form/dropdown.jpg); }
 #lower_pagewrapper #content #right-column #searchbox form#Selectable div p input.text_input { padding: 6px 0 0 6px; border: 0px; width: 192px; height: 20px; margin-top: 6px; background-image: url(../images/system/form/advanced_search_input.jpg); background-repeat: no-repeat; float: left; padding-right: 0px; line-height: 25px; }
+#lower_pagewrapper #content #right-column #searchbox form#Selectable div p input.short { width: 82px; height: 27px; background-image: url(../images/system/form/ZipBox.jpg); }
+#lower_pagewrapper #content #right-column #searchbox form#Selectable div p span { float: left; margin: 12px 4px 0 0; }
 #lower_pagewrapper #content #right-column #searchbox form#Selectable div.titles { margin-top: 22px; color: #838383; }
 #lower_pagewrapper #content #right-column #searchbox form#Selectable div.titles p { width: 68px; font-size: 80%; font-variant: small-caps; }
 #lower_pagewrapper #content #page_header { width: 500px; float: left; }
@@ -184,12 +187,12 @@ body object { outline: none; }
 #lower_pagewrapper #content #subcontent td table.nolines td { border: 0px none; }
 #lower_pagewrapper #footer { margin: 0px auto; width: 100%; height: 35px; background-image: url(../images/system/bg/front/footer_bg.jpg); z-index: 100; }
 #lower_pagewrapper #footer ul#links { width: 1000px; margin: 0px auto; list-style: none; }
-#lower_pagewrapper #footer ul#links li { line-height: 35px; font-size: 11px; float: left; margin: 0 15px; color: #888888; }
+#lower_pagewrapper #footer ul#links li { line-height: 31px; font-size: 11px; float: left; margin: 0 17px; color: #888888; }
 #lower_pagewrapper #footer ul#links li img { margin-top: 12px; float: left; }
 #lower_pagewrapper #footer ul#links li h4 { margin: 0; font-size: 14px; float: left; }
 #lower_pagewrapper #footer ul#links li h4 a { text-decoration: none; }
-#lower_pagewrapper #footer ul#links li h6 { margin: 0 60px; letter-spacing: 2px; }
+#lower_pagewrapper #footer ul#links li h6 { margin: 2px 60px; letter-spacing: 2px; }
 #lower_pagewrapper #footer ul#links li h6 a { text-decoration: none; }
-#lower_pagewrapper #footer ul#links li img.eandv { margin: 7px 0 0 0; }
+#lower_pagewrapper #footer ul#links li img.eandv { margin: 7px 0 0 7px; }
 #lower_pagewrapper #footer #logbox { float: right; width: 250px; margin-top: 0px; }
 #lower_pagewrapper #footer #logbox div { float: left; margin-left: 15px; background-color: white; }

@@ -149,3 +149,4 @@
 ** Writing PID file to log/mongrel.pid
 /Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
 /Users/ryan/Dev/2.3.4/eandv_npb/app/views/shared/_property.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
