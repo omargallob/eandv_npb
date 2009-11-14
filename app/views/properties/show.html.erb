@@ -81,8 +81,23 @@
 	<div class="top"></div>
 	<h3>nearest schools</h3>
 	<hr />
-	<ul><li><span><%= @property.title %></span>,<br><%= @property.location.region %> (<%= @property.location.zipcod %>),&nbsp;<%= @property.location.county %> county</li></ul>
+	<ul><li class="title"><span><%= @property.title %></span>,<br><%= @property.location.region %> (<%= @property.location.zipcod %>),&nbsp;<%= @property.location.county %> county</li></ul>
 	<hr />
+	<ul class="school">
+		<li class="distance">1,050 ft</li>
+		<li class="title">Burnaby High<br> <i>Newport Beach</i></li>
+		<li class='map'><span>map</span></li>
+	</ul>
+	<ul class="school">
+		<li class="distance">1,750 ft</li>
+		<li class="title">Nikki Beach High<br> <i>Newport Beach</i></li>
+		<li class='map'><span>map</span></li>
+	</ul>
+	<ul class="school">
+		<li class="distance">2, 750 ft</li>
+		<li class="title">Burnaby High<br> <i>Newport Beach</i></li>
+		<li class='map'><span>map</span></li>
+	</ul>
 	<div class="bottom"></div>
 </div>
 <% content_for :script do %>

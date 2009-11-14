@@ -217,13 +217,39 @@ body
 				float: left
 			ul
 				margin: 0 0 0 24px
-				li
+				float: left
+				li.title
 					color: black
 					font-size: 12px
 					font-style: italic
 					span
 						text-transform: uppercase
 						font-style: normal
+			ul.school
+				li
+					list-style: none
+					float: left
+					margin-right: 0px
+				li.distance
+					color: #e13939
+					width: 90px
+				li.title
+					color: #7e7e7e
+					font-weight: bold
+					font-style: normal
+					width: 120px
+					i
+						font-weight: normal
+				li.map
+					width: 45px
+					height: 21px
+					:background-image url(../images/system/buttons/schoolsmap.jpg)
+					color: white
+					font-size: 12px
+					line-height: 21px
+					span
+						margin: 0 0 0 8px
+						text-transform: uppercase
 		#eanvvip
 			width: 302px
 			height: 159px
@@ -679,7 +705,7 @@ body
 								width: 82px
 								height: 27px
 								background-image: url(../images/system/form/ZipBox.jpg)
-							span
+							span.zip
 								float: left
 								margin: 12px 4px 0 0
 					div.titles

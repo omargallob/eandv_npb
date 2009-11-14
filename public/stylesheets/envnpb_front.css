@@ -49,9 +49,15 @@ body span.right { float: right; font-size: 11px; line-height: 18px; font-style: 
 #lower_pagewrapper #content #schools h3 { margin-left: 24px; }
 #lower_pagewrapper #content #schools .top { width: 304px; height: 15px; background: url(../images/system/bg/front/right_tool_top.jpg); }
 #lower_pagewrapper #content #schools .bottom { width: 304px; height: 15px; background: url(../images/system/bg/front/right_tool_bottom.jpg); position: relative; float: left; }
-#lower_pagewrapper #content #schools ul { margin: 0 0 0 24px; }
-#lower_pagewrapper #content #schools ul li { color: black; font-size: 12px; font-style: italic; }
-#lower_pagewrapper #content #schools ul li span { text-transform: uppercase; font-style: normal; }
+#lower_pagewrapper #content #schools ul { margin: 0 0 0 24px; float: left; }
+#lower_pagewrapper #content #schools ul li.title { color: black; font-size: 12px; font-style: italic; }
+#lower_pagewrapper #content #schools ul li.title span { text-transform: uppercase; font-style: normal; }
+#lower_pagewrapper #content #schools ul.school li { list-style: none; float: left; margin-right: 0px; }
+#lower_pagewrapper #content #schools ul.school li.distance { color: #e13939; width: 90px; }
+#lower_pagewrapper #content #schools ul.school li.title { color: #7e7e7e; font-weight: bold; font-style: normal; width: 120px; }
+#lower_pagewrapper #content #schools ul.school li.title i { font-weight: normal; }
+#lower_pagewrapper #content #schools ul.school li.map { width: 45px; height: 21px; background-image: url(../images/system/buttons/schoolsmap.jpg); color: white; font-size: 12px; line-height: 21px; }
+#lower_pagewrapper #content #schools ul.school li.map span { margin: 0 0 0 8px; text-transform: uppercase; }
 #lower_pagewrapper #content #eanvvip { width: 302px; height: 159px; background: url(../images/system/bg/front/ev_vip_bg.jpg); float: left; margin: 14px 16px; }
 #lower_pagewrapper #content #eanvvip p { margin: 50px; color: white; text-align: center; font-size: 14px; line-height: 18px; font-style: italic; }
 #lower_pagewrapper #content #main { width: 463px; background: url(../images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px; }
@@ -157,7 +163,7 @@ body span.right { float: right; font-size: 11px; line-height: 18px; font-style: 
 #lower_pagewrapper #content #right-column #searchbox form#Selectable div p input.onfocus { background-image: url(../images/system/form/dropdown.jpg); }
 #lower_pagewrapper #content #right-column #searchbox form#Selectable div p input.text_input { padding: 6px 0 0 6px; border: 0px; width: 192px; height: 20px; margin-top: 6px; background-image: url(../images/system/form/advanced_search_input.jpg); background-repeat: no-repeat; float: left; padding-right: 0px; line-height: 25px; }
 #lower_pagewrapper #content #right-column #searchbox form#Selectable div p input.short { width: 82px; height: 27px; background-image: url(../images/system/form/ZipBox.jpg); }
-#lower_pagewrapper #content #right-column #searchbox form#Selectable div p span { float: left; margin: 12px 4px 0 0; }
+#lower_pagewrapper #content #right-column #searchbox form#Selectable div p span.zip { float: left; margin: 12px 4px 0 0; }
 #lower_pagewrapper #content #right-column #searchbox form#Selectable div.titles { margin-top: 22px; color: #838383; }
 #lower_pagewrapper #content #right-column #searchbox form#Selectable div.titles p { width: 68px; font-size: 80%; font-variant: small-caps; }
 #lower_pagewrapper #content #page_header { width: 500px; float: left; }
