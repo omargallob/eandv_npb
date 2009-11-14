@@ -23,7 +23,7 @@
 .ui-combobox-list {border: 1px solid black; z-index: 780}
 .ui-combobox-list, .ui-combobox-item {display: block; font-family: "Georgia"; font-size:90%; background-image: url(../images/system/form/dropdown.jpg)}
 .ui-combobox-list .selected {background-color: #eeeeff; border-top: 1px solid blue; border-bottom: 1px solid blue; font-weight: bold}
- .ui-tabs {padding: .2em; zoom: 1}
+ .ui-tabs {padding: .2em;}
 .ui-tabs .ui-tabs-nav {list-style: none; position: relative; padding: .2em .2em 0}
 .ui-tabs .ui-tabs-nav li {position: relative; float: left; border-bottom-width: 0 !important; margin: 0 .2em -1px 0; padding: 0}
 .ui-tabs .ui-tabs-nav li a {float: left; text-decoration: none; padding: .5em 1em; color:red;}

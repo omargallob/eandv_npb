@@ -43,7 +43,7 @@
 	<script>
 	
 		nice_fonts();
-
+		//pro_fonts();
 	</script>
 	<link href="http://www.engelvoelkers.com/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
   </head>
@@ -82,16 +82,7 @@
 		</div>
 		<div id="content_bottom"></div>
 		<div id='footer'>
-			<ul id="links">
-				<li><%= image_tag "system/buttons/phone.jpg", :class=>"button" %>&nbsp;&nbsp;&nbsp;&nbsp; +1 949 257 7277</li>
-				<li>Office Locations</li>
-				<li>Sitemap</li>
-				<li><span>www.engelandvoelkers.com</span></li>
-				<li><%= image_tag "system/buttons/chat.png", :class=>"button" %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chat</li>
-				<li>Print</li>				
-				<li>Disclaimer</li>
-				<li><%= image_tag "system/buttons/EandV.jpg"%></li>
-			</ul>
+			<%= render :partial => "shared/footer" %>
 		</div>
 	</div>
 	<script type="text/javascript"> Cufon.now(); </script>

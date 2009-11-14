@@ -19,7 +19,7 @@ javascripts:
   - jquery.mousewheel
   - jquery.jcarousel
   - jquery.easing.1.3
-  - jquery.variations
+  - browserdetect
 
 stylesheets: 
 - base: 

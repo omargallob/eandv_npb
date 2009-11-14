@@ -114,7 +114,7 @@ body object { outline: none; }
 #lower_pagewrapper #content #main .property .price p { margin: 0 0 0 5px; }
 #lower_pagewrapper #content #main .featured { background: url(../images/system/bg/front/featured_property_bg.jpg); }
 #lower_pagewrapper #content #main .testing { background: url(../images/system/bg/front/featBG.jpg); }
-#lower_pagewrapper #content #main hr { width: 409px; height: 1px; align: center; background-color: #e1e1e1; border: 0px none; float: left; margin-left: 16px; }
+#lower_pagewrapper #content #main hr { width: 409px; height: 1px; text-align: center; background-color: #e1e1e1; border: 0px none; float: left; margin-left: 16px; }
 #lower_pagewrapper #content #main h3 { margin: 13px 0 0 24px; }
 #lower_pagewrapper #content #main #main_top { background-image: url(../images/system/bg/front/main_top.jpg); margin-top: 0; }
 #lower_pagewrapper #content #main #main_bottom { background-image: url(../images/system/bg/front/main_bottom.jpg); float: left; margin-top: 33px; }
@@ -156,7 +156,7 @@ body object { outline: none; }
 #lower_pagewrapper #content #right-column #searchbox form#Selectable div.titles { margin-top: 22px; color: #838383; }
 #lower_pagewrapper #content #right-column #searchbox form#Selectable div.titles p { width: 68px; font-size: 80%; font-variant: small-caps; }
 #lower_pagewrapper #content #page_header { width: 500px; float: left; }
-#lower_pagewrapper #content #sellyourproperty { width: 170px; float: left; margin-top: 15px auto; }
+#lower_pagewrapper #content #sellyourproperty { width: 170px; float: left; margin-top: 15px; }
 #lower_pagewrapper #content ul#gallerylinks { height: 230px; width: 130px; }
 #lower_pagewrapper #content ul#gallerylinks li { float: left; height: 62px; }
 #lower_pagewrapper #content #side-nav { width: 162px; float: left; background-color: transparent; margin-right: 20px; }
@@ -185,8 +185,11 @@ body object { outline: none; }
 #lower_pagewrapper #footer { margin: 0px auto; width: 100%; height: 35px; background-image: url(../images/system/bg/front/footer_bg.jpg); z-index: 100; }
 #lower_pagewrapper #footer ul#links { width: 1000px; margin: 0px auto; list-style: none; }
 #lower_pagewrapper #footer ul#links li { line-height: 35px; font-size: 11px; float: left; margin: 0 15px; color: #888888; }
-#lower_pagewrapper #footer ul#links li span { font-size: 14px; letter-spacing: 2px; margin: 0 60px; }
-#lower_pagewrapper #footer ul#links li img { margin-top: 7px; }
-#lower_pagewrapper #footer ul#links li img.button { position: absolute; margin-top: 10px; }
+#lower_pagewrapper #footer ul#links li img { margin-top: 12px; float: left; }
+#lower_pagewrapper #footer ul#links li h4 { margin: 0; font-size: 14px; float: left; }
+#lower_pagewrapper #footer ul#links li h4 a { text-decoration: none; }
+#lower_pagewrapper #footer ul#links li h6 { margin: 0 60px; letter-spacing: 2px; }
+#lower_pagewrapper #footer ul#links li h6 a { text-decoration: none; }
+#lower_pagewrapper #footer ul#links li img.eandv { margin: 7px 0 0 0; }
 #lower_pagewrapper #footer #logbox { float: right; width: 250px; margin-top: 0px; }
 #lower_pagewrapper #footer #logbox div { float: left; margin-left: 15px; background-color: white; }

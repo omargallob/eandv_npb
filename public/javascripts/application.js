@@ -184,4 +184,24 @@ function nice_fonts(){
 	  color: '#E13939',
 	  fontSize: "16px",
  });
+  Cufon.replace('h4', {
+	  fontFamily: "AGaramond LT",
+	  color: '#888888',
+	  fontSize: "12px",
+    hover: {
+     		color: 'white'
+     }
+ });
+  Cufon.replace('h6', {
+	  fontFamily: "AGaramond LT",
+	  color: '#888888',
+	  fontSize: "14px",
+    hover: {
+     		color: 'white'
+     }
+ });
+}
+
+function pro_fonts(){
+  alert(BrowserDetect.browser);
 }
