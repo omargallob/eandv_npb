@@ -64,7 +64,7 @@ body span.right { float: right; font-size: 11px; line-height: 18px; font-style: 
 #lower_pagewrapper #content #main #facility_list .bottom { width: 136px; height: 4px; background: url(../images/system/bg/front/property_facility_bottom.jpg); }
 #lower_pagewrapper #content #main #facility_list h3 { text-align: center; margin: 10px 0 0 0; }
 #lower_pagewrapper #content #main #facility_list p { margin: 0 0 0 12px; }
-#lower_pagewrapper #content #main #facility_list ul { margin: 0 0 0 12px; list-style-position: inside; }
+#lower_pagewrapper #content #main #facility_list ul { margin: 10px 0 10px 12px; list-style-position: inside; }
 #lower_pagewrapper #content #main #facility_list ul li { font-size: 12px; }
 #lower_pagewrapper #content #main #property_content { width: 248px; float: left; background: transparent; margin-left: 16px; margin-top: 3px; }
 #lower_pagewrapper #content #main #property_content p { font-style: normal; font-size: 12px; margin: 0 0 0 6px; }
@@ -76,13 +76,13 @@ body span.right { float: right; font-size: 11px; line-height: 18px; font-style: 
 #lower_pagewrapper #content #main #property_header .state { width: 409px; margin: 3px 0 0 6px; font-style: normal; }
 #lower_pagewrapper #content #main #property_header .state strong { text-transform: uppercase; }
 #lower_pagewrapper #content #main #property_header .price { width: 159px; margin: 3px 0 0 6px; }
-#lower_pagewrapper #content #main #property_header ul.facility { margin: 6px 0 0 5px; list-style: none; width: 152px; height: 17px; float: right; }
+#lower_pagewrapper #content #main #property_header ul.facility { margin: 6px 0 0 5px; list-style: none; width: 155px; height: 17px; float: right; }
 #lower_pagewrapper #content #main #property_header ul.facility li { float: left; color: white; text-align: center; }
 #lower_pagewrapper #content #main #property_header ul.facility li p { margin: -2px 0 0 5px; padding: 0; }
 #lower_pagewrapper #content #main #property_header ul.facility li.number { height: 16px; width: 17px; background: url(../images/system/buttons/Facility/Facilites_NumBG.jpg); margin-right: 3px; }
-#lower_pagewrapper #content #main #property_header ul.facility li.bed { height: 16px; width: 24px; background: url(../images/system/buttons/Facility/Facilities_Bed.jpg); margin-right: 12px; }
-#lower_pagewrapper #content #main #property_header ul.facility li.bath { height: 20px; width: 22px; background: url(../images/system/buttons/Facility/Facilities_Shower.jpg); margin-right: 12px; margin-top: -2px; }
-#lower_pagewrapper #content #main #property_header ul.facility li.garage { height: 20px; width: 22px; background: url(../images/system/buttons/Facility/Facilities_Garage.jpg); margin-top: -2px; }
+#lower_pagewrapper #content #main #property_header ul.facility li.bed { height: 16px; width: 24px; background: url(../images/system/buttons/Facility/Icon_Bed.jpg); margin-right: 12px; }
+#lower_pagewrapper #content #main #property_header ul.facility li.bath { height: 21px; width: 22px; background: url(../images/system/buttons/Facility/Icon_Shower.jpg); margin-right: 12px; margin-top: -2px; }
+#lower_pagewrapper #content #main #property_header ul.facility li.garage { height: 18px; width: 24px; background: url(../images/system/buttons/Facility/Icon_Car.jpg); margin-top: -2px; }
 #lower_pagewrapper #content #main ul#view_options { width: 409px; padding: 0px; float: left; margin-top: 0px; }
 #lower_pagewrapper #content #main ul#view_options li { float: left; list-style: none; text-align: center; background-repeat: no-repeat; color: white; font-size: 12px; height: 22px; line-height: 22px; margin: 5px 5px 0 0; }
 #lower_pagewrapper #content #main ul#view_options li span { font-weight: bold; color: black; }
