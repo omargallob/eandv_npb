@@ -23,7 +23,7 @@
 	<hr />
 	<div id="property_header">
 		<h1><%= @property.title %></h1>
-		<p class="code">Property code: #CA8900-11</p>
+		<p class="code">Property code: #CA8900-<%= @property.id %></p>
 		<p class="address"><%= @property.location.region %>,&nbsp;<%= @property.location.county %> county </p>
 		<p class="state"><strong><%= "CA" %></strong> - <%= @property.location.country.title %> </p>
 		<p class="price"><%= number_to_currency(@property.price,:precision => 0) %> </p>

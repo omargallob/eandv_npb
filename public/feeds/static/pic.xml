@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <pic>
 	<plink>../images/bed1.jpg </plink><pdis>Newport Beach</pdis>
-
-	<plink>../images/bed2.jpg</plink><pdis>Balboa&Islands</pdis>
-
+	<plink>../images/bed2.jpg</plink><pdis>Balboa & Islands</pdis>
 	<plink>../images/bed3.jpg</plink><pdis>Fashion Island</pdis>
 </pic>

@@ -4,7 +4,12 @@
 	</div>
 	<div class="title text"><p><%= property.title %></p></div>
 	<div class="text address"><p> <%=  property.location.region %>,&nbsp;<%=  property.location.county %> </p></div>
-	<div class="price text"><p> <%= number_to_currency (property.price,:precision => 0) %></p></div>
+	<div class="price text">
+		<p>
+			<span class="left"> <%= number_to_currency (property.price,:precision => 0) %></span>
+			<span class="right">Property #CA8900-<%= property.id %></span>
+		</p>
+	</div>
 	<div class="extra text">
 		<ul class="facility">
 			<li class="number"><p> <%= property.bedrooms %></p></li>
